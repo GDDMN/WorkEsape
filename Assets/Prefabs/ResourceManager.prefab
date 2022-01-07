@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2697932727834055722}
-  - component: {fileID: 2697932727834055723}
+  - component: {fileID: 2169720983852730141}
   m_Layer: 5
   m_Name: ResourceManager
   m_TagString: Untagged
@@ -36,7 +36,7 @@ RectTransform:
   m_AnchoredPosition: {x: 353, y: 159}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2697932727834055723
+--- !u!114 &2169720983852730141
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,27 +49,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resources:
-  - type: 0
-    icon: {fileID: 21300000, guid: ca807d5a83cd2294cb4b6ab656f97ab4, type: 3}
-    current: 0
-    name: Gold
-  - type: 1
-    icon: {fileID: 21300000, guid: c4658ad9861287b40bd93b24da5b6ab3, type: 3}
-    current: 0
-    name: Diamond
-  - type: 2
-    icon: {fileID: 21300000, guid: 3398e9f44fd79dc468f3ee343b844bfa, type: 3}
-    current: 0
-    name: Star
-  - type: 3
-    icon: {fileID: 21300000, guid: 9e1026ab30a6a2f48975db92cbad0dd4, type: 3}
-    current: 0
-    name: golden key
-  - type: 4
-    icon: {fileID: 21300000, guid: 78bd4a86eb262e145bbcde88f1daa1e0, type: 3}
-    current: 0
-    name: silver key
-  - type: 5
-    icon: {fileID: 21300000, guid: 4bd8323256c68c0449c8bf9659ec49d0, type: 3}
-    current: 0
-    name: ruby
+    _keys: 000000000100000002000000030000000400000005000000
+    _value:
+    - icon: {fileID: 21300000, guid: ca807d5a83cd2294cb4b6ab656f97ab4, type: 3}
+      current: 0
+      name: Gold
+    - icon: {fileID: 21300000, guid: c4658ad9861287b40bd93b24da5b6ab3, type: 3}
+      current: 0
+      name: Diamond
+    - icon: {fileID: 21300000, guid: 3398e9f44fd79dc468f3ee343b844bfa, type: 3}
+      current: 0
+      name: Star
+    - icon: {fileID: 21300000, guid: 9e1026ab30a6a2f48975db92cbad0dd4, type: 3}
+      current: 0
+      name: Gold key
+    - icon: {fileID: 21300000, guid: 78bd4a86eb262e145bbcde88f1daa1e0, type: 3}
+      current: 0
+      name: Silver key
+    - icon: {fileID: 21300000, guid: 4bd8323256c68c0449c8bf9659ec49d0, type: 3}
+      current: 0
+      name: Ruby

@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ResourceManager.cs" />
+    <Compile Include="Assets\Scripts\ResourceItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
