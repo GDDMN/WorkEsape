@@ -21,7 +21,6 @@ namespace PurpleDrank
 
 
     [CustomEditor(typeof(ResourceManager))]
-    [CanEditMultipleObjects]
     public class customeInspector : Editor
     {
         ResourceManager a;

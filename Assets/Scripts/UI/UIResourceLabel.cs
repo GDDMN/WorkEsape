@@ -9,7 +9,9 @@ namespace PurpleDrank
     {
         ResourceManager _resManager;
 
+        [HideInInspector]
         public Text resourceCount;
+        [HideInInspector]
         public Image resourceImage;
 
         public ResourceType resourceType;
@@ -23,6 +25,7 @@ namespace PurpleDrank
                 {
                     resourceCount.text = res.Value.current.ToString();
                     resourceImage.sprite = res.Value.icon;
+
                     break;
                 }
             }
