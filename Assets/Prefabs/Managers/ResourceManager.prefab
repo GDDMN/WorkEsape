@@ -57,7 +57,7 @@ MonoBehaviour:
     - icon: {fileID: 21300000, guid: c4658ad9861287b40bd93b24da5b6ab3, type: 3}
       current: 0
       name: Diamonds
-    - icon: {fileID: 21300000, guid: 3398e9f44fd79dc468f3ee343b844bfa, type: 3}
+    - icon: {fileID: 21300000, guid: c29162d11d03499498205196908712a5, type: 3}
       current: 0
       name: Stars
     - icon: {fileID: 21300000, guid: 9e1026ab30a6a2f48975db92cbad0dd4, type: 3}
