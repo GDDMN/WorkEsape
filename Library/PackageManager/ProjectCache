@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637769334232863987
-    m_Hash: 3439656990
+      ticks: 637776227401339986
+    m_Hash: 827633130
   m_LockFileStatus:
     m_FilePath: E:/Coding/Games/Base_project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637769335466228706
-    m_Hash: 258382707
+      ticks: 637776227411304899
+    m_Hash: 3994059223
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -459,6 +459,115 @@ m_PackageAssets:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.vscode.git
         revision: b5ec9b38109e52b1b26597d521e4df75e042ebb9
+        path: 
+    - packageId: com.unity.recorder@3.0.3
+      testable: 0
+      isDirectDependency: 1
+      version: 3.0.3
+      source: 1
+      resolvedPath: E:\Coding\Games\Base_project\Library\PackageCache\com.unity.recorder@3.0.3
+      assetPath: Packages/com.unity.recorder
+      name: com.unity.recorder
+      displayName: Recorder
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'The Recorder allows you to capture and save data from the Unity
+        Editor during Play mode: animations, videos, images, audio, arbitrary output
+        variables (AOVs), and more.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 2.0.0-preview.6
+        - 2.0.1-preview.1
+        - 2.0.2-preview.3
+        - 2.0.3-preview.1
+        - 2.1.0-preview.1
+        - 2.2.0-preview.4
+        - 2.3.0-preview.3
+        - 2.4.0-preview.1
+        - 2.5.0-pre.1
+        - 2.5.2
+        - 2.5.4
+        - 2.5.5
+        - 2.5.7
+        - 2.6.0-exp.3
+        - 2.6.0-exp.4
+        - 3.0.0-pre.1
+        - 3.0.0-pre.2
+        - 3.0.0
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 4.0.0-pre.1
+        - 4.0.0-pre.2
+        compatible:
+        - 2.0.0-preview.6
+        - 2.0.1-preview.1
+        - 2.0.2-preview.3
+        - 2.0.3-preview.1
+        - 2.1.0-preview.1
+        - 2.2.0-preview.4
+        - 2.3.0-preview.3
+        - 2.4.0-preview.1
+        - 2.5.0-pre.1
+        - 2.5.2
+        - 2.5.4
+        - 2.5.5
+        - 2.5.7
+        - 2.6.0-exp.3
+        - 2.6.0-exp.4
+        - 3.0.0-pre.1
+        - 3.0.0-pre.2
+        - 3.0.0
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 4.0.0-pre.1
+        - 4.0.0-pre.2
+        verified: 
+      dependencies:
+      - name: com.unity.timeline
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.timeline
+        version: 1.2.6
+      keywords:
+      - unity
+      - recorder
+      - recording
+      - capture
+      - video
+      - animation
+      - clip
+      - images
+      - AOV
+      - render
+      - pass
+      - layer
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637726685330000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.recorder.git
+        revision: 52d2b7e77e6832f279e4de2172226475c5465729
         path: 
     - packageId: com.unity.test-framework@1.1.20
       testable: 0
