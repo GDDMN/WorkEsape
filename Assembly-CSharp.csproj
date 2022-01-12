@@ -69,6 +69,15 @@
     <Compile Include="Assets\Scripts\Command\MoveLeft.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\UnityAds\UnityEngine.Advertisements.Unsupported.dll" />
+     <None Include="Assets\UnityAds\UnityEngine.Monetization.Editor.dll" />
+     <None Include="Assets\UnityAds\UnityEngine.Advertisements.Editor.dll" />
+     <None Include="Assets\UnityAds\UnityEngine.Advertisements.iOS.dll" />
+     <None Include="Assets\UnityAds\UnityEngine.Monetization.iOS.dll" />
+     <None Include="Assets\UnityAds\link.xml" />
+     <None Include="Assets\UnityAds\UnityEngine.Monetization.Unsupported.dll" />
+     <None Include="Assets\UnityAds\UnityEngine.Advertisements.Android.dll" />
+     <None Include="Assets\UnityAds\UnityEngine.Monetization.Android.dll" />
     <Reference Include="UnityEngine">
       <HintPath>C:\distrib\unity\2020.2.2f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -281,6 +290,12 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\distrib\unity\2020.2.2f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Monetization.Editor">
+      <HintPath>Assets\UnityAds\UnityEngine.Monetization.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements.Editor">
+      <HintPath>Assets\UnityAds\UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\distrib\unity\2020.2.2f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
