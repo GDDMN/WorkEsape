@@ -56,9 +56,17 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ResourceItem.cs" />
-    <Compile Include="Assets\Scripts\ResourceManager.cs" />
+    <Compile Include="Assets\Scripts\Resource\ResourceItem.cs" />
+    <Compile Include="Assets\Scripts\Resource\ResourceManager.cs" />
+    <Compile Include="Assets\Scripts\Command\Command.cs" />
+    <Compile Include="Assets\Scripts\Command\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Command\NullCommand.cs" />
+    <Compile Include="Assets\Scripts\Command\MoveDown.cs" />
+    <Compile Include="Assets\Scripts\Command\InputHandle.cs" />
+    <Compile Include="Assets\Scripts\Command\MoveUp.cs" />
     <Compile Include="Assets\Scripts\UI\UIResourceLabel.cs" />
+    <Compile Include="Assets\Scripts\Command\MoveRight.cs" />
+    <Compile Include="Assets\Scripts\Command\MoveLeft.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
