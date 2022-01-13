@@ -529,10 +529,52 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2113810411}
     m_Modifications:
+    - target: {fileID: 757955976072172268, guid: 775b96ed879f56c4aa935f1f3f8fc8b3,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 757955976072172268, guid: 775b96ed879f56c4aa935f1f3f8fc8b3,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 757955976072172271, guid: 775b96ed879f56c4aa935f1f3f8fc8b3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 087c0b4ab2162ae4aa83b91476fac4c8,
+        type: 3}
+    - target: {fileID: 757955976731070667, guid: 775b96ed879f56c4aa935f1f3f8fc8b3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 706ef2fb7ecb5c549904fa06e3162d05,
+        type: 3}
+    - target: {fileID: 1415093876656057827, guid: 775b96ed879f56c4aa935f1f3f8fc8b3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 5.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2126740407896994207, guid: 775b96ed879f56c4aa935f1f3f8fc8b3,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3826339432848092927, guid: 775b96ed879f56c4aa935f1f3f8fc8b3,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4d180bbc2bfb9bd4986b975a64be2488, type: 2}
     - target: {fileID: 4195953766214181892, guid: 775b96ed879f56c4aa935f1f3f8fc8b3,
         type: 3}
       propertyPath: m_Name
       value: HypercasualMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4762777464558773117, guid: 775b96ed879f56c4aa935f1f3f8fc8b3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7418746238023963588, guid: 775b96ed879f56c4aa935f1f3f8fc8b3,
         type: 3}
@@ -637,6 +679,11 @@ PrefabInstance:
     - target: {fileID: 7418746238023963588, guid: 775b96ed879f56c4aa935f1f3f8fc8b3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8020875481267755774, guid: 775b96ed879f56c4aa935f1f3f8fc8b3,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
