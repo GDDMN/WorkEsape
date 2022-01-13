@@ -13,7 +13,7 @@ namespace PurpleDrank
         private void Awake()
         {
             title.text = titleName;
-            this.gameObject.SetActive(false);
+            //this.gameObject.SetActive(false);
         }
 
         public void CloseWindow()
