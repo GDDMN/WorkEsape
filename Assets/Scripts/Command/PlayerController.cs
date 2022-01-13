@@ -8,18 +8,25 @@ namespace PurpleDrank
     {
         private GameObject Player;
         private InputHandle Input = new InputHandle();
+        private GameSceneManager _sceneManager;
         private void Awake()
         {
             Player = this.gameObject;
+            _sceneManager = FindObjectOfType<GameSceneManager>();
         }
 
         private void Update()
         {
-            Command command = Input.handleInput();
-            if (command != null)
+            IGameState gameState = _sceneManager.GetState();
+            if(gameState.GetType() == typeof(PlayState))
             {
-                command.execute(Player);
+                Command command = Input.handleInput();
+                if (command != null)
+                {
+                    command.execute(Player);
+                }
             }
+            
         }
     }
 
