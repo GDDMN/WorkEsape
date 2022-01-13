@@ -4,11 +4,13 @@ using UnityEngine;
 
 namespace PurpleDrank
 {
-    public class PlayState : IGameState
+    public class PlayState : MonoBehaviour, IGameState
     {
+        
         public void Entry()
         {
             Debug.Log("PlayState");
+            
         }
         public void OnUpdate()
         {
@@ -16,7 +18,7 @@ namespace PurpleDrank
         }
         public void Exit()
         {
-
+            
         }
     }
 }

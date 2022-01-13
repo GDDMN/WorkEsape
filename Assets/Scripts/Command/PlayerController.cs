@@ -15,10 +15,10 @@ namespace PurpleDrank
             _sceneManager = FindObjectOfType<GameSceneManager>();
         }
 
-        private void Update()
+        public void PlayerControllerUpdate()
         {
             IGameState gameState = _sceneManager.GetState();
-            if(gameState.GetType() == typeof(PlayState))
+            if (gameState.GetType() == typeof(PlayState))
             {
                 Command command = Input.handleInput();
                 if (command != null)
@@ -26,7 +26,6 @@ namespace PurpleDrank
                     command.execute(Player);
                 }
             }
-            
         }
     }
 

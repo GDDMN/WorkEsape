@@ -57,31 +57,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+    <Compile Include="Assets\Scripts\GameSceneManager\EndLevelState.cs" />
     <Compile Include="Assets\Scripts\Resource\ResourceItem.cs" />
     <Compile Include="Assets\Scripts\Resource\ResourceManager.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Scripts\Base\Joystick.cs" />
+    <Compile Include="Assets\Scripts\GameSceneManager.cs" />
     <Compile Include="Assets\Scripts\Command\Command.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\Scripts\GameSceneManager\MenuState.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Scripts\UI\UIWindow.cs" />
+    <Compile Include="Assets\Scripts\GameSceneManager\PlayState.cs" />
     <Compile Include="Assets\Scripts\Command\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Command\NullCommand.cs" />
     <Compile Include="Assets\Scripts\Command\MoveDown.cs" />
     <Compile Include="Assets\Scripts\Command\InputHandle.cs" />
     <Compile Include="Assets\Scripts\Command\MoveUp.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+    <Compile Include="Assets\Scripts\GameSceneManager\IGameState.cs" />
     <Compile Include="Assets\Scripts\UI\SettingsWindow.cs" />
     <Compile Include="Assets\Scripts\UI\UIResourceLabel.cs" />
-    <Compile Include="Assets\Scripts\HypercasualMainMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\HypercasualMainMenu.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Scripts\Command\MoveRight.cs" />
     <Compile Include="Assets\Scripts\Command\MoveLeft.cs" />
-    <Compile Include="Assets\GameSceneManager.cs" />
-    <Compile Include="Assets\Scripts\GameSceneManager\IGameState.cs" />
-    <Compile Include="Assets\Scripts\GameSceneManager\MenuState.cs" />
-    <Compile Include="Assets\Scripts\GameSceneManager\PlayState.cs" />
-    <Compile Include="Assets\Scripts\GameSceneManager\EndLevelState.cs" />
+    <Compile Include="Assets\ScenePlay.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\UnityAds\UnityEngine.Advertisements.Unsupported.dll" />
