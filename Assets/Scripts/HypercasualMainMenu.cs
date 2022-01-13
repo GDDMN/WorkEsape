@@ -10,6 +10,11 @@ namespace PurpleDrank
         {
             window.gameObject.SetActive(true);
         }
+
+        public void CloseMenu()
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 }
 
