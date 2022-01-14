@@ -82,7 +82,6 @@
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Scripts\Command\MoveRight.cs" />
     <Compile Include="Assets\Scripts\Command\MoveLeft.cs" />
-    <Compile Include="Assets\ScenePlay.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\UnityAds\UnityEngine.Advertisements.Unsupported.dll" />

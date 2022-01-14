@@ -17,6 +17,11 @@ namespace PurpleDrank
             SetMenuState();
         }
 
+        private void Update()
+        {
+            _activeState.OnUpdate();
+        }
+
         /************************************************************************/
         public void InitStates()
         {
