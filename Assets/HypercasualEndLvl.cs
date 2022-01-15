@@ -9,6 +9,7 @@ namespace PurpleDrank
     {
         public Animator _endLvlAnimation;
         public Button buttonAds;
+        public Image finImage;
         public void SetEndLvlTrigger()
         {
             _endLvlAnimation.SetTrigger("EndLvl");

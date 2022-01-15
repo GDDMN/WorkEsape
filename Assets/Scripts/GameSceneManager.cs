@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-
 namespace PurpleDrank
 {
     public class GameSceneManager : MonoBehaviour
     {
         private Dictionary<Type, IGameState> _gameStates;
         private IGameState _activeState;
+        private GameObject _actualScene;
 
+        public GameObject[] gamePrefab;
+        public int Lvl = 0;
+        
         private void Awake()
         {
+            InitGameScene();            
             InitStates();
             SetMenuState();
         }
@@ -20,6 +24,22 @@ namespace PurpleDrank
         private void Update()
         {
             _activeState.OnUpdate();
+        }
+
+        public void InitGameScene()
+        {
+            if(_actualScene!= null)
+                Destroy(_actualScene);
+
+            if(Lvl >= gamePrefab.Length)
+            {
+                Lvl = 0;
+            }
+            _actualScene = Instantiate(gamePrefab[Lvl], transform.position, Quaternion.identity);
+            Transform sceneObject = FindObjectOfType<Scene>().transform;
+            _actualScene.transform.SetParent(sceneObject);
+            _actualScene.transform.position = sceneObject.position;
+            Lvl++;
         }
 
         /************************************************************************/

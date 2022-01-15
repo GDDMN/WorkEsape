@@ -10,10 +10,11 @@ namespace PurpleDrank
 
         private void Awake()
         {
-            gsMan = FindObjectOfType<GameSceneManager>();
+            
         }
         private void OnCollisionEnter(Collision collision)
         {
+            gsMan = FindObjectOfType<GameSceneManager>();
             gsMan.SetEndLvlState();
         }
     }

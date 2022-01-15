@@ -7,9 +7,14 @@ namespace PurpleDrank
     public class EndLevelState : MonoBehaviour, IGameState
     {
         HypercasualEndLvl _endLvlUI;
-        public void Entry()
+        Vector3 _startPosImage;
+        public EndLevelState()
         {
             _endLvlUI = FindObjectOfType<HypercasualEndLvl>();
+            _startPosImage = _endLvlUI.finImage.transform.position;
+        }
+        public void Entry()
+        {
             _endLvlUI.gameObject.SetActive(true);
             _endLvlUI.SetEndLvlTrigger();
         }
@@ -19,7 +24,7 @@ namespace PurpleDrank
         }
         public void Exit()
         {
-
+            _endLvlUI.finImage.transform.position = _startPosImage + new Vector3(0.0f, 1.0f, 0.0f);
             _endLvlUI.gameObject.SetActive(false);
         }
     }
