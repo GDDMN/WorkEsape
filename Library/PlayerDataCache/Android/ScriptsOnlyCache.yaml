@@ -19,8 +19,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -35,7 +37,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Boot.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -715,7 +717,193 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: b8f61d47d5357228f62df063a9c8643a
+    assemblyName: ToonyColorsPro2.Demo.dll
+    namespaceName: ToonyColorsPro.Demo
+    className: TCP2_Demo_Interactive
+  - hash:
+      serializedVersion: 2
+      Hash: 7c04ff7abdae8f8e88fda7b0ca2e11ba
+    assemblyName: ToonyColorsPro.Runtime.dll
+    namespaceName: ToonyColorsPro.Runtime
+    className: TCP2_PlanarReflection
+  - hash:
+      serializedVersion: 2
+      Hash: 0f46123eb60a6cce1399824f93fe8219
+    assemblyName: ToonyColorsPro2.Demo.dll
+    namespaceName: ToonyColorsPro.Demo
+    className: TCP2_Demo_View
+  - hash:
+      serializedVersion: 2
+      Hash: 2122c42aac0c44e0cd7ed01910b598fb
+    assemblyName: ToonyColorsPro2.Demo.dll
+    namespaceName: ToonyColorsPro.Demo
+    className: TCP2_Demo_PBS_View
+  - hash:
+      serializedVersion: 2
+      Hash: 301439da0db6587dcbb560673f5dc397
+    assemblyName: ToonyColorsPro2.Demo.dll
+    namespaceName: ToonyColorsPro.Demo
+    className: TCP2_Demo_AnimateMaterial
+  - hash:
+      serializedVersion: 2
+      Hash: 12a825b52bd19f9c163c2c4b9548d867
+    assemblyName: ToonyColorsPro.Runtime.dll
+    namespaceName: ToonyColorsPro.Runtime
+    className: TCP2_GetPosOnWater
+  - hash:
+      serializedVersion: 2
+      Hash: 787b7f6dec616f7986358e5b9bdacbfe
+    assemblyName: ToonyColorsPro2.Demo.dll
+    namespaceName: ToonyColorsPro.Demo
+    className: TCP2_Demo_Interactive_Environment
+  - hash:
+      serializedVersion: 2
+      Hash: d8a422018ec06aded5071b7bf260f85c
+    assemblyName: ToonyColorsPro2.Demo.dll
+    namespaceName: 
+    className: TCP2_Demo_AutoRotate
+  - hash:
+      serializedVersion: 2
+      Hash: f6b4756d4470fa625d367b30639b2c73
+    assemblyName: ToonyColorsPro2.Demo.dll
+    namespaceName: ToonyColorsPro.Demo
+    className: TCP2_Demo
+  - hash:
+      serializedVersion: 2
+      Hash: b60b8aabeb6f51f9849b883e275225bb
+    assemblyName: ToonyColorsPro2.Demo.dll
+    namespaceName: ToonyColorsPro
+    className: TCP2_Demo_Interactive_Content
+  - hash:
+      serializedVersion: 2
+      Hash: b10f0f008d787b95a5928eed8ceaa36e
+    assemblyName: ToonyColorsPro2.Demo.dll
+    namespaceName: Kino
+    className: Bloom
+  - hash:
+      serializedVersion: 2
+      Hash: ad414eeb94134c1b0331356405c13b1f
+    assemblyName: ToonyColorsPro2.Demo.dll
+    namespaceName: ToonyColorsPro.Demo
+    className: TCP2_Demo_GammaLinear
+  - hash:
+      serializedVersion: 2
+      Hash: 7ffbb3f92ea27f70bb5deca6312414ef
+    assemblyName: ToonyColorsPro2.Demo.dll
+    namespaceName: ToonyColorsPro.Demo
+    className: TCP2_Demo_Cat
+  - hash:
+      serializedVersion: 2
+      Hash: dc9e318326bf89001e1c59c6bb98abc2
+    assemblyName: ToonyColorsPro.Runtime.dll
+    namespaceName: ToonyColorsPro.Runtime
+    className: TCP2_CameraDepth
+  - hash:
+      serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: ToonyColorsPro2.Demo.dll
+    namespaceName: 
+    className: TCP2_Demo_InvertedMaskImage
+  - hash:
+      serializedVersion: 2
+      Hash: 1dbd2fa1959126791e0a40fe507d6cfb
+    assemblyName: ToonyColorsPro2.Demo.dll
+    namespaceName: ToonyColorsPro.Demo
+    className: TCP2_Demo_Camera
+  - hash:
+      serializedVersion: 2
+      Hash: b6542bdca0edcd169421a6f5be1ebec1
+    assemblyName: ToonyColorsPro2.Demo.dll
+    namespaceName: ToonyColorsPro.Demo
+    className: TCP2_Demo_PBS
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: ToonyColorsPro.Runtime.dll
+    namespaceName: ToonyColorsPro.Runtime
+    className: TCP2_ShaderUpdateUnityTime
+  - hash:
+      serializedVersion: 2
+      Hash: a4900d574c1d1a9001f0f83b0dddb24d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ParticleEffectsLibrary
+  - hash:
+      serializedVersion: 2
+      Hash: 0912db8419735ecb16044b834208729d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXLoopScript
+  - hash:
+      serializedVersion: 2
+      Hash: 0e2dcecfc1a59863d6161482eaa244b3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXPitchRandomizer
+  - hash:
+      serializedVersion: 2
+      Hash: 2890c468cf196dca883ea02bde96343e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXLightFade
+  - hash:
+      serializedVersion: 2
+      Hash: 8e5e00ca42eeebc1eae2f91fabb1ee02
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXButtonScript
+  - hash:
+      serializedVersion: 2
+      Hash: e888ef4305b8fac9cd5510fefa0636bf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXFireProjectile
+  - hash:
+      serializedVersion: 2
+      Hash: b5aaf686465544e9e949e46e293afee1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXMouseOrbit
+  - hash:
+      serializedVersion: 2
+      Hash: 32cebb2ae4cddf0e4d07ddef22ca3a5c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXTarget
+  - hash:
+      serializedVersion: 2
+      Hash: 24b2edb739e02ab9678256f4cc52b87d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PEButtonScript
+  - hash:
+      serializedVersion: 2
+      Hash: 5058e62971372d10db24fe80294c7a3d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ETFXProjectileScript
+  - hash:
+      serializedVersion: 2
+      Hash: 79566861074b80c5467fa81dddcf4f5a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXRotation
+  - hash:
+      serializedVersion: 2
+      Hash: 096a50f6a3d89528ac732e9bb63631c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ETFXSceneManager
+  - hash:
+      serializedVersion: 2
+      Hash: b41f6a02beff5d31b9210834dce1767e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UICanvasManager
   platform: 13
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/Boot.unity
   playerPath: C:/Users/anton/Desktop/BaseDemoTest.apk
