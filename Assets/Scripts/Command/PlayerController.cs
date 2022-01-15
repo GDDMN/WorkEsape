@@ -8,11 +8,12 @@ namespace PurpleDrank
     {
         private GameObject Player;
         private InputHandle Input = new InputHandle();
-        private void Awake()
+
+        public void Awake()
         {
+
             Player = this.gameObject;
         }
-
         public void PlayerControllerUpdate()
         {
             Command command = Input.handleInput();

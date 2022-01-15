@@ -6,10 +6,18 @@ namespace PurpleDrank
 {
     public class PlayState : MonoBehaviour, IGameState
     {
+        FixedJoystick fixedJoystick;
         PlayerController _playerController;
         GameSceneManager _gameSceneManager;
+
+        public PlayState()
+        {
+            fixedJoystick = FindObjectOfType<FixedJoystick>();
+        }
         public void Entry()
         {
+            fixedJoystick.gameObject.SetActive(true);
+            
             _playerController = FindObjectOfType<PlayerController>();
             _gameSceneManager = FindObjectOfType<GameSceneManager>();
             Debug.Log("PlayState");
@@ -22,7 +30,7 @@ namespace PurpleDrank
         }
         public void Exit()
         {
-            
+            fixedJoystick.gameObject.SetActive(false);
         }
     }
 }
