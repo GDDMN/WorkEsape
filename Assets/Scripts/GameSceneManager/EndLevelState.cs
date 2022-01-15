@@ -4,11 +4,14 @@ using UnityEngine;
 
 namespace PurpleDrank
 {
-    public class EndLevelState : IGameState
+    public class EndLevelState : MonoBehaviour, IGameState
     {
+        HypercasualEndLvl _endLvlUI;
         public void Entry()
         {
-
+            _endLvlUI = FindObjectOfType<HypercasualEndLvl>();
+            _endLvlUI.gameObject.SetActive(true);
+            _endLvlUI.SetEndLvlTrigger();
         }
         public void OnUpdate()
         {
@@ -17,6 +20,7 @@ namespace PurpleDrank
         public void Exit()
         {
 
+            _endLvlUI.gameObject.SetActive(false);
         }
     }
 }
