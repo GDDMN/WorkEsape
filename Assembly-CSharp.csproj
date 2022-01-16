@@ -67,40 +67,43 @@
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\Scripts\GameSceneManager.cs" />
     <Compile Include="Assets\Scripts\Command\Command.cs" />
-    <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\ETFXButtonScript.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Scripts\ETFXLightFade.cs" />
-    <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\ETFXButtonScript.cs" />
     <Compile Include="Assets\Scripts\GameSceneManager\MenuState.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
-    <Compile Include="Assets\Scripts\UI\UIWindow.cs" />
-    <Compile Include="Assets\Scripts\GameSceneManager\PlayState.cs" />
-    <Compile Include="Assets\Scripts\Command\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Command\NullCommand.cs" />
     <Compile Include="Assets\Scripts\Command\MoveDown.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\VFX Library\ParticleEffectsLibrary.cs" />
+    <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\ETFXMouseOrbit.cs" />
+    <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\VFX Library\UICanvasManager.cs" />
+    <Compile Include="Assets\Scripts\GameSceneManager\IGameState.cs" />
+    <Compile Include="Assets\Scripts\UI\UIResourceLabel.cs" />
+    <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Examples\JoystickSetterExample.cs" />
+    <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\ETFXTarget.cs" />
+    <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Scripts\ETFXRotation.cs" />
+    <Compile Include="Assets\Scripts\Command\MoveLeft.cs" />
+    <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\Scripts\UI\UIWindow.cs" />
+    <Compile Include="Assets\Scripts\GameSceneManager\PlayState.cs" />
+    <Compile Include="Assets\Scripts\Command\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Command\InputHandle.cs" />
     <Compile Include="Assets\Scripts\Command\MoveUp.cs" />
-    <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\ETFXMouseOrbit.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\ETFXProjectileScript.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\ETFXSceneManager.cs" />
     <Compile Include="Assets\Scripts\Command\Move.cs" />
-    <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\VFX Library\UICanvasManager.cs" />
-    <Compile Include="Assets\Scripts\GameSceneManager\IGameState.cs" />
+    <Compile Include="Assets\AdsManager.cs" />
     <Compile Include="Assets\Scripts\UI\SettingsWindow.cs" />
-    <Compile Include="Assets\Scripts\UI\UIResourceLabel.cs" />
     <Compile Include="Assets\Scripts\SaveGameManager.cs" />
     <Compile Include="Assets\Scripts\UI\HypercasualMainMenu.cs" />
-    <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Scripts\Command\MoveRight.cs" />
-    <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\ETFXTarget.cs" />
     <Compile Include="Assets\HypercasualEndLvl.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\VFX Library\PEButtonScript.cs" />
-    <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Scripts\ETFXRotation.cs" />
-    <Compile Include="Assets\Scripts\Command\MoveLeft.cs" />
     <Compile Include="Assets\BoxTrigger.cs" />
-    <Compile Include="Assets\AdsManager.cs" />
+    <Compile Include="Assets\Scripts\GameSceneManager\LoseState.cs" />
+    <Compile Include="Assets\HypercasualLoose.cs" />
+    <Compile Include="Assets\LoseGame.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Shader Templates 2\SG2_Template_URP.txt" />
@@ -784,8 +787,14 @@
     <Reference Include="Unity.Recorder.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Recorder.Base">
       <HintPath>Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
@@ -816,12 +825,6 @@
     </Reference>
     <Reference Include="Unity.Recorder">
       <HintPath>Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

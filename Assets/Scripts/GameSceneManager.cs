@@ -50,6 +50,7 @@ namespace PurpleDrank
             _gameStates[typeof(MenuState)] = new MenuState();
             _gameStates[typeof(PlayState)] = new PlayState();
             _gameStates[typeof(EndLevelState)] = new EndLevelState();
+            _gameStates[typeof(LoseState)] = new LoseState();
 
         }
         private void SetState(IGameState newState)
@@ -78,6 +79,12 @@ namespace PurpleDrank
         public void SetEndLvlState()
         {
             var state = GetGameState<EndLevelState>();
+            SetState(state);
+        }
+
+        public void SetLoseState()
+        {
+            var state = GetGameState<LoseState>();
             SetState(state);
         }
         /************************************************************************/

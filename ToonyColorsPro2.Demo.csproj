@@ -56,20 +56,20 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\TCP2 Demo Assets\Misc\TCP2_Demo.cs" />
     <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\Cat Demo Assets\Scripts\TCP2_Demo_Camera.cs" />
-    <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\Common Demo Assets\Scripts\TCP2_Demo_InvertedMaskImage.cs" />
-    <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\SG2 Demo Assets\_Misc\TCP2_Demo_AutoRotate.cs" />
     <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\Common Demo Assets\Scripts\TCP2_Demo_Interactive_Environment.cs" />
     <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\Common Demo Assets\Kino Bloom\Bloom.cs" />
     <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\TCP2 Demo Assets\Misc\TCP2_Demo_PBS.cs" />
-    <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\TCP2 Demo Assets\Misc\TCP2_Demo_View.cs" />
     <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\Common Demo Assets\Scripts\TCP2_Demo_Interactive_Content.cs" />
+    <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\Cat Demo Assets\Scripts\TCP2_Demo_GammaLinear.cs" />
+    <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\TCP2 Demo Assets\Misc\TCP2_Demo.cs" />
+    <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\Common Demo Assets\Scripts\TCP2_Demo_InvertedMaskImage.cs" />
+    <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\SG2 Demo Assets\_Misc\TCP2_Demo_AutoRotate.cs" />
+    <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\TCP2 Demo Assets\Misc\TCP2_Demo_View.cs" />
     <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\Common Demo Assets\Scripts\TCP2_Demo_AnimateMaterial.cs" />
     <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\Cat Demo Assets\Scripts\TCP2_Demo_Cat.cs" />
     <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\TCP2 Demo Assets\Misc\TCP2_Demo_PBS_View.cs" />
     <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\Common Demo Assets\Scripts\TCP2_Demo_Interactive.cs" />
-    <Compile Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\Cat Demo Assets\Scripts\TCP2_Demo_GammaLinear.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Demo TCP2\TCP2 Code Injection Example.cginc" />

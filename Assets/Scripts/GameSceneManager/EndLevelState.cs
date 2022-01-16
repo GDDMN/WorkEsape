@@ -13,6 +13,7 @@ namespace PurpleDrank
         {
             _saveGameManager = FindObjectOfType<SaveGameManager>();
             _endLvlUI = FindObjectOfType<HypercasualEndLvl>();
+            _endLvlUI.gameObject.SetActive(false);
             _startPosImage = new Vector3(_endLvlUI.transform.position.x, _endLvlUI.transform.position.y + 320.0f, _endLvlUI.transform.position.z);
         }
         public void Entry()
