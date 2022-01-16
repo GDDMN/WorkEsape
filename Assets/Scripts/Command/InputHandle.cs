@@ -6,11 +6,11 @@ namespace PurpleDrank
 {
     public class InputHandle : MonoBehaviour
     {
-        FixedJoystick _fixedJoystic;
+        Joystick _fixedJoystic;
 
         public Command handleInput()
         {
-            _fixedJoystic = FindObjectOfType<FixedJoystick>();
+            _fixedJoystic = FindObjectOfType<Joystick>();
             var vPlayerMove = _fixedJoystic.Direction;
             //Debug.Log(vPlayerMove);
             if (vPlayerMove != Vector2.zero) return new Move(vPlayerMove);

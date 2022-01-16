@@ -6,7 +6,7 @@ namespace PurpleDrank
 {
     public class PlayState : MonoBehaviour, IGameState
     {
-        FixedJoystick fixedJoystick;
+        Joystick fixedJoystick;
         PlayerController _playerController;
         GameSceneManager _gameSceneManager;
 

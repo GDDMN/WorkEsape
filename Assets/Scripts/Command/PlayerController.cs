@@ -10,7 +10,7 @@ namespace PurpleDrank
         private InputHandle Input = new InputHandle();
 
 
-        public FixedJoystick _fixedJoystick;
+        public Joystick _fixedJoystick;
 
 
 
