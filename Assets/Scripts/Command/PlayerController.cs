@@ -12,13 +12,17 @@ namespace PurpleDrank
 
         public FixedJoystick _fixedJoystick;
 
+
+
         public void Awake()
         {
             Vector3 joyPos = _fixedJoystick.transform.position;
             _fixedJoystick = Instantiate(_fixedJoystick, joyPos, Quaternion.identity);
             _fixedJoystick.transform.SetParent(FindObjectOfType<Canvas>().transform);
+            _fixedJoystick.gameObject.SetActive(false);
             Player = this.gameObject;
         }
+
         public void PlayerControllerUpdate()
         {
             Command command = Input.handleInput();

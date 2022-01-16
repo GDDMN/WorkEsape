@@ -8,6 +8,8 @@ namespace PurpleDrank
     {
         ResourceManager _resManager;
 
+        public string key;
+
         [HideInInspector]
         public ResourceInfo[] _allRes;
 
@@ -24,14 +26,14 @@ namespace PurpleDrank
         {
             for(int i=0;i < _allRes.Length; i++)
             {
-                PlayerPrefs.SetInt(_allRes[i].name, _allRes[i].current);
+                PlayerPrefs.SetInt(_allRes[i].name + key, _allRes[i].current);
             }
         }
         public void LoadGameProgress()
         {
             foreach(var res in _resManager.resources.Values)
             {
-                res.current = PlayerPrefs.GetInt(res.name);
+                res.current = PlayerPrefs.GetInt(res.name + key);
             }
         }
     }
