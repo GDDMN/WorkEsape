@@ -20,7 +20,6 @@ namespace PurpleDrank
         {
 
         }
-
         public void ShowVideoAds()
         {
             if(Advertisement.IsReady())
@@ -28,10 +27,12 @@ namespace PurpleDrank
                 Advertisement.Show("video");
             }
         }
-
         public void ShowReverdedVideoAds()
         {
-
+            if(Advertisement.IsReady())
+            {
+                Advertisement.Show("reverdedvideo");
+            }
         }
     }
 }

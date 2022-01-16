@@ -4,7 +4,7 @@
 4    xmlns:tools="http://schemas.android.com/tools"
 5    package="com.unity3d.player"
 6    android:versionCode="1"
-7    android:versionName="0.3" >
+7    android:versionName="0.4" >
 8
 9    <uses-sdk
 10        android:minSdkVersion="19"
@@ -108,7 +108,7 @@
 61-->E:\Coding\Games\Base_project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:16:5-101
 62            android:name="unity.build-id"
 62-->E:\Coding\Games\Base_project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:16:16-45
-63            android:value="2c81b5d4-247c-4d4c-8dd4-7fd67269f354" />
+63            android:value="8a865402-241a-4069-9afe-dcf5ea058095" />
 63-->E:\Coding\Games\Base_project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:16:46-98
 64    </application>
 65

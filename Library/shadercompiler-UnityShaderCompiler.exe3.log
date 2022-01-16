@@ -1,6 +1,3 @@
 Base path: 'C:/distrib/unity/2020.2.2f1/Editor/Data', plugins path 'C:/distrib/unity/2020.2.2f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  api=4 insize=2513 outsize=1383 ok=1
-Cmd: compileComputeKernel
-  api=18 insize=2513 outsize=6783 ok=1
+Cmd: shutdown

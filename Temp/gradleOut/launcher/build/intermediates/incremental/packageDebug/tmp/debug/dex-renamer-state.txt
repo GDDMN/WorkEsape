@@ -1,4 +1,0 @@
-#Sun Jan 16 06:12:03 MSK 2022
-base.0=E\:\\Coding\\Games\\Base_project\\Temp\\gradleOut\\launcher\\build\\intermediates\\dex\\debug\\out\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

@@ -15,11 +15,11 @@ E:/Coding/Games/Base_project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63287
+64575
 Successfully changed project path to: E:/Coding/Games/Base_project
 E:/Coding/Games/Base_project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 89.82 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 88.87 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
 [Subsystems] Discovering subsystems at path C:/distrib/unity/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
@@ -35,660 +35,183 @@ Initialize mono
 Mono path[0] = 'C:/distrib/unity/2020.2.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/distrib/unity/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/distrib/unity/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56168
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56160
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/distrib/unity/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002372 seconds.
+Registered in 0.003416 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 84.95 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 94.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.709 seconds
+- Completed reload, in  2.724 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005287 seconds.
+Registered in 0.005665 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.304 seconds
+- Completed reload, in  1.810 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.55 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1432 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 103.6 MB.
-System memory in use after: 103.6 MB.
+Unloading 1580 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.5 MB.
+System memory in use after: 108.5 MB.
 
-Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 1863.
-Total: 4.223400 ms (FindLiveObjects: 0.321300 ms CreateObjectMapping: 0.111200 ms MarkObjects: 3.516500 ms  DeleteObjects: 0.271000 ms)
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 2011.
+Total: 4.935200 ms (FindLiveObjects: 0.655500 ms CreateObjectMapping: 0.248300 ms MarkObjects: 3.752300 ms  DeleteObjects: 0.276400 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/Managers/SaveGameManager.prefab
-  artifactKey: Guid(800848a2f1a0d8549b4d6c84ec346dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Managers/SaveGameManager.prefab using Guid(800848a2f1a0d8549b4d6c84ec346dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0834e63834480171f57d39181a86f903') in 0.136269 seconds
-  Import took 0.141381 seconds .
+  path: Assets/Prefabs/UI/UIResourceLabel.prefab
+  artifactKey: Guid(2bd8ae1bc8abdc042ab56bea8e6b8580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/UIResourceLabel.prefab using Guid(2bd8ae1bc8abdc042ab56bea8e6b8580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b27471576f70dc881119a4f068e2a5b2') in 0.135822 seconds
+  Import took 0.141087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.040606 seconds.
+  path: Assets/Prefabs/UI/UIResourceLabel.prefab
+  artifactKey: Guid(2bd8ae1bc8abdc042ab56bea8e6b8580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/UIResourceLabel.prefab using Guid(2bd8ae1bc8abdc042ab56bea8e6b8580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b27471576f70dc881119a4f068e2a5b2') in 0.011264 seconds
+  Import took 0.016139 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.183475 seconds.
+Registered in 0.006995 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invalid AssetDatabase path: /Editor/EditorResources/cm_logo_sm.png. Use path relative to the project folder.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.AssetDatabase:LoadAssetAtPath<UnityEngine.Texture2D> (string)
-Cinemachine.Editor.CinemachineSettings:get_CinemachineLogoTexture () (at Library/PackageCache/com.unity.cinemachine@2.6.11/Editor/Windows/CinemachineSettings.cs:205)
-Cinemachine.Editor.CinemachineSettings:.cctor () (at Library/PackageCache/com.unity.cinemachine@2.6.11/Editor/Windows/CinemachineSettings.cs:237)
-Cinemachine.CinemachineColliderPrefs:.cctor () (at Library/PackageCache/com.unity.cinemachine@2.6.11/Editor/Windows/CinemachineColliderPrefs.cs:61)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.cinemachine@2.6.11/Editor/Windows/CinemachineSettings.cs line 205]
-
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.222 seconds
+- Completed reload, in  1.802 seconds
 Platform modules already initialized, skipping
 Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1488 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.5 MB.
-System memory in use after: 98.6 MB.
+Unloading 1489 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.7 MB.
+System memory in use after: 98.7 MB.
 
-Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 2011.
-Total: 10.331700 ms (FindLiveObjects: 0.801600 ms CreateObjectMapping: 0.171100 ms MarkObjects: 8.599100 ms  DeleteObjects: 0.757400 ms)
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 2014.
+Total: 2.800800 ms (FindLiveObjects: 0.349600 ms CreateObjectMapping: 0.153600 ms MarkObjects: 2.144800 ms  DeleteObjects: 0.150500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.016444 seconds.
+Registered in 0.005236 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.49 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.618 seconds
+- Completed reload, in  1.538 seconds
 Platform modules already initialized, skipping
 Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1490 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1488 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.7 MB.
+System memory in use after: 98.7 MB.
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 2016.
+Total: 3.216600 ms (FindLiveObjects: 0.419100 ms CreateObjectMapping: 0.170700 ms MarkObjects: 2.427300 ms  DeleteObjects: 0.197100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007845 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.456 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1488 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 98.8 MB.
 System memory in use after: 98.8 MB.
 
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 2015.
-Total: 3.026400 ms (FindLiveObjects: 0.469100 ms CreateObjectMapping: 0.105300 ms MarkObjects: 2.276800 ms  DeleteObjects: 0.172500 ms)
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 2018.
+Total: 2.469000 ms (FindLiveObjects: 0.242700 ms CreateObjectMapping: 0.076300 ms MarkObjects: 1.985800 ms  DeleteObjects: 0.161700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.108049 seconds.
+Registered in 0.005641 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.61 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 3.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.344 seconds
+- Completed reload, in  6.973 seconds
 Platform modules already initialized, skipping
 Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.94 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1489 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1488 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 98.9 MB.
 System memory in use after: 98.9 MB.
 
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 2017.
-Total: 4.035200 ms (FindLiveObjects: 0.993500 ms CreateObjectMapping: 0.200700 ms MarkObjects: 2.658100 ms  DeleteObjects: 0.179500 ms)
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 2020.
+Total: 3.894200 ms (FindLiveObjects: 0.460200 ms CreateObjectMapping: 0.167100 ms MarkObjects: 3.049500 ms  DeleteObjects: 0.214500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.041516 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 9.08 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  4.689 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1489 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.9 MB.
-System memory in use after: 99.0 MB.
+Unloading 34 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 73.5 MB.
+System memory in use after: 73.5 MB.
 
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 2019.
-Total: 4.039600 ms (FindLiveObjects: 0.662700 ms CreateObjectMapping: 0.148900 ms MarkObjects: 3.032600 ms  DeleteObjects: 0.192700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008169 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  4.992 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 1.88 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1489 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 99.0 MB.
-System memory in use after: 99.0 MB.
-
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 2021.
-Total: 5.238400 ms (FindLiveObjects: 1.137500 ms CreateObjectMapping: 0.134000 ms MarkObjects: 3.741200 ms  DeleteObjects: 0.223500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 3724.714537 seconds.
-  path: Assets/Prefabs/Managers/AdsManager.prefab
-  artifactKey: Guid(fd2f98efbfa7c404ba372d62e58ca539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Managers/AdsManager.prefab using Guid(fd2f98efbfa7c404ba372d62e58ca539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3cc75fc7c9e894d26811c4bd10b7a7b') in 0.847143 seconds
-  Import took 0.855436 seconds .
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2020.
+Total: 3.787700 ms (FindLiveObjects: 0.254300 ms CreateObjectMapping: 0.265100 ms MarkObjects: 3.074500 ms  DeleteObjects: 0.191200 ms)
 
 ========================================================================
 Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012962 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.61 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 812.66 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.893 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 1.04 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1489 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 99.1 MB.
-System memory in use after: 99.1 MB.
+Unloading 34 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 73.5 MB.
+System memory in use after: 73.5 MB.
 
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 2023.
-Total: 4.834700 ms (FindLiveObjects: 0.388900 ms CreateObjectMapping: 0.139700 ms MarkObjects: 4.046600 ms  DeleteObjects: 0.256700 ms)
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2020.
+Total: 5.291800 ms (FindLiveObjects: 0.928500 ms CreateObjectMapping: 0.161600 ms MarkObjects: 3.927000 ms  DeleteObjects: 0.272200 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008029 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.54 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in 22.914 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1489 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 99.1 MB.
-System memory in use after: 99.2 MB.
-
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 2025.
-Total: 13.793600 ms (FindLiveObjects: 0.959000 ms CreateObjectMapping: 0.145000 ms MarkObjects: 12.003900 ms  DeleteObjects: 0.682400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 164.056365 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Demo/Textures/dev.png
-  artifactKey: Guid(db19b71026cdca74bb6c5a6056fdf33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Demo/Textures/dev.png using Guid(db19b71026cdca74bb6c5a6056fdf33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29b557fd1b67d7946a52b84f6af1524a') in 0.500955 seconds
-  Import took 0.508127 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/heart2.png
-  artifactKey: Guid(a6ef3e54e9e0f524abee5cb44d8666bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/heart2.png using Guid(a6ef3e54e9e0f524abee5cb44d8666bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ec500fd88af89906411c5c8cdffe58b') in 0.368250 seconds
-  Import took 0.378425 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000417 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/cardglow07.png
-  artifactKey: Guid(ac02ec98bb1ce884c938cc8a274b98ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/cardglow07.png using Guid(ac02ec98bb1ce884c938cc8a274b98ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '633e975ab81edda1d65ecb1adc644402') in 5.665812 seconds
-  Import took 5.673511 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000380 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/cloud_magic.png
-  artifactKey: Guid(747d716dbea89fc48b954a506c47b164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/cloud_magic.png using Guid(747d716dbea89fc48b954a506c47b164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '305349ac22dd42bb32634dce02626642') in 0.200867 seconds
-  Import took 0.208891 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000349 seconds.
-  path: Assets/Editor/Resources/LandscapeMon.png
-  artifactKey: Guid(479bd169843eb40d1895a9252c57e271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor/Resources/LandscapeMon.png using Guid(479bd169843eb40d1895a9252c57e271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '981bd05a722e0245863a21ce96b16fd9') in 0.238751 seconds
-  Import took 0.268435 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000390 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/Emojis/heart.png
-  artifactKey: Guid(d0e4c740627a41948b4730bdde80159f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/Emojis/heart.png using Guid(d0e4c740627a41948b4730bdde80159f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '411691cabbc9c85dee3497fbbff6f79d') in 2.012819 seconds
-  Import took 2.018345 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000573 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/evil_spirit3.png
-  artifactKey: Guid(62cf045bae9b6ce498ff8b5ca766aebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/evil_spirit3.png using Guid(62cf045bae9b6ce498ff8b5ca766aebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8297ceb799b0a58ae5dff533e8f56ba5') in 0.579738 seconds
-  Import took 0.584127 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/Text/poof.png
-  artifactKey: Guid(4e931fc6461d5b547919549fb76af3d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/Text/poof.png using Guid(4e931fc6461d5b547919549fb76af3d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20fd633821be3f271f6a78b33054691c') in 0.337392 seconds
-  Import took 0.342951 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/fire_ground_softer3x3.png
-  artifactKey: Guid(77df309a835044f43bfdb69d4e65bf92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/fire_ground_softer3x3.png using Guid(77df309a835044f43bfdb69d4e65bf92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79906b68784c8e7b37aad54f67c6e9be') in 0.190838 seconds
-  Import took 0.223225 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000329 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/Emojis/clenchteeth.png
-  artifactKey: Guid(1fd22cd0da38c8c4eb307a0f69062d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/Emojis/clenchteeth.png using Guid(1fd22cd0da38c8c4eb307a0f69062d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0da3bd910164fde6eb79ecfa25c67663') in 0.249580 seconds
-  Import took 0.281711 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/glow1.png
-  artifactKey: Guid(75c822b01a637d547abc69e6f1f590b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/glow1.png using Guid(75c822b01a637d547abc69e6f1f590b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd08b4f7af584ee7274180f7a1e57e482') in 0.072908 seconds
-  Import took 0.079325 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000745 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/cloud_2x2_outlined.png
-  artifactKey: Guid(386b0e2cec538fa44b283ea65d1602bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/cloud_2x2_outlined.png using Guid(386b0e2cec538fa44b283ea65d1602bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31baf52feb854fd1fc53ad59754b33ed') in 0.147037 seconds
-  Import took 0.151616 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001162 seconds.
-  path: Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Additive 2.png
-  artifactKey: Guid(65282ed7102afc4489337b34cbf9bbd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Additive 2.png using Guid(65282ed7102afc4489337b34cbf9bbd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b334ca08991285e4b8c5346732e2170d') in 0.241867 seconds
-  Import took 0.251076 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000408 seconds.
-  path: Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Cyan and Purple.png
-  artifactKey: Guid(66c5a6eef50c4524ca969773d4903be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Cyan and Purple.png using Guid(66c5a6eef50c4524ca969773d4903be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '789c1af319897e690d7311deb291d82e') in 0.376294 seconds
-  Import took 0.384399 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC 4 Colors.png
-  artifactKey: Guid(dde49ae1cadcc4848a8978c7bf8d5671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC 4 Colors.png using Guid(dde49ae1cadcc4848a8978c7bf8d5671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbb793dc6552f5292ed220766b117e60') in 0.119605 seconds
-  Import took 0.124174 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Orange and Teal.png
-  artifactKey: Guid(ef309140cf1453b4b93171004e4bd179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Orange and Teal.png using Guid(ef309140cf1453b4b93171004e4bd179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6466a2e2ec1f3006287d9875f05bd736') in 0.433532 seconds
-  Import took 0.492007 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000325 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/Emojis/angryscream.png
-  artifactKey: Guid(1d53ccea30d239443a353dfc56787f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/Emojis/angryscream.png using Guid(1d53ccea30d239443a353dfc56787f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89ebb60228c2dd6330c345aa53597141') in 0.235418 seconds
-  Import took 0.241797 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Basic 1.png
-  artifactKey: Guid(330811522a36c0e41bd3db6f76848d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Basic 1.png using Guid(330811522a36c0e41bd3db6f76848d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c69b1f1310c2eb00da0a3c40a4cff8d') in 0.143114 seconds
-  Import took 0.147852 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000292 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/heart.png
-  artifactKey: Guid(b1c54177ee430c440b20c560f382f2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/heart.png using Guid(b1c54177ee430c440b20c560f382f2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6fd8a49be2c381a7a7fe8633eca269e') in 0.193684 seconds
-  Import took 0.200795 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000369 seconds.
-  path: Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Metallic Shiny Orange.png
-  artifactKey: Guid(904a7bba824ee0c418826440aa824947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Metallic Shiny Orange.png using Guid(904a7bba824ee0c418826440aa824947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bba3984a0ac49d35dbb77d72193593ca') in 2.646837 seconds
-  Import took 3.057092 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.006730 seconds.
-  path: Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Demo TCP2/SG Demo Assets/_Misc Assets/Roboto-Regular.ttf
-  artifactKey: Guid(6ed7389dc6cc157418355b24d4ed743d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Demo TCP2/SG Demo Assets/_Misc Assets/Roboto-Regular.ttf using Guid(6ed7389dc6cc157418355b24d4ed743d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42fd0eedabcf5d98531b6ef5e6ce47b8') in 2.525144 seconds
-  Import took 2.592236 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000674 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/candle_soft.png
-  artifactKey: Guid(27219c4af3e561e41bc297224110e7ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/candle_soft.png using Guid(27219c4af3e561e41bc297224110e7ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '069de8f042831bdfee05eedb7036cd75') in 0.906012 seconds
-  Import took 1.195594 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005491 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/Emojis/expressionless.png
-  artifactKey: Guid(437a9fa932ecb444993f508d7a2a4a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/Emojis/expressionless.png using Guid(437a9fa932ecb444993f508d7a2a4a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ce14b07dfec1f75c486c6006b5579e3') in 6.416095 seconds
-  Import took 6.466024 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001984 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/Emojis/poop.png
-  artifactKey: Guid(d6b8ff0936f1167478d95f7f3767315c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/Emojis/poop.png using Guid(d6b8ff0936f1167478d95f7f3767315c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c1debb1d38dc60d805136b6126c6e86') in 0.200538 seconds
-  Import took 0.327738 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.007736 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/gradient_vertical_spiky.png
-  artifactKey: Guid(f49e22d051dd27a429c90269e9bdf852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/gradient_vertical_spiky.png using Guid(f49e22d051dd27a429c90269e9bdf852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5daccdff75ea2f2fed96afe2c56709a') in 1.161462 seconds
-  Import took 1.328430 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000347 seconds.
-  path: Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Metallic Rough Orange.png
-  artifactKey: Guid(1c6b0e9805d2a104fb8e0e4f8e15322e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Metallic Rough Orange.png using Guid(1c6b0e9805d2a104fb8e0e4f8e15322e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8717107f37b8d80eec91c0c92920a0b3') in 1.245950 seconds
-  Import took 1.371173 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000861 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/lightning_spritesheet_3x3.png
-  artifactKey: Guid(c18d1a1e5915b68408b0fa5b5d8b91e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/lightning_spritesheet_3x3.png using Guid(c18d1a1e5915b68408b0fa5b5d8b91e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b6a916f71339b2811a8435be16bc398') in 4.066751 seconds
-  Import took 4.174159 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000589 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/lightning1.png
-  artifactKey: Guid(961576313dba37442bae2709c1321841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/lightning1.png using Guid(961576313dba37442bae2709c1321841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56358c994465d63731d78969bcf5581e') in 0.157760 seconds
-  Import took 0.170430 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000369 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/lightning2.png
-  artifactKey: Guid(b060cf52f6c9b55438ed3e8dfd5d4e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/lightning2.png using Guid(b060cf52f6c9b55438ed3e8dfd5d4e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3984b531440c0261abe45ff4f5acd988') in 0.149437 seconds
-  Import took 0.208259 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Additive 3.png
-  artifactKey: Guid(999c0a8caecef6e4b997f93a5af758bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Additive 3.png using Guid(999c0a8caecef6e4b997f93a5af758bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01db4c8cf4157f6f35b4d27e8d1f7e20') in 0.179744 seconds
-  Import took 0.187346 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000528 seconds.
-  path: Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Metallic Shiny.png
-  artifactKey: Guid(707658b05bb04cf46b37cd576917d084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Metallic Shiny.png using Guid(707658b05bb04cf46b37cd576917d084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feffc95ca2e29e0d12a1cb2f8040364e') in 0.275181 seconds
-  Import took 0.284763 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Demo/Textures/card.png
-  artifactKey: Guid(011d8f9ef7b5e86428a2e6ba9140a7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Demo/Textures/card.png using Guid(011d8f9ef7b5e86428a2e6ba9140a7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c89d4d80064982ac9eb5f85bd1481afd') in 1.533117 seconds
-  Import took 1.592566 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000352 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/portal_glow.png
-  artifactKey: Guid(391a79d0916dfeb459e5daafb9fbe41f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/portal_glow.png using Guid(391a79d0916dfeb459e5daafb9fbe41f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b454de8f2ed4349d6a7769addc9e841d') in 0.443509 seconds
-  Import took 0.449965 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000318 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/Text/flash_white.png
-  artifactKey: Guid(a6004af65835ac14ea8d598dbe14d5fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/Text/flash_white.png using Guid(a6004af65835ac14ea8d598dbe14d5fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3b529f52870f93710f5f2faf6a9c38f') in 0.413321 seconds
-  Import took 0.420976 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/numbers.png
-  artifactKey: Guid(269b3a6f2e8b4cb488f349fd6324c484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/numbers.png using Guid(269b3a6f2e8b4cb488f349fd6324c484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab536edbeb949a470da703a4b1fe121') in 0.652153 seconds
-  Import took 0.661395 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000345 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/Emojis/laugh.png
-  artifactKey: Guid(c164152f42c79e448b37df5a5a1662e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/Emojis/laugh.png using Guid(c164152f42c79e448b37df5a5a1662e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3fe830e213230b94fb1c3706cda3074') in 2.208369 seconds
-  Import took 2.215338 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000395 seconds.
-  path: Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Frontlit.png
-  artifactKey: Guid(be8f4eca082cf42439e1f8efe1eb3d5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Frontlit.png using Guid(be8f4eca082cf42439e1f8efe1eb3d5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18e2dbba89e275aff241d960bdb3783b') in 0.493527 seconds
-  Import took 0.499181 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000421 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/decal_atlas.png
-  artifactKey: Guid(15b6357f26ee271458084e3603b7824c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/decal_atlas.png using Guid(15b6357f26ee271458084e3603b7824c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10ba070ff16e4e98d840826d79097b38') in 0.469091 seconds
-  Import took 0.473444 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000629 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/portal_ring_twisty.png
-  artifactKey: Guid(fc890aa003424804480616885605c634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/portal_ring_twisty.png using Guid(fc890aa003424804480616885605c634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199e76ac85cf2d59739404ed649d5d1e') in 0.226613 seconds
-  Import took 0.232631 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000275 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/glow5.png
-  artifactKey: Guid(94a2382b3266c3d42b63547591d33306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/glow5.png using Guid(94a2382b3266c3d42b63547591d33306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f737ce8fec715f7a5e58fa401c5b502d') in 0.236016 seconds
-  Import took 0.243565 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000129 seconds.
-  path: Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Rainbow.png
-  artifactKey: Guid(cda2f2cd49bff5a4fa9d69729f6b393c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/JMO Assets/Toony Colors Pro/Textures/MatCap/MC Rainbow.png using Guid(cda2f2cd49bff5a4fa9d69729f6b393c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '641d9b5804632919be1e543b8596d474') in 1.756876 seconds
-  Import took 1.769886 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000672 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Demo/Textures/Skybox/3.png
-  artifactKey: Guid(de1b95d3444c8b145ba0dc400c9860b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Demo/Textures/Skybox/3.png using Guid(de1b95d3444c8b145ba0dc400c9860b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3389926786fd40b0b02330ca6ea7682e') in 0.236352 seconds
-  Import took 0.245701 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000399 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/cloud_2x2_hardshadow.png
-  artifactKey: Guid(c191bbcd4d376b54b9d57e6a123f8bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/cloud_2x2_hardshadow.png using Guid(c191bbcd4d376b54b9d57e6a123f8bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '715d3009946cf97f54e7263f012a3f0a') in 0.161138 seconds
-  Import took 0.172505 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/circle.png
-  artifactKey: Guid(155f67fd8750f8e4e83c8efb1731f3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/circle.png using Guid(155f67fd8750f8e4e83c8efb1731f3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ddd6460b6a9558c16b84ddb164d1453') in 0.101903 seconds
-  Import took 0.109641 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000310 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/cloud_2x2_soft.png
-  artifactKey: Guid(d91a7ceceb48b6d4eb7da66199435d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/cloud_2x2_soft.png using Guid(d91a7ceceb48b6d4eb7da66199435d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e22a20d81c4d36b99cd2f184f5ca0f6') in 0.091750 seconds
-  Import took 0.096486 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000270 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/glow4.png
-  artifactKey: Guid(f23ff85f32327cf4dbe7ed8e73695926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/glow4.png using Guid(f23ff85f32327cf4dbe7ed8e73695926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06272166bdb220370a8570369732dbfc') in 0.761300 seconds
-  Import took 0.767942 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/fire_soft.png
-  artifactKey: Guid(c1969f56ca4638f4caa04c5c0b510d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/fire_soft.png using Guid(c1969f56ca4638f4caa04c5c0b510d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24a74655d927c74af93a978c83bab277') in 0.320229 seconds
-  Import took 0.326839 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000387 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Demo/Textures/devtarget.png
-  artifactKey: Guid(92e32f8601f101c42811acfb2a6ecf7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Demo/Textures/devtarget.png using Guid(92e32f8601f101c42811acfb2a6ecf7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '508fc96fde3369f6ef3dce7c78f290b1') in 0.185906 seconds
-  Import took 0.191832 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.014500 seconds.
-  path: Assets/DownloadedPrefabs/Epic Toon FX/Textures/moneybillsv2.png
-  artifactKey: Guid(8b1358b9e9109104184a14ad6c4bcaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DownloadedPrefabs/Epic Toon FX/Textures/moneybillsv2.png using Guid(8b1358b9e9109104184a14ad6c4bcaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a440c2006ce5a4f41c2c256397394d98') in 0.101187 seconds
-  Import took 0.106594 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/Editor/Resources/Portrait.png
-  artifactKey: Guid(6c9acc1f9cd7248fdb7d40b8d300be76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor/Resources/Portrait.png using Guid(6c9acc1f9cd7248fdb7d40b8d300be76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccae9bebe74f9b2ffdb11918d477cd83') in 0.754616 seconds
-  Import took 0.763596 seconds .
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 38.83 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 35 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.6 MB.
-System memory in use after: 77.6 MB.
-
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2073.
-Total: 11.062900 ms (FindLiveObjects: 0.507100 ms CreateObjectMapping: 0.186100 ms MarkObjects: 10.173200 ms  DeleteObjects: 0.193700 ms)
-
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

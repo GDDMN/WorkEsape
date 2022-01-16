@@ -195,7 +195,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 678707410}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &678707409
 GameObject:
@@ -227,8 +227,8 @@ Transform:
   - {fileID: 1203649839}
   - {fileID: 1047710812}
   - {fileID: 1751723187}
-  - {fileID: 148999467}
   - {fileID: 1359248514}
+  - {fileID: 148999467}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1248,8 +1248,8 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 250, y: 500}
-  m_ScreenMatchMode: 1
-  m_MatchWidthOrHeight: 1
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1313,7 +1313,7 @@ PrefabInstance:
     - target: {fileID: 5349854616593203022, guid: fd2f98efbfa7c404ba372d62e58ca539,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5349854616593203022, guid: fd2f98efbfa7c404ba372d62e58ca539,
         type: 3}

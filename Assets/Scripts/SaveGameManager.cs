@@ -7,6 +7,8 @@ namespace PurpleDrank
     public class SaveGameManager : MonoBehaviour
     {
         ResourceManager _resManager;
+
+        [HideInInspector]
         public ResourceInfo[] _allRes;
 
         private void Awake()
@@ -18,7 +20,6 @@ namespace PurpleDrank
                 _allRes[i] = res;
             }
         }
-
         public void SaveGameProgress()
         {
             for(int i=0;i < _allRes.Length; i++)
@@ -26,7 +27,6 @@ namespace PurpleDrank
                 PlayerPrefs.SetInt(_allRes[i].name, _allRes[i].current);
             }
         }
-
         public void LoadGameProgress()
         {
             foreach(var res in _resManager.resources.Values)
