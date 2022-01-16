@@ -8,8 +8,16 @@ namespace PurpleDrank
     {
         FixedJoystick fixedJoystick;
         HypercasualMainMenu _mainMenu;
+        SaveGameManager _saveGameManager;
+
+        public MenuState()
+        {
+            _saveGameManager = FindObjectOfType<SaveGameManager>();
+            _saveGameManager.LoadGameProgress();
+        }
         public void Entry()
         {
+           
             fixedJoystick = FindObjectOfType<FixedJoystick>();
             fixedJoystick.gameObject.SetActive(false);
             Debug.Log("MenuState");

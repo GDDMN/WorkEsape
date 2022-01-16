@@ -698,21 +698,21 @@
       <Project>{E6D3FC7B-26E5-5745-D034-698100779483}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="ToonyColorsPro2.Demo.csproj">
-      <Project>{E4E423BF-98A8-EC30-877D-22BCFA57FED7}</Project>
-      <Name>ToonyColorsPro2.Demo</Name>
+    <ProjectReference Include="ToonyColorsPro.Runtime.csproj">
+      <Project>{93B66490-9B38-4620-EB3C-02BF00041A6B}</Project>
+      <Name>ToonyColorsPro.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
       <Project>{DED8F1CB-9A00-2177-5125-1894767606FE}</Project>
       <Name>ToonyColorsPro.Demo.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="ToonyColorsPro.Runtime.csproj">
-      <Project>{93B66490-9B38-4620-EB3C-02BF00041A6B}</Project>
-      <Name>ToonyColorsPro.Runtime</Name>
-    </ProjectReference>
     <ProjectReference Include="ToonyColorsPro.Editor.csproj">
       <Project>{F755BF02-2909-6195-A010-1DB86670F07B}</Project>
       <Name>ToonyColorsPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro2.Demo.csproj">
+      <Project>{E4E423BF-98A8-EC30-877D-22BCFA57FED7}</Project>
+      <Name>ToonyColorsPro2.Demo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

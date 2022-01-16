@@ -8,8 +8,10 @@ namespace PurpleDrank
     {
         HypercasualEndLvl _endLvlUI;
         Vector3 _startPosImage;
+        SaveGameManager _saveGameManager;
         public EndLevelState()
         {
+            _saveGameManager = FindObjectOfType<SaveGameManager>();
             _endLvlUI = FindObjectOfType<HypercasualEndLvl>();
             _startPosImage = new Vector3(_endLvlUI.transform.position.x, _endLvlUI.transform.position.y + 320.0f, _endLvlUI.transform.position.z);
         }
@@ -27,6 +29,7 @@ namespace PurpleDrank
         {
             _endLvlUI.finImage.transform.position = _startPosImage + new Vector3(0.0f, 1.0f, 0.0f);
             _endLvlUI.gameObject.SetActive(false);
+            _saveGameManager.SaveGameProgress();
         }
     }
 }

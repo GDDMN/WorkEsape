@@ -10,12 +10,20 @@ namespace PurpleDrank
         PlayerController _playerController;
         GameSceneManager _gameSceneManager;
 
+        UIResourceLabel[] _allLabels;
+
         public PlayState()
         {
+            _allLabels = FindObjectsOfType<UIResourceLabel>();
             fixedJoystick = FindObjectOfType<FixedJoystick>();
         }
         public void Entry()
         {
+            foreach(var lable in _allLabels)
+            {
+                lable.UpdateUI();
+            }
+
             fixedJoystick.gameObject.SetActive(true);
             
             _playerController = FindObjectOfType<PlayerController>();

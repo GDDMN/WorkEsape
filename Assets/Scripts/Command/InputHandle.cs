@@ -12,7 +12,7 @@ namespace PurpleDrank
         {
             _fixedJoystic = FindObjectOfType<FixedJoystick>();
             var vPlayerMove = _fixedJoystic.Direction;
-            Debug.Log(vPlayerMove);
+            //Debug.Log(vPlayerMove);
             if (vPlayerMove != Vector2.zero) return new Move(vPlayerMove);
             //if (Input.GetKey(KeyCode.W)) return new MoveUp();
             //if (Input.GetKey(KeyCode.S)) return new MoveDown();

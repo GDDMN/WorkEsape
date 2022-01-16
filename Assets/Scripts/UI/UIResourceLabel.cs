@@ -18,10 +18,15 @@ namespace PurpleDrank
 
         private void Awake()
         {
+            
+        }
+
+        public void UpdateUI()
+        {
             _resManager = FindObjectOfType<ResourceManager>();
-            foreach(var res in _resManager.resources)
+            foreach (var res in _resManager.resources)
             {
-                if(res.Key == resourceType)
+                if (res.Key == resourceType)
                 {
                     resourceCount.text = res.Value.current.ToString();
                     resourceImage.sprite = res.Value.icon;

@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToonyColorsPro2.Demo", "Too
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToonyColorsPro.Runtime", "ToonyColorsPro.Runtime.csproj", "{93B66490-9B38-4620-EB3C-02BF00041A6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{1A320099-3505-9A8C-0C5F-BB25F134388B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToonyColorsPro.Editor", "ToonyColorsPro.Editor.csproj", "{F755BF02-2909-6195-A010-1DB86670F07B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{1A320099-3505-9A8C-0C5F-BB25F134388B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToonyColorsPro.Demo.Editor", "ToonyColorsPro.Demo.Editor.csproj", "{DED8F1CB-9A00-2177-5125-1894767606FE}"
 EndProject
@@ -31,14 +31,14 @@ Global
 		{93B66490-9B38-4620-EB3C-02BF00041A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93B66490-9B38-4620-EB3C-02BF00041A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93B66490-9B38-4620-EB3C-02BF00041A6B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1A320099-3505-9A8C-0C5F-BB25F134388B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A320099-3505-9A8C-0C5F-BB25F134388B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1A320099-3505-9A8C-0C5F-BB25F134388B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1A320099-3505-9A8C-0C5F-BB25F134388B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F755BF02-2909-6195-A010-1DB86670F07B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F755BF02-2909-6195-A010-1DB86670F07B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F755BF02-2909-6195-A010-1DB86670F07B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F755BF02-2909-6195-A010-1DB86670F07B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A320099-3505-9A8C-0C5F-BB25F134388B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A320099-3505-9A8C-0C5F-BB25F134388B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A320099-3505-9A8C-0C5F-BB25F134388B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A320099-3505-9A8C-0C5F-BB25F134388B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DED8F1CB-9A00-2177-5125-1894767606FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DED8F1CB-9A00-2177-5125-1894767606FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DED8F1CB-9A00-2177-5125-1894767606FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
