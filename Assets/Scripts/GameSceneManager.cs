@@ -11,7 +11,6 @@ namespace PurpleDrank
         private IGameState _activeState;
         private GameObject _actualScene;
 
-        public FixedJoystick fixedJoystick;
         public GameObject[] gamePrefab;
         public int Lvl = 0;
         public bool test;

@@ -9,16 +9,14 @@ namespace PurpleDrank
     {
         ResourceManager _resManager;
 
-        [HideInInspector]
         public Text resourceCount;
-        [HideInInspector]
         public Image resourceImage;
 
         public ResourceType resourceType;
 
         private void Awake()
         {
-            
+            _resManager = FindObjectOfType<ResourceManager>();
         }
 
         public void UpdateUI()

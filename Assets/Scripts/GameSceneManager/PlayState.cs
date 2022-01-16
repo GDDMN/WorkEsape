@@ -14,20 +14,20 @@ namespace PurpleDrank
 
         public PlayState()
         {
-            _allLabels = FindObjectsOfType<UIResourceLabel>();
-            fixedJoystick = FindObjectOfType<FixedJoystick>();
+            
         }
         public void Entry()
         {
-            foreach(var lable in _allLabels)
+            _allLabels = FindObjectsOfType<UIResourceLabel>();
+            foreach (var lable in _allLabels)
             {
                 lable.UpdateUI();
             }
-
-            fixedJoystick.gameObject.SetActive(true);
             
             _playerController = FindObjectOfType<PlayerController>();
             _gameSceneManager = FindObjectOfType<GameSceneManager>();
+            fixedJoystick = _playerController._fixedJoystick;
+            fixedJoystick.gameObject.SetActive(true);
             Debug.Log("PlayState");
             
         }
@@ -39,6 +39,7 @@ namespace PurpleDrank
         public void Exit()
         {
             fixedJoystick.gameObject.SetActive(false);
+            Destroy(fixedJoystick.gameObject);
         }
     }
 }
