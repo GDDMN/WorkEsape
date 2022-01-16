@@ -43,6 +43,18 @@ namespace PurpleDrank
             Lvl++;
         }
 
+        public void RestartLvl()
+        {
+            if (_actualScene != null)
+                Destroy(_actualScene);
+            Lvl--;
+            _actualScene = Instantiate(gamePrefab[Lvl], transform.position, Quaternion.identity);
+            Transform sceneObject = FindObjectOfType<Scene>().transform;
+            _actualScene.transform.SetParent(sceneObject);
+            _actualScene.transform.position = sceneObject.position;
+            Lvl++;
+        }
+
         /************************************************************************/
         public void InitStates()
         {
