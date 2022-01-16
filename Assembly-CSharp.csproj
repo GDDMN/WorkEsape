@@ -90,6 +90,7 @@
     <Compile Include="Assets\Scripts\GameSceneManager\IGameState.cs" />
     <Compile Include="Assets\Scripts\UI\SettingsWindow.cs" />
     <Compile Include="Assets\Scripts\UI\UIResourceLabel.cs" />
+    <Compile Include="Assets\Scripts\SaveGameManager.cs" />
     <Compile Include="Assets\Scripts\UI\HypercasualMainMenu.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Scripts\Command\MoveRight.cs" />
@@ -99,7 +100,7 @@
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Scripts\ETFXRotation.cs" />
     <Compile Include="Assets\Scripts\Command\MoveLeft.cs" />
     <Compile Include="Assets\BoxTrigger.cs" />
-    <Compile Include="Assets\Scripts\SaveGameManager.cs" />
+    <Compile Include="Assets\AdsManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Shader Templates 2\SG2_Template_URP.txt" />
@@ -815,6 +816,12 @@
     </Reference>
     <Reference Include="Unity.Recorder">
       <HintPath>Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

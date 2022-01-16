@@ -1,0 +1,20 @@
+# Starting compiling UnityEngine.TestRunner.dll
+C:\distrib\unity\2020.2.2f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-7f27e45681da6934d953824cd5c83a0a
+# Starting compiling UnityEngine.UI.dll
+C:\distrib\unity\2020.2.2f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-47ed18526e1502047ae26bf347d0cfa6
+# Starting compiling Unity.Recorder.Base.dll
+C:\distrib\unity\2020.2.2f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-b2ba63ca848a87b44bf2a4acc266621b
+# Starting compiling ToonyColorsPro.Runtime.dll
+C:\distrib\unity\2020.2.2f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-19abd61be66d72448b406ead2e519c53
+# Starting compiling Unity.Timeline.dll
+C:\distrib\unity\2020.2.2f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-9b3329a07a3436841a105cfa4b7aaac3
+# Starting compiling Unity.TextMeshPro.dll
+C:\distrib\unity\2020.2.2f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-b5a9776dcce3d434bb0390c5c6ec821b
+# Starting compiling ToonyColorsPro2.Demo.dll
+C:\distrib\unity\2020.2.2f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-cbe522af348d3cd4eaa1ae9eeeda4fb4
+# Starting compiling Unity.Recorder.dll
+C:\distrib\unity\2020.2.2f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-daacadcd4099aec419a1660204f51afb
+# Starting compiling Cinemachine.dll
+C:\distrib\unity\2020.2.2f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-dd588f0dfc2a1a14f85a72924956d844
+# Starting compiling Assembly-CSharp.dll
+C:\distrib\unity\2020.2.2f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-5fa881b65e8fbdc47b7a5b2eba340ba1
