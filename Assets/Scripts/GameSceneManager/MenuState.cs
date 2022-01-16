@@ -13,11 +13,10 @@ namespace PurpleDrank
         public MenuState()
         {
             _saveGameManager = FindObjectOfType<SaveGameManager>();
-            _saveGameManager.LoadGameProgress();
         }
         public void Entry()
         {
-           
+            
             fixedJoystick = FindObjectOfType<FixedJoystick>();
             fixedJoystick.gameObject.SetActive(false);
             Debug.Log("MenuState");
@@ -31,6 +30,7 @@ namespace PurpleDrank
         {
             fixedJoystick.gameObject.SetActive(true);
             _mainMenu.gameObject.SetActive(false);
+            _saveGameManager.LoadGameProgress();
         }
     }
 }
