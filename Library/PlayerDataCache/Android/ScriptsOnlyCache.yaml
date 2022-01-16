@@ -12,7 +12,6 @@ ScriptsOnlyBuild:
     - PurpleDrank.PlayerController
     - PurpleDrank.ResourceManager
     - PurpleDrank.SaveGameManager
-    - PurpleDrank.UIResourceLabel
     - PurpleDrank.UIWindow
     - Scene
     Unity.Recorder.Editor.dll:
@@ -31,9 +30,6 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-    UnityEngine.Advertisements.Editor.dll:
-    - UnityEngine.Advertisements.Placeholder
-    - UnityEngine.Advertisements.Platform.Editor.BannerPlaceholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -106,8 +102,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2766}
     - Class: 114
       Script: {instanceID: 2818}
-    - Class: 114
-      Script: {instanceID: 2838}
     - Class: 114
       Script: {instanceID: 2968}
     - Class: 114
@@ -1155,7 +1149,7 @@ ScriptsOnlyBuild:
     className: CinemachinePOV
   - hash:
       serializedVersion: 2
-      Hash: daf0b6477244ba2f95c7d8a6f7613a7b
+      Hash: f2ac57d0495542df23d282a50bb3ed39
     assemblyName: Assembly-CSharp.dll
     namespaceName: PurpleDrank
     className: SaveGameManager
