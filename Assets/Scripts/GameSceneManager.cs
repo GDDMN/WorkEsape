@@ -14,12 +14,14 @@ namespace PurpleDrank
         public FixedJoystick fixedJoystick;
         public GameObject[] gamePrefab;
         public int Lvl = 0;
+        public bool test;
         
         private void Awake()
         {
             InitGameScene();            
             InitStates();
-            SetMenuState();
+            if (test) SetPlayState();
+            else SetMenuState();
         }
 
         private void Update()
@@ -29,18 +31,21 @@ namespace PurpleDrank
 
         public void InitGameScene()
         {
-            if(_actualScene!= null)
-                Destroy(_actualScene);
-
-            if(Lvl >= gamePrefab.Length)
+            if(gamePrefab.Length != 0)
             {
-                Lvl = 0;
+                if (_actualScene != null)
+                    Destroy(_actualScene);
+
+                if (Lvl >= gamePrefab.Length)
+                {
+                    Lvl = 0;
+                }
+                _actualScene = Instantiate(gamePrefab[Lvl], transform.position, Quaternion.identity);
+                Transform sceneObject = FindObjectOfType<Scene>().transform;
+                _actualScene.transform.SetParent(sceneObject);
+                _actualScene.transform.position = sceneObject.position;
+                Lvl++;
             }
-            _actualScene = Instantiate(gamePrefab[Lvl], transform.position, Quaternion.identity);
-            Transform sceneObject = FindObjectOfType<Scene>().transform;
-            _actualScene.transform.SetParent(sceneObject);
-            _actualScene.transform.position = sceneObject.position;
-            Lvl++;
         }
 
         public void RestartLvl()

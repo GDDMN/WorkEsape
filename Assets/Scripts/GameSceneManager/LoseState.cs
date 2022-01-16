@@ -10,7 +10,7 @@ namespace PurpleDrank
         public LoseState()
         {
             _looseUI = FindObjectOfType<HypercasualLoose>();
-            _looseUI.gameObject.SetActive(false);
+            if(_looseUI!= null) _looseUI.gameObject.SetActive(false);
         }
         public void Entry()
         {

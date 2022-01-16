@@ -757,6 +757,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 766738379}
     m_Modifications:
+    - target: {fileID: 5424533391845408592, guid: 2bd8ae1bc8abdc042ab56bea8e6b8580,
+        type: 3}
+      propertyPath: resourceType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5424533391845408593, guid: 2bd8ae1bc8abdc042ab56bea8e6b8580,
         type: 3}
       propertyPath: m_Pivot.x
@@ -855,7 +860,7 @@ PrefabInstance:
     - target: {fileID: 5424533391845408593, guid: 2bd8ae1bc8abdc042ab56bea8e6b8580,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 941.2749
+      value: 1022.13
       objectReference: {fileID: 0}
     - target: {fileID: 5424533391845408593, guid: 2bd8ae1bc8abdc042ab56bea8e6b8580,
         type: 3}
@@ -1430,6 +1435,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 757955976731070665, guid: 775b96ed879f56c4aa935f1f3f8fc8b3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -190
+      objectReference: {fileID: 0}
     - target: {fileID: 757955976731070667, guid: 775b96ed879f56c4aa935f1f3f8fc8b3,
         type: 3}
       propertyPath: m_Sprite
@@ -1858,6 +1868,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596364084152428587, guid: 31f6e08d3da53664cb7539bb0b0d5d7f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6198454406443914337, guid: 31f6e08d3da53664cb7539bb0b0d5d7f,
         type: 3}
