@@ -6,7 +6,9 @@ ScriptsOnlyBuild:
     - PurpleDrank.BoxTrigger
     - PurpleDrank.GameSceneManager
     - PurpleDrank.HypercasualEndLvl
+    - PurpleDrank.HypercasualLoose
     - PurpleDrank.HypercasualMainMenu
+    - PurpleDrank.LoseGame
     - PurpleDrank.PlayerController
     - PurpleDrank.ResourceManager
     - PurpleDrank.SaveGameManager
@@ -29,9 +31,6 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-    UnityEngine.Advertisements.Editor.dll:
-    - UnityEngine.Advertisements.Placeholder
-    - UnityEngine.Advertisements.Platform.Editor.BannerPlaceholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -91,33 +90,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1906}
     - Class: 114
-      Script: {instanceID: 2138}
+      Script: {instanceID: 1984}
     - Class: 114
-      Script: {instanceID: 2208}
+      Script: {instanceID: 2140}
     - Class: 114
-      Script: {instanceID: 2502}
+      Script: {instanceID: 2210}
     - Class: 114
-      Script: {instanceID: 2630}
+      Script: {instanceID: 2504}
     - Class: 114
-      Script: {instanceID: 2762}
+      Script: {instanceID: 2632}
     - Class: 114
-      Script: {instanceID: 2830}
+      Script: {instanceID: 2766}
     - Class: 114
-      Script: {instanceID: 2960}
+      Script: {instanceID: 2816}
     - Class: 114
-      Script: {instanceID: 3652}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 3794}
+      Script: {instanceID: 2966}
     - Class: 114
-      Script: {instanceID: 4232}
+      Script: {instanceID: 3658}
     - Class: 114
-      Script: {instanceID: 4334}
+      Script: {instanceID: 3800}
     - Class: 114
-      Script: {instanceID: 4354}
+      Script: {instanceID: 4238}
     - Class: 114
-      Script: {instanceID: 4468}
+      Script: {instanceID: 4340}
     - Class: 114
-      Script: {instanceID: 4612}
+      Script: {instanceID: 4360}
+    - Class: 114
+      Script: {instanceID: 4474}
+    - Class: 114
+      Script: {instanceID: 4618}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -313,6 +316,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: 
     className: CinemachineCameraOffset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PurpleDrank
+    className: LoseGame
   - hash:
       serializedVersion: 2
       Hash: 2890c468cf196dca883ea02bde96343e
@@ -537,6 +546,12 @@ ScriptsOnlyBuild:
     className: CinemachineHardLookAt
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PurpleDrank
+    className: LoseState
+  - hash:
+      serializedVersion: 2
       Hash: b41f6a02beff5d31b9210834dce1767e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -571,6 +586,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PurpleDrank
+    className: HypercasualLoose
   - hash:
       serializedVersion: 2
       Hash: 446eb68736b125c8c3343de6c52c7a22
