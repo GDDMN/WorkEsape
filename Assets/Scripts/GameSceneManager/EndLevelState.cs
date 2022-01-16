@@ -11,10 +11,11 @@ namespace PurpleDrank
         public EndLevelState()
         {
             _endLvlUI = FindObjectOfType<HypercasualEndLvl>();
-            _startPosImage = _endLvlUI.finImage.transform.position;
+            _startPosImage = new Vector3(_endLvlUI.transform.position.x, _endLvlUI.transform.position.y + 320.0f, _endLvlUI.transform.position.z);
         }
         public void Entry()
         {
+            _endLvlUI.finImage.transform.position = _startPosImage;
             _endLvlUI.gameObject.SetActive(true);
             _endLvlUI.SetEndLvlTrigger();
         }
