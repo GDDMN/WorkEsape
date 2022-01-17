@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - PurpleDrank.HypercasualLoose
     - PurpleDrank.HypercasualMainMenu
     - PurpleDrank.LoseGame
+    - PurpleDrank.MusicManager
     - PurpleDrank.PlayerController
     - PurpleDrank.ResourceManager
     - PurpleDrank.SaveGameManager
@@ -38,6 +39,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
   sceneClasses:
     Assets/Scenes/Boot.unity:
     - Class: 1
@@ -68,6 +70,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 91
@@ -85,39 +91,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1818}
     - Class: 114
+      Script: {instanceID: 1832}
+    - Class: 114
       Script: {instanceID: 1900}
     - Class: 114
       Script: {instanceID: 1906}
     - Class: 114
       Script: {instanceID: 1984}
     - Class: 114
-      Script: {instanceID: 2210}
+      Script: {instanceID: 2190}
     - Class: 114
-      Script: {instanceID: 2504}
+      Script: {instanceID: 2212}
     - Class: 114
-      Script: {instanceID: 2632}
+      Script: {instanceID: 2506}
     - Class: 114
-      Script: {instanceID: 2766}
+      Script: {instanceID: 2634}
     - Class: 114
-      Script: {instanceID: 2818}
+      Script: {instanceID: 2768}
     - Class: 114
-      Script: {instanceID: 2970}
+      Script: {instanceID: 2820}
     - Class: 114
-      Script: {instanceID: 3580}
+      Script: {instanceID: 2972}
     - Class: 114
-      Script: {instanceID: 3662}
+      Script: {instanceID: 3582}
     - Class: 114
-      Script: {instanceID: 3804}
+      Script: {instanceID: 3664}
     - Class: 114
-      Script: {instanceID: 4242}
+      Script: {instanceID: 3806}
     - Class: 114
-      Script: {instanceID: 4344}
+      Script: {instanceID: 4244}
     - Class: 114
-      Script: {instanceID: 4364}
+      Script: {instanceID: 4346}
     - Class: 114
-      Script: {instanceID: 4478}
+      Script: {instanceID: 4366}
     - Class: 114
-      Script: {instanceID: 4622}
+      Script: {instanceID: 4480}
+    - Class: 114
+      Script: {instanceID: 4624}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -133,6 +143,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
@@ -379,6 +395,12 @@ ScriptsOnlyBuild:
     assemblyName: ToonyColorsPro2.Demo.dll
     namespaceName: Kino
     className: Bloom
+  - hash:
+      serializedVersion: 2
+      Hash: 59c8c93b42a5bed5e2323b3db0fb6e59
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PurpleDrank
+    className: MusicManager
   - hash:
       serializedVersion: 2
       Hash: 9dac16f3efc511835ac976dfae55f580
