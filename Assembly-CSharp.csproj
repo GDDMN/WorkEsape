@@ -84,6 +84,7 @@
     <Compile Include="Assets\HypercasualLoose.cs" />
     <Compile Include="Assets\Scripts\UI\UIResourceLabel.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Examples\JoystickSetterExample.cs" />
+    <Compile Include="Assets\HypercasualPlayGameUI.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\ETFXTarget.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Scripts\ETFXRotation.cs" />
     <Compile Include="Assets\Scripts\Command\MoveLeft.cs" />
@@ -105,7 +106,7 @@
     <Compile Include="Assets\HypercasualEndLvl.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\VFX Library\PEButtonScript.cs" />
     <Compile Include="Assets\BoxTrigger.cs" />
-    <Compile Include="Assets\HypercasualPlayGameUI.cs" />
+    <Compile Include="Assets\MusicManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Shader Templates 2\SG2_Template_URP.txt" />

@@ -1,7 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - FixedJoystick
+    - FloatingJoystick
     - PurpleDrank.AdsManager
     - PurpleDrank.BoxTrigger
     - PurpleDrank.GameSceneManager
@@ -91,8 +91,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1984}
     - Class: 114
-      Script: {instanceID: 2140}
-    - Class: 114
       Script: {instanceID: 2210}
     - Class: 114
       Script: {instanceID: 2504}
@@ -103,21 +101,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 2968}
+      Script: {instanceID: 2970}
     - Class: 114
-      Script: {instanceID: 3660}
+      Script: {instanceID: 3580}
     - Class: 114
-      Script: {instanceID: 3802}
+      Script: {instanceID: 3662}
     - Class: 114
-      Script: {instanceID: 4240}
+      Script: {instanceID: 3804}
     - Class: 114
-      Script: {instanceID: 4342}
+      Script: {instanceID: 4242}
     - Class: 114
-      Script: {instanceID: 4362}
+      Script: {instanceID: 4344}
     - Class: 114
-      Script: {instanceID: 4476}
+      Script: {instanceID: 4364}
     - Class: 114
-      Script: {instanceID: 4620}
+      Script: {instanceID: 4478}
+    - Class: 114
+      Script: {instanceID: 4622}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -639,6 +639,12 @@ ScriptsOnlyBuild:
     className: RecorderBindings
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PurpleDrank
+    className: HypercasualPlayGameUI
+  - hash:
+      serializedVersion: 2
       Hash: 32cebb2ae4cddf0e4d07ddef22ca3a5c
     assemblyName: Assembly-CSharp.dll
     namespaceName: EpicToonFX
@@ -927,7 +933,7 @@ ScriptsOnlyBuild:
     className: CinemachineGroupComposer
   - hash:
       serializedVersion: 2
-      Hash: 4a23b6a438c98f2226f9349a0374346a
+      Hash: 2395b6b909335c46b223253c14d42d7c
     assemblyName: Assembly-CSharp.dll
     namespaceName: PurpleDrank
     className: PlayerController
