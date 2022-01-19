@@ -25,7 +25,7 @@ namespace PurpleDrank
     //{
     //    ResourceManager a;
     //    ResourceType type;
-    //
+    
     //    public void OnEnable()
     //    {
     //        a = (ResourceManager)target;
@@ -36,7 +36,7 @@ namespace PurpleDrank
     //        {
     //            foreach (var res in a.resources)
     //            {
-    //
+    
     //                GUILayout.BeginVertical("box");
     //                EditorGUILayout.EnumFlagsField("Тип: ", res.Key);
     //                res.Value.current = EditorGUILayout.IntField("Количество: ", res.Value.current);
@@ -48,24 +48,24 @@ namespace PurpleDrank
     //                }
     //                EditorGUILayout.Space(10);
     //                GUILayout.EndVertical();
-    //
+    
     //            }
     //        }
-    //
+    
     //        type = (ResourceType)EditorGUILayout.EnumPopup("Создать обхект типа: ", type);
-    //
+    
     //        if (GUILayout.Button("Add Resource"))
     //        {
-    //
+    
     //            a.AddRes(type);
     //        }
-    //
+    
     //        if (GUI.changed)
     //        {
     //            SetObjectDirty(a.gameObject);
     //        }
     //    }
-    //
+    
     //    public static void SetObjectDirty(GameObject a)
     //    {
     //        EditorUtility.SetDirty(a);

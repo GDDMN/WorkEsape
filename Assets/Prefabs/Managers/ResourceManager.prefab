@@ -52,7 +52,7 @@ MonoBehaviour:
     _keys: 000000000100000002000000030000000400000005000000
     _value:
     - icon: {fileID: 21300000, guid: c52957513f663cc408af0762493e4004, type: 3}
-      current: 999
+      current: 0
       name: Gold
     - icon: {fileID: 21300000, guid: c4658ad9861287b40bd93b24da5b6ab3, type: 3}
       current: 0

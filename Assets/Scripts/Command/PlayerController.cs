@@ -6,18 +6,18 @@ namespace PurpleDrank
 {
     public class PlayerController : MonoBehaviour
     {
-        private GameObject Player;
-        private InputHandle Input = new InputHandle();
-
-
         public Joystick _fixedJoystick;
+        private Camera _mainCamera;
+        public Animator animator;
 
-
+        private GameObject Player;
+        private InputHandle input;
 
         public void Awake()
         {
-            Vector3 joyPos = _fixedJoystick.transform.position;
-            _fixedJoystick = Instantiate(_fixedJoystick, joyPos, Quaternion.identity);
+            input = new InputHandle(animator);
+            _mainCamera = FindObjectOfType<Camera>();
+            _fixedJoystick = Instantiate(_fixedJoystick, _fixedJoystick.transform.position, Quaternion.identity);
             _fixedJoystick.transform.SetParent(FindObjectOfType<Canvas>().transform);
             _fixedJoystick.gameObject.SetActive(false);
             Player = this.gameObject;
@@ -25,7 +25,7 @@ namespace PurpleDrank
 
         public void PlayerControllerUpdate()
         {
-            Command command = Input.handleInput();
+            Command command = input.handleInput();
             if (command != null)
             {
                 command.execute(Player);

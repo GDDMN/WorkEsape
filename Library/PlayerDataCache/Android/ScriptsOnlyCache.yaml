@@ -8,7 +8,6 @@ ScriptsOnlyBuild:
     - PurpleDrank.HypercasualEndLvl
     - PurpleDrank.HypercasualLoose
     - PurpleDrank.HypercasualMainMenu
-    - PurpleDrank.LoseGame
     - PurpleDrank.MusicManager
     - PurpleDrank.PlayerController
     - PurpleDrank.ResourceManager
@@ -24,13 +23,18 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.Advertisements.Editor.dll:
+    - UnityEngine.Advertisements.Placeholder
+    - UnityEngine.Advertisements.Platform.Editor.BannerPlaceholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -76,6 +80,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -96,8 +102,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 1900}
     - Class: 114
       Script: {instanceID: 1906}
-    - Class: 114
-      Script: {instanceID: 1984}
     - Class: 114
       Script: {instanceID: 2190}
     - Class: 114
@@ -126,11 +130,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4366}
     - Class: 114
       Script: {instanceID: 4480}
-    - Class: 114
-      Script: {instanceID: 4624}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 137
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -955,7 +959,7 @@ ScriptsOnlyBuild:
     className: CinemachineGroupComposer
   - hash:
       serializedVersion: 2
-      Hash: 2395b6b909335c46b223253c14d42d7c
+      Hash: 2bdc6fc206e1c805600c79f35d1478c7
     assemblyName: Assembly-CSharp.dll
     namespaceName: PurpleDrank
     className: PlayerController

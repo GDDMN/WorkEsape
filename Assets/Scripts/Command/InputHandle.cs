@@ -7,18 +7,21 @@ namespace PurpleDrank
     public class InputHandle : MonoBehaviour
     {
         Joystick _fixedJoystic;
-
+        Animator _animator;
+        public InputHandle(Animator animator)
+        {
+            _animator = animator;
+        }
         public Command handleInput()
         {
             _fixedJoystic = FindObjectOfType<Joystick>();
-            var vPlayerMove = _fixedJoystic.Direction;
-            //Debug.Log(vPlayerMove);
-            if (vPlayerMove != Vector2.zero) return new Move(vPlayerMove);
-            //if (Input.GetKey(KeyCode.W)) return new MoveUp();
-            //if (Input.GetKey(KeyCode.S)) return new MoveDown();
-            //if (Input.GetKey(KeyCode.A)) return new MoveLeft();
-            //if (Input.GetKey(KeyCode.D)) return new MoveRight();
-            return new NullCommand();
+            var vPlayerMove = new Vector2(_fixedJoystic.Horizontal, _fixedJoystic.Vertical);
+            if (vPlayerMove != Vector2.zero)
+                _animator.SetBool("Walk", true);
+            else
+                _animator.SetBool("Walk", false);
+
+            return new Move(vPlayerMove);
         }
     }
 }
