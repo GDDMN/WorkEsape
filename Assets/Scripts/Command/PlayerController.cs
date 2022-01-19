@@ -7,7 +7,6 @@ namespace PurpleDrank
     public class PlayerController : MonoBehaviour
     {
         public Joystick _fixedJoystick;
-        private Camera _mainCamera;
         public Animator animator;
 
         private GameObject Player;
@@ -16,7 +15,6 @@ namespace PurpleDrank
         public void Awake()
         {
             input = new InputHandle(animator);
-            _mainCamera = FindObjectOfType<Camera>();
             _fixedJoystick = Instantiate(_fixedJoystick, _fixedJoystick.transform.position, Quaternion.identity);
             _fixedJoystick.transform.SetParent(FindObjectOfType<Canvas>().transform);
             _fixedJoystick.gameObject.SetActive(false);

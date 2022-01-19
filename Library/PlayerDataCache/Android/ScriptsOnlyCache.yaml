@@ -14,6 +14,12 @@ ScriptsOnlyBuild:
     - PurpleDrank.SaveGameManager
     - PurpleDrank.UIWindow
     - Scene
+    Cinemachine.dll:
+    - Cinemachine.CinemachineBrain
+    - Cinemachine.CinemachineComposer
+    - Cinemachine.CinemachinePipeline
+    - Cinemachine.CinemachineTransposer
+    - Cinemachine.CinemachineVirtualCamera
     Unity.Recorder.Editor.dll:
     - UnityEditor.Recorder.RecorderControllerSettings
     - UnityEditor.Recorder.RecorderSettingsPrefsEditor
@@ -23,10 +29,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -107,15 +111,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2212}
     - Class: 114
+      Script: {instanceID: 2472}
+    - Class: 114
       Script: {instanceID: 2506}
     - Class: 114
+      Script: {instanceID: 2564}
+    - Class: 114
       Script: {instanceID: 2634}
+    - Class: 114
+      Script: {instanceID: 2694}
     - Class: 114
       Script: {instanceID: 2768}
     - Class: 114
       Script: {instanceID: 2820}
     - Class: 114
       Script: {instanceID: 2972}
+    - Class: 114
+      Script: {instanceID: 3532}
     - Class: 114
       Script: {instanceID: 3582}
     - Class: 114
@@ -130,6 +142,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4366}
     - Class: 114
       Script: {instanceID: 4480}
+    - Class: 114
+      Script: {instanceID: 4586}
+    - Class: 114
+      Script: {instanceID: 4624}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
