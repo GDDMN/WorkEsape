@@ -21,6 +21,10 @@ namespace PurpleDrank
         }
         public void Entry()
         {
+            PlayerController player = FindObjectOfType<PlayerController>();
+            player.Win();
+            player.animator.SetBool("Walk", false);
+            player.animator.SetTrigger("Win");
             _endLvlUI.finImage.transform.position = _startPosImage;
             _endLvlUI.gameObject.SetActive(true);
             _endLvlUI.SetEndLvlTrigger();

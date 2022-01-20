@@ -9,11 +9,16 @@ namespace PurpleDrank
         public Joystick _fixedJoystick;
         public Animator animator;
 
+        public GameObject CameraPlay;
+        public GameObject CameraWin;
+        
         private GameObject Player;
         private InputHandle input;
 
         public void Awake()
         {
+            CameraPlay.SetActive(true);
+            CameraWin.SetActive(false);
             input = new InputHandle(animator);
             _fixedJoystick = Instantiate(_fixedJoystick, _fixedJoystick.transform.position, Quaternion.identity);
             _fixedJoystick.transform.SetParent(FindObjectOfType<Canvas>().transform);
@@ -28,6 +33,12 @@ namespace PurpleDrank
             {
                 command.execute(Player);
             }
+        }
+
+        public void Win()
+        {
+            CameraPlay.SetActive(false);
+            CameraWin.SetActive(true);
         }
     }
 
