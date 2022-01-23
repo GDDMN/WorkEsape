@@ -8,6 +8,7 @@ namespace PurpleDrank
     {
         Joystick fixedJoystick;
         PlayerController _playerController;
+        FieldOfView fieldOfViews;
         GameSceneManager _gameSceneManager;
 
         UIResourceLabel[] _allLabels;
@@ -18,12 +19,14 @@ namespace PurpleDrank
         }
         public void Entry()
         {
+            
             _allLabels = FindObjectsOfType<UIResourceLabel>();
             foreach (var lable in _allLabels)
             {
                 lable.UpdateUI();
             }
-            
+
+            fieldOfViews = FindObjectOfType<FieldOfView>();
             _playerController = FindObjectOfType<PlayerController>();
             _gameSceneManager = FindObjectOfType<GameSceneManager>();
             fixedJoystick = _playerController._fixedJoystick;
@@ -33,7 +36,13 @@ namespace PurpleDrank
         }
         public void OnUpdate()
         {
-            if(_playerController!= null)
+            if (fieldOfViews != null)
+            {
+                fieldOfViews.DrawFieldOfView();
+                fieldOfViews.FindVisiableTargets();
+            }
+                
+            if (_playerController!= null)
                 _playerController.PlayerControllerUpdate();
         }
         public void Exit()

@@ -14,11 +14,12 @@ namespace PurpleDrank
         GameObject _thing;
         ParticleSystem _explosion;
 
-
+        
 
         private Dictionary<Type, IPlayerState> _playerStates;
         public IPlayerState activeState;
         bool stateChange = false;
+        bool firstWalk = false;
         public InputHandle(Animator animator, GameObject human, GameObject thing, ParticleSystem explosion)
         {
             _animator = animator;
@@ -26,6 +27,7 @@ namespace PurpleDrank
             _thing = thing;
             _explosion = explosion;
             InitStates();
+            SetWait();
         }
         public Command handleInput()
         {
@@ -33,16 +35,18 @@ namespace PurpleDrank
             var vPlayerMove = new Vector2(_fixedJoystic.Horizontal, _fixedJoystic.Vertical);
             if (vPlayerMove != Vector2.zero)
             {
+                firstWalk = true;
                 if (stateChange == true)
                 {
                     SetWalk();
                     stateChange = false;
+                    
                 }
                 _animator.SetBool("Walk", true);
             }
             else
             {
-                if(stateChange == false)
+                if(stateChange == false & firstWalk == true)
                 {
                     SetIdle();
                     stateChange = true;
