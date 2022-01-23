@@ -29,10 +29,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -101,53 +99,53 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1680}
     - Class: 114
-      Script: {instanceID: 1818}
+      Script: {instanceID: 13998}
     - Class: 114
-      Script: {instanceID: 1832}
+      Script: {instanceID: 14012}
     - Class: 114
-      Script: {instanceID: 1900}
+      Script: {instanceID: 14080}
     - Class: 114
-      Script: {instanceID: 1906}
+      Script: {instanceID: 14086}
     - Class: 114
-      Script: {instanceID: 2190}
+      Script: {instanceID: 14366}
     - Class: 114
-      Script: {instanceID: 2212}
+      Script: {instanceID: 14388}
     - Class: 114
-      Script: {instanceID: 2472}
+      Script: {instanceID: 14644}
     - Class: 114
-      Script: {instanceID: 2506}
+      Script: {instanceID: 14678}
     - Class: 114
-      Script: {instanceID: 2564}
+      Script: {instanceID: 14736}
     - Class: 114
-      Script: {instanceID: 2634}
+      Script: {instanceID: 14802}
     - Class: 114
-      Script: {instanceID: 2694}
+      Script: {instanceID: 14862}
     - Class: 114
-      Script: {instanceID: 2768}
+      Script: {instanceID: 14934}
     - Class: 114
-      Script: {instanceID: 2820}
+      Script: {instanceID: 14986}
     - Class: 114
-      Script: {instanceID: 2972}
+      Script: {instanceID: 15136}
     - Class: 114
-      Script: {instanceID: 3532}
+      Script: {instanceID: 15688}
     - Class: 114
-      Script: {instanceID: 3582}
+      Script: {instanceID: 15732}
     - Class: 114
-      Script: {instanceID: 3664}
+      Script: {instanceID: 15814}
     - Class: 114
-      Script: {instanceID: 3806}
+      Script: {instanceID: 15956}
     - Class: 114
-      Script: {instanceID: 4244}
+      Script: {instanceID: 16384}
     - Class: 114
-      Script: {instanceID: 4346}
+      Script: {instanceID: 16484}
     - Class: 114
-      Script: {instanceID: 4366}
+      Script: {instanceID: 16504}
     - Class: 114
-      Script: {instanceID: 4480}
+      Script: {instanceID: 16616}
     - Class: 114
-      Script: {instanceID: 4586}
+      Script: {instanceID: 16720}
     - Class: 114
-      Script: {instanceID: 4624}
+      Script: {instanceID: 16758}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -157,6 +155,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -977,7 +979,7 @@ ScriptsOnlyBuild:
     className: CinemachineGroupComposer
   - hash:
       serializedVersion: 2
-      Hash: 2ab6c86e4ad24e829c28af6c7891f02f
+      Hash: 470e1c264808baee97929ea11a833f65
     assemblyName: Assembly-CSharp.dll
     namespaceName: PurpleDrank
     className: PlayerController
@@ -1290,4 +1292,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Boot.unity
-  playerPath: C:/Users/anton/Desktop/BaseDemoTest.apk
+  playerPath: C:/Users/anton/Desktop/Work escape.apk

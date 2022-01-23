@@ -14,6 +14,7 @@ namespace PurpleDrank
         {
             _svManag = FindObjectOfType<SaveGameManager>();
         }
+
         private void OnCollisionEnter(Collision collision)
         {
             _svManag._allRes[(int)ResourceType.GOLD].current += 10;

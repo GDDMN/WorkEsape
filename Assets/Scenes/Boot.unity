@@ -1358,7 +1358,7 @@ PrefabInstance:
     - target: {fileID: 7418746238023963588, guid: 775b96ed879f56c4aa935f1f3f8fc8b3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7418746238023963588, guid: 775b96ed879f56c4aa935f1f3f8fc8b3,
         type: 3}
@@ -1727,6 +1727,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2596364083541210214, guid: 31f6e08d3da53664cb7539bb0b0d5d7f,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596364083541210214, guid: 31f6e08d3da53664cb7539bb0b0d5d7f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596364083541210214, guid: 31f6e08d3da53664cb7539bb0b0d5d7f,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1203649840}
@@ -1735,6 +1745,31 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1203649840}
+    - target: {fileID: 2596364083541210214, guid: 31f6e08d3da53664cb7539bb0b0d5d7f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1359248515}
+    - target: {fileID: 2596364083541210214, guid: 31f6e08d3da53664cb7539bb0b0d5d7f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596364083541210214, guid: 31f6e08d3da53664cb7539bb0b0d5d7f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ShowVideoAds
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596364083541210214, guid: 31f6e08d3da53664cb7539bb0b0d5d7f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: PurpleDrank.AdsManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596364083541210214, guid: 31f6e08d3da53664cb7539bb0b0d5d7f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2596364084152428565, guid: 31f6e08d3da53664cb7539bb0b0d5d7f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1768,7 +1803,7 @@ PrefabInstance:
     - target: {fileID: 2596364084152428565, guid: 31f6e08d3da53664cb7539bb0b0d5d7f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: ShowVideoAds
+      value: ShowReverdedVideoAds
       objectReference: {fileID: 0}
     - target: {fileID: 2596364084152428565, guid: 31f6e08d3da53664cb7539bb0b0d5d7f,
         type: 3}
@@ -1808,7 +1843,7 @@ PrefabInstance:
     - target: {fileID: 6198454406443914342, guid: 31f6e08d3da53664cb7539bb0b0d5d7f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6198454406443914342, guid: 31f6e08d3da53664cb7539bb0b0d5d7f,
         type: 3}
@@ -1937,7 +1972,7 @@ PrefabInstance:
     - target: {fileID: 6480566891166569192, guid: 9db3d39d73873744caf115d50bc0af2f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6480566891166569192, guid: 9db3d39d73873744caf115d50bc0af2f,
         type: 3}

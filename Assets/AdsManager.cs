@@ -9,6 +9,8 @@ namespace PurpleDrank
     {
         public string gameID;
         public bool testMode;
+
+        int lvlcomplets = 0;
         private void Awake()
         {
             if(Advertisement.isSupported)
@@ -22,16 +24,18 @@ namespace PurpleDrank
         }
         public void ShowVideoAds()
         {
-            if(Advertisement.IsReady())
+            lvlcomplets++;
+            if(Advertisement.IsReady() & lvlcomplets >= 3)
             {
                 Advertisement.Show("video");
+                lvlcomplets = 0;
             }
         }
         public void ShowReverdedVideoAds()
         {
             if(Advertisement.IsReady())
             {
-                Advertisement.Show("reverdedvideo");
+                Advertisement.Show("rewardedVideo");
             }
         }
     }

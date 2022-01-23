@@ -11,7 +11,11 @@ namespace PurpleDrank
 
         public GameObject CameraPlay;
         public GameObject CameraWin;
-        
+
+        public GameObject human;
+        public GameObject thing;
+        public ParticleSystem explosion;
+
         private GameObject Player;
         private InputHandle input;
 
@@ -19,7 +23,7 @@ namespace PurpleDrank
         {
             CameraPlay.SetActive(true);
             CameraWin.SetActive(false);
-            input = new InputHandle(animator);
+            input = new InputHandle(animator, human, thing, explosion);
             _fixedJoystick = Instantiate(_fixedJoystick, _fixedJoystick.transform.position, Quaternion.identity);
             _fixedJoystick.transform.SetParent(FindObjectOfType<Canvas>().transform);
             _fixedJoystick.gameObject.SetActive(false);

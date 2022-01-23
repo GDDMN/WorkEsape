@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1A320099-3505-9A8C-0C5F-BB25F134388B}</ProjectGuid>
+    <ProjectGuid>{D732A1C2-0ABA-E928-BC78-30851CC8DEC0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -701,23 +701,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{E6D3FC7B-26E5-5745-D034-698100779483}</Project>
+      <Project>{56C4F30A-C2E6-AB8D-503F-F2798EF8A611}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="ToonyColorsPro.Runtime.csproj">
-      <Project>{93B66490-9B38-4620-EB3C-02BF00041A6B}</Project>
+      <Project>{636A6AE2-61A6-2089-4589-729D641B476C}</Project>
       <Name>ToonyColorsPro.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
-      <Project>{DED8F1CB-9A00-2177-5125-1894767606FE}</Project>
+      <Project>{DFFCDFA0-E550-4BA0-78E1-0014A384EFCC}</Project>
       <Name>ToonyColorsPro.Demo.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="ToonyColorsPro.Editor.csproj">
-      <Project>{F755BF02-2909-6195-A010-1DB86670F07B}</Project>
+      <Project>{D1AB207B-0150-734A-00DC-39A906EEC680}</Project>
       <Name>ToonyColorsPro.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="ToonyColorsPro2.Demo.csproj">
-      <Project>{E4E423BF-98A8-EC30-877D-22BCFA57FED7}</Project>
+      <Project>{0A205901-D8A0-9F41-86F7-3F7299FE3A55}</Project>
       <Name>ToonyColorsPro2.Demo</Name>
     </ProjectReference>
   </ItemGroup>
