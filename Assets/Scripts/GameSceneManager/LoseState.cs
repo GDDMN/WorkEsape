@@ -7,14 +7,18 @@ namespace PurpleDrank
     public class LoseState : MonoBehaviour, IGameState
     {
         HypercasualLoose _looseUI;
+        PlayerController _player;
         public LoseState()
         {
             _looseUI = FindObjectOfType<HypercasualLoose>();
-            if(_looseUI!= null) _looseUI.gameObject.SetActive(false);
+            
+            if (_looseUI!= null) _looseUI.gameObject.SetActive(false);
         }
         public void Entry()
         {
+            _player = FindObjectOfType<PlayerController>();
             _looseUI.gameObject.SetActive(true);
+            _player.input.SetLose();
         }
 
         public void OnUpdate()

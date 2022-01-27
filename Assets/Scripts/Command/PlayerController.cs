@@ -17,7 +17,7 @@ namespace PurpleDrank
         public ParticleSystem explosion;
 
         private GameObject Player;
-        private InputHandle input;
+        public InputHandle input;
 
         public void Awake()
         {

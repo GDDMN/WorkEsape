@@ -63,6 +63,9 @@ namespace PurpleDrank
             _playerStates[typeof(Idle)] = new Idle(_explosion, _human, _thing);
             _playerStates[typeof(Walk)] = new Walk(_explosion, _human, _thing);
             _playerStates[typeof(Wait)] = new Wait(_explosion, _human, _thing);
+            _playerStates[typeof(Win)] = new Win();
+            _playerStates[typeof(Lose)] = new Lose();
+
         }
         private void SetState(IPlayerState newState)
         {
@@ -93,6 +96,16 @@ namespace PurpleDrank
             var state = GetPlayerState<Wait>();
             SetState(state);
         }
+        public void SetWin()
+        {
+            var state = GetPlayerState<Win>();
+            SetState(state);
+        }
+        public void SetLose()
+        {
+            var state = GetPlayerState<Lose>();
+            SetState(state);
+        }
     }
 
     public interface IPlayerState
@@ -116,9 +129,9 @@ namespace PurpleDrank
         }
         public void Entry()
         {
-            _human.SetActive(true);
+            _explosion.gameObject.SetActive(false);
             _thing.SetActive(false);
-            _explosion.Play();
+            _human.SetActive(true);
         }
         public void OnUpdate()
         {
@@ -134,6 +147,7 @@ namespace PurpleDrank
         ParticleSystem _explosion;
         GameObject _human;
         GameObject _thing;
+        GameObject player = FindObjectOfType<PlayerController>().gameObject;
         public Idle(ParticleSystem explosion, GameObject human, GameObject thing)
         {
             _human = human;
@@ -142,8 +156,10 @@ namespace PurpleDrank
         }
         public void Entry()
         {
+            _explosion.gameObject.SetActive(true);
             _human.SetActive(false);
             _thing.SetActive(true);
+            //Instantiate(_explosion, transform.position, Quaternion.identity);
             _explosion.Play();
         }
         public void OnUpdate()
@@ -152,7 +168,11 @@ namespace PurpleDrank
         }
         public void Exit()
         {
-            
+            _thing.SetActive(false);
+            _human.SetActive(true);
+            _human.transform.position = player.transform.position;
+            //Instantiate(_explosion, transform.position, Quaternion.identity);
+            _explosion.Play();
         }
     }
     public class Walk : MonoBehaviour, IPlayerState
@@ -160,7 +180,7 @@ namespace PurpleDrank
         ParticleSystem _explosion;
         GameObject _human;
         GameObject _thing;
-        GameObject player = FindObjectOfType<PlayerController>().gameObject;
+ 
         public Walk(ParticleSystem explosion, GameObject human, GameObject thing)
         {
             _human = human;
@@ -169,10 +189,7 @@ namespace PurpleDrank
         }
         public void Entry()
         {
-            _human.transform.position = player.transform.position;
-            _thing.SetActive(false);
-            _human.SetActive(true);
-            _explosion.Play();
+            
         }
         public void OnUpdate()
         {
@@ -183,6 +200,42 @@ namespace PurpleDrank
 
         }
     }
+    public class Win : MonoBehaviour, IPlayerState
+    {
+        GameObject player = FindObjectOfType<PlayerController>().gameObject;
+        public void Entry()
+        {
+            player.GetComponent<Rigidbody>().velocity = new Vector3(0.0f, 0.0f, 0.0f);
+            player.GetComponent<PlayerController>().animator.SetBool("Walk", false);
+            player.GetComponent<PlayerController>().animator.SetTrigger("Win");
+        }
+        public void OnUpdate()
+        {
+
+        }
+        public void Exit()
+        {
+
+        }
+    }
+
+    public class Lose : MonoBehaviour, IPlayerState
+    {
+        GameObject player = FindObjectOfType<PlayerController>().gameObject;
+        public void Entry()
+        {
+            player.GetComponent<Rigidbody>().velocity = new Vector3(0.0f, 0.0f, 0.0f);
+        }
+        public void OnUpdate()
+        {
+
+        }
+        public void Exit()
+        {
+
+        }
+    }
+
 
 }
 
