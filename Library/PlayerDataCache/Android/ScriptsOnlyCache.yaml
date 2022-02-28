@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - FloatingJoystick
     - PurpleDrank.AdsManager
     - PurpleDrank.BoxTrigger
+    - PurpleDrank.FieldOfView
     - PurpleDrank.GameSceneManager
     - PurpleDrank.HypercasualEndLvl
     - PurpleDrank.HypercasualLoose
@@ -29,8 +30,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -99,56 +102,60 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1680}
     - Class: 114
-      Script: {instanceID: 13998}
+      Script: {instanceID: 1818}
     - Class: 114
-      Script: {instanceID: 14012}
+      Script: {instanceID: 1832}
     - Class: 114
-      Script: {instanceID: 14080}
+      Script: {instanceID: 1900}
     - Class: 114
-      Script: {instanceID: 14086}
+      Script: {instanceID: 1906}
     - Class: 114
-      Script: {instanceID: 14366}
+      Script: {instanceID: 2190}
     - Class: 114
-      Script: {instanceID: 14388}
+      Script: {instanceID: 2212}
     - Class: 114
-      Script: {instanceID: 14644}
+      Script: {instanceID: 2472}
     - Class: 114
-      Script: {instanceID: 14678}
+      Script: {instanceID: 2506}
     - Class: 114
-      Script: {instanceID: 14736}
+      Script: {instanceID: 2564}
     - Class: 114
-      Script: {instanceID: 14802}
+      Script: {instanceID: 2634}
     - Class: 114
-      Script: {instanceID: 14862}
+      Script: {instanceID: 2694}
     - Class: 114
-      Script: {instanceID: 14934}
+      Script: {instanceID: 2768}
     - Class: 114
-      Script: {instanceID: 14986}
+      Script: {instanceID: 2820}
     - Class: 114
-      Script: {instanceID: 15136}
+      Script: {instanceID: 2972}
     - Class: 114
-      Script: {instanceID: 15688}
+      Script: {instanceID: 3532}
     - Class: 114
-      Script: {instanceID: 15732}
+      Script: {instanceID: 3582}
     - Class: 114
-      Script: {instanceID: 15814}
+      Script: {instanceID: 3608}
     - Class: 114
-      Script: {instanceID: 15956}
+      Script: {instanceID: 3666}
     - Class: 114
-      Script: {instanceID: 16384}
+      Script: {instanceID: 3808}
     - Class: 114
-      Script: {instanceID: 16484}
+      Script: {instanceID: 4246}
     - Class: 114
-      Script: {instanceID: 16504}
+      Script: {instanceID: 4348}
     - Class: 114
-      Script: {instanceID: 16616}
+      Script: {instanceID: 4368}
     - Class: 114
-      Script: {instanceID: 16720}
+      Script: {instanceID: 4482}
     - Class: 114
-      Script: {instanceID: 16758}
+      Script: {instanceID: 4588}
+    - Class: 114
+      Script: {instanceID: 4626}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
@@ -925,6 +932,12 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
+      Hash: af6585b6386a9c6e7137b7b8d18f81ad
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PurpleDrank
+    className: FieldOfView
+  - hash:
+      serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -979,7 +992,7 @@ ScriptsOnlyBuild:
     className: CinemachineGroupComposer
   - hash:
       serializedVersion: 2
-      Hash: 470e1c264808baee97929ea11a833f65
+      Hash: 55a50f557f49885203ad469df52c5e36
     assemblyName: Assembly-CSharp.dll
     namespaceName: PurpleDrank
     className: PlayerController

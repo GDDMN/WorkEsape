@@ -115,8 +115,7 @@ namespace PurpleDrank
         void Exit();
 
     }
-
-    public class Wait : MonoBehaviour, IPlayerState
+    public class Wait : IPlayerState
     {
         ParticleSystem _explosion;
         GameObject _human;
@@ -129,7 +128,6 @@ namespace PurpleDrank
         }
         public void Entry()
         {
-            _explosion.gameObject.SetActive(false);
             _thing.SetActive(false);
             _human.SetActive(true);
         }
@@ -142,12 +140,12 @@ namespace PurpleDrank
 
         }
     }
-    public class Idle: MonoBehaviour, IPlayerState
+    public class Idle: IPlayerState
     {
         ParticleSystem _explosion;
         GameObject _human;
         GameObject _thing;
-        GameObject player = FindObjectOfType<PlayerController>().gameObject;
+        GameObject player = GameObject.FindObjectOfType<PlayerController>().gameObject;
         public Idle(ParticleSystem explosion, GameObject human, GameObject thing)
         {
             _human = human;
@@ -156,10 +154,9 @@ namespace PurpleDrank
         }
         public void Entry()
         {
-            _explosion.gameObject.SetActive(true);
             _human.SetActive(false);
             _thing.SetActive(true);
-            //Instantiate(_explosion, transform.position, Quaternion.identity);
+            _explosion = GameObject.Instantiate(_explosion, player.transform.position + new Vector3(0.0f, 1.5f, 0.0f), Quaternion.identity);
             _explosion.Play();
         }
         public void OnUpdate()
@@ -171,11 +168,11 @@ namespace PurpleDrank
             _thing.SetActive(false);
             _human.SetActive(true);
             _human.transform.position = player.transform.position;
-            //Instantiate(_explosion, transform.position, Quaternion.identity);
+            _explosion = GameObject.Instantiate(_explosion, player.transform.position + new Vector3(0.0f, 1.5f, 0.0f), Quaternion.identity);
             _explosion.Play();
         }
     }
-    public class Walk : MonoBehaviour, IPlayerState
+    public class Walk : IPlayerState
     {
         ParticleSystem _explosion;
         GameObject _human;
@@ -200,9 +197,9 @@ namespace PurpleDrank
 
         }
     }
-    public class Win : MonoBehaviour, IPlayerState
+    public class Win : IPlayerState
     {
-        GameObject player = FindObjectOfType<PlayerController>().gameObject;
+        GameObject player = GameObject.FindObjectOfType<PlayerController>().gameObject;
         public void Entry()
         {
             player.GetComponent<Rigidbody>().velocity = new Vector3(0.0f, 0.0f, 0.0f);
@@ -218,10 +215,9 @@ namespace PurpleDrank
 
         }
     }
-
-    public class Lose : MonoBehaviour, IPlayerState
+    public class Lose : IPlayerState
     {
-        GameObject player = FindObjectOfType<PlayerController>().gameObject;
+        GameObject player = GameObject.FindObjectOfType<PlayerController>().gameObject;
         public void Entry()
         {
             player.GetComponent<Rigidbody>().velocity = new Vector3(0.0f, 0.0f, 0.0f);

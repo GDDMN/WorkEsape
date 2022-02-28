@@ -18,20 +18,54 @@ namespace PurpleDrank
 
         public GameSceneManager gameManager;
 
-        public float meshResolution; 
+        public float meshResolution;
+
+        public MeshFilter viewMeshFilter;
+        Mesh viewMesh;
         private void Start()
         {
+            viewMesh = new Mesh();
+            viewMesh.name = "view mesh";
+            viewMeshFilter.mesh = viewMesh;
+
             gameManager = FindObjectOfType<GameSceneManager>();
         }
 
         public void DrawFieldOfView()
         {
-            int stepCount = Mathf.RoundToInt(viewAngle * meshResolution);
+            int stepCount = (int)(viewAngle * meshResolution);
             float stepAngleSize = viewAngle / stepCount;
-            for(int i=0;i<stepCount;i++)
+
+            List<Vector3> viewPoints = new List<Vector3>();
+            for(int i=0;i<=stepCount;i++)
             {
-                float angle = transform.eulerAngles.y - viewAngle / 2 + stepAngleSize * 1;
+                float angle = transform.eulerAngles.y - viewAngle / 2 + stepAngleSize * i;
+                ViewCastInfo newViewCast = ViewCast(angle);
+                viewPoints.Add(newViewCast.point);
             }
+
+            int vertexCount = viewPoints.Count + 1;
+            Vector3[] vertices = new Vector3[vertexCount];
+            int[] triangles = new int[(vertexCount - 2) * 3];
+
+            vertices[0] = Vector3.zero;
+            for(int i=0;i<=vertexCount; i++)
+            {
+                vertices[i + 1] = transform.InverseTransformPoint(viewPoints[i]);
+                if(i<vertexCount-2)
+                {
+                    triangles[i * 3] = 0;
+                    triangles[i * 3 + 1] = i + 1;
+                    triangles[i * 3 + 2] = i + 2;
+                }else
+                {
+                    break;
+                }
+            }
+            viewMesh.Clear();
+            viewMesh.vertices = vertices;
+            viewMesh.triangles = triangles;
+            viewMesh.RecalculateNormals();
         }
         public void FindVisiableTargets()
         {
@@ -51,6 +85,21 @@ namespace PurpleDrank
                     }
                 }
             }
+
+        }
+
+        ViewCastInfo ViewCast(float globalAngle ){
+            Vector3 dir = DirFromAngle(globalAngle, true);
+            RaycastHit hit;
+
+            if(Physics.Raycast(transform.position, dir, out hit, viewRadius, obstracleMask))
+            {
+                return new ViewCastInfo(true, hit.point, hit.distance, globalAngle);
+            }
+            else
+            {
+                return new ViewCastInfo(false, transform.position + dir * viewRadius, viewRadius, globalAngle);
+            }
         }
         public Vector3 DirFromAngle(float angleInDegrees, bool angleIsGlobal)
         {
@@ -62,6 +111,23 @@ namespace PurpleDrank
                 0,
                 Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
         }
+
+        public struct ViewCastInfo
+        {
+            public bool hit;
+            public Vector3 point;
+            public float dst;
+            public float angle;
+
+            public ViewCastInfo(bool _hit, Vector3 _point, float _dst, float _angle)
+            {
+                hit = _hit;
+                point = _point;
+                dst = _dst;
+                angle = _angle;
+            }
+        }
+
     }
 
     [CustomEditor(typeof(FieldOfView))]
@@ -78,7 +144,7 @@ namespace PurpleDrank
                                 fow.viewRadius);
             Vector3 viewAngleA = fow.DirFromAngle(-fow.viewAngle / 2, false);
             Vector3 viewAngleB = fow.DirFromAngle(fow.viewAngle / 2, false);
-
+    
             Handles.DrawLine(fow.transform.position, fow.transform.position + viewAngleA * fow.viewRadius);
             Handles.DrawLine(fow.transform.position, fow.transform.position + viewAngleB * fow.viewRadius);
         }
