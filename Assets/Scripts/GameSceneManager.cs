@@ -69,6 +69,7 @@ namespace PurpleDrank
             _gameStates[typeof(LoseState)] = new LoseState();
 
         }
+
         private void SetState(IGameState newState)
         {
             if (_activeState != null)
@@ -77,21 +78,25 @@ namespace PurpleDrank
             this._activeState = newState;
             this._activeState.Entry();
         }
+
         private T GetGameState<T>() where T : IGameState
         {
             var type = typeof(T);
             return (T)_gameStates[type];
         }
+
         public void SetMenuState()
         {
             var state = GetGameState<MenuState>();
             SetState(state);
         }
+
         public void SetPlayState()
         {
             var state = GetGameState<PlayState>();
             SetState(state);
         }
+
         public void SetEndLvlState()
         {
             var state = GetGameState<EndLevelState>();

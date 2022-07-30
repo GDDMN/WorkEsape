@@ -680,7 +680,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088985347}
   m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
-  m_LocalPosition: {x: 0, y: 12.06, z: -12.45}
+  m_LocalPosition: {x: 0, y: 6, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -799,5 +799,43 @@ PrefabInstance:
       propertyPath: m_Name
       value: WorkEscape_v2.1
       objectReference: {fileID: 0}
+    - target: {fileID: 9000955883912846139, guid: bebbe9c8fe91f7f45821459a5f607c4c,
+        type: 3}
+      propertyPath: pointColors.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000955883912846139, guid: bebbe9c8fe91f7f45821459a5f607c4c,
+        type: 3}
+      propertyPath: pointColors.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000955883912846139, guid: bebbe9c8fe91f7f45821459a5f607c4c,
+        type: 3}
+      propertyPath: pointColors.g
+      value: 0.02948308
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000955883912846139, guid: bebbe9c8fe91f7f45821459a5f607c4c,
+        type: 3}
+      propertyPath: pointColors.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bebbe9c8fe91f7f45821459a5f607c4c, type: 3}
+--- !u!1 &7361166589047071510 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7361166588618752929, guid: bebbe9c8fe91f7f45821459a5f607c4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7361166589047071509}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7361166589047071511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7361166589047071510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7766142dd2c722244bb5603f4e9309e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

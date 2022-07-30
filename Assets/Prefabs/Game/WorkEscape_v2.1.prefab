@@ -1,22 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &9000955883912846139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1956510864236251467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf33ec36ea87a994a8278f0ef1a2ebd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _walkPoints:
-  - {x: 13.09, y: 0, z: 2.18}
-  - {x: 9.27, y: 0, z: -4.46}
-  - {x: 2.87, y: 0, z: -4.46}
-  - {x: 3.17, y: 0, z: 3.68}
 --- !u!195 &9000955883912846117
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -39,6 +22,24 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &9000955883912846139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956510864236251467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf33ec36ea87a994a8278f0ef1a2ebd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointColors: {r: 0, g: 0, b: 0, a: 0}
+  _walkPoints:
+  - {x: 13.09, y: 0, z: 2.18}
+  - {x: 9.27, y: 0, z: -4.46}
+  - {x: 2.87, y: 0, z: -4.46}
+  - {x: 3.17, y: 0, z: 3.68}
 --- !u!1 &7361166587028712568
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,6 +919,7 @@ GameObject:
   - component: {fileID: 7361166588618752930}
   - component: {fileID: 7361166588618752931}
   - component: {fileID: 9000955883912846116}
+  - component: {fileID: 643101903874057019}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -1018,6 +1020,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &643101903874057019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7361166588618752929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7766142dd2c722244bb5603f4e9309e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7361166588638231239
 GameObject:
   m_ObjectHideFlags: 0

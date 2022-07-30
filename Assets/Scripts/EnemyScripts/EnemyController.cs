@@ -11,13 +11,14 @@ public struct ActivePoint
 
 public class EnemyController : MonoBehaviour
 {
+    [SerializeField] private Color pointColors = new Color(); 
     [SerializeField] private List<Vector3> _walkPoints = new List<Vector3>();
     [SerializeField] private ActivePoint _activePoint;
     private NavMeshAgent _agent;
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.blue;
+        Gizmos.color = pointColors;
 
         foreach (var point in _walkPoints)
             Gizmos.DrawSphere(point, .3f);

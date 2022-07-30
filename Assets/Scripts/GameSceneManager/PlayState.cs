@@ -11,6 +11,7 @@ namespace PurpleDrank
         private List<EnemyController> _enemys = new List<EnemyController>();
         private FieldOfView fieldOfViews;
         private GameSceneManager _gameSceneManager;
+        private MashBuilder _ground;
 
         UIResourceLabel[] _allLabels;
 
@@ -20,12 +21,14 @@ namespace PurpleDrank
         }
         public void Entry()
         {
-            
+
+            _ground = FindObjectOfType<MashBuilder>();
+            _ground.Initialize();
+
             _allLabels = FindObjectsOfType<UIResourceLabel>();
+
             foreach (var lable in _allLabels)
-            {
                 lable.UpdateUI();
-            }
 
             foreach (var enemy in FindObjectsOfType<EnemyController>())
             {
