@@ -6,10 +6,11 @@ namespace PurpleDrank
 {
     public class PlayState : MonoBehaviour, IGameState
     {
-        Joystick fixedJoystick;
-        PlayerController _playerController;
-        FieldOfView fieldOfViews;
-        GameSceneManager _gameSceneManager;
+        private Joystick fixedJoystick;
+        private PlayerController _playerController;
+        private List<EnemyController> _enemys = new List<EnemyController>();
+        private FieldOfView fieldOfViews;
+        private GameSceneManager _gameSceneManager;
 
         UIResourceLabel[] _allLabels;
 
@@ -26,6 +27,12 @@ namespace PurpleDrank
                 lable.UpdateUI();
             }
 
+            foreach (var enemy in FindObjectsOfType<EnemyController>())
+            {
+                enemy.Initiailize();
+                _enemys.Add(enemy);
+            }
+
             fieldOfViews = FindObjectOfType<FieldOfView>();
             _playerController = FindObjectOfType<PlayerController>();
             _gameSceneManager = FindObjectOfType<GameSceneManager>();
@@ -36,6 +43,9 @@ namespace PurpleDrank
         }
         public void OnUpdate()
         {
+            foreach (var enemy in _enemys)
+                enemy.OnUpdate();
+
             if (fieldOfViews != null)
             {
                 fieldOfViews.DrawFieldOfView();

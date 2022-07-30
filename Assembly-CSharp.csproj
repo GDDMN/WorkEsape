@@ -90,6 +90,7 @@
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Scripts\ETFXRotation.cs" />
     <Compile Include="Assets\Scripts\Command\MoveLeft.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\FieldOfView.cs" />
     <Compile Include="Assets\Scripts\UI\UIWindow.cs" />
     <Compile Include="Assets\Scripts\GameSceneManager\PlayState.cs" />
     <Compile Include="Assets\Scripts\Command\PlayerController.cs" />
@@ -107,7 +108,8 @@
     <Compile Include="Assets\HypercasualEndLvl.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\VFX Library\PEButtonScript.cs" />
     <Compile Include="Assets\BoxTrigger.cs" />
-    <Compile Include="Assets\Scripts\EnemyScripts\FieldOfView.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\NacMeshAgent.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Shader Templates 2\SG2_Template_URP.txt" />
