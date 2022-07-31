@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\GameSceneManager.cs" />
     <Compile Include="Assets\Scripts\Command\Command.cs" />
     <Compile Include="Assets\LoseGame.cs" />
+    <Compile Include="Assets\MashBuilder.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Scripts\ETFXLightFade.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\ETFXButtonScript.cs" />
     <Compile Include="Assets\Scripts\GameSceneManager\MenuState.cs" />
@@ -110,7 +111,6 @@
     <Compile Include="Assets\HypercasualEndLvl.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\VFX Library\PEButtonScript.cs" />
     <Compile Include="Assets\BoxTrigger.cs" />
-    <Compile Include="Assets\MashBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Shader Templates 2\SG2_Template_URP.txt" />

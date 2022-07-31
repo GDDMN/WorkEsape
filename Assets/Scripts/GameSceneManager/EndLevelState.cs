@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace PurpleDrank
 {
-    public class EndLevelState : MonoBehaviour, IGameState
+    public class EndLevelState : IGameState
     {
         HypercasualEndLvl _endLvlUI;
         Vector3 _startPosImage;
         SaveGameManager _saveGameManager;
         public EndLevelState()
         {
-            _saveGameManager = FindObjectOfType<SaveGameManager>();
-            _endLvlUI = FindObjectOfType<HypercasualEndLvl>();
+            _saveGameManager = GameObject.FindObjectOfType<SaveGameManager>();
+            _endLvlUI = GameObject.FindObjectOfType<HypercasualEndLvl>();
             if(_endLvlUI != null)
             {
                 _endLvlUI.gameObject.SetActive(false);
@@ -21,7 +19,7 @@ namespace PurpleDrank
         }
         public void Entry()
         {
-            PlayerController player = FindObjectOfType<PlayerController>();
+            PlayerController player = GameObject.FindObjectOfType<PlayerController>();
             player.Win();
             player.input.SetWin();
             _endLvlUI.finImage.transform.position = _startPosImage;
