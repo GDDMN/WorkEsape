@@ -28,6 +28,7 @@ namespace PurpleDrank
 
         public void Exit()
         {
+            
             _looseUI.gameObject.SetActive(false);
         }
     }

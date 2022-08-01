@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace PurpleDrank
 {
@@ -19,7 +17,12 @@ namespace PurpleDrank
         private GameObject Player;
         public InputHandle input;
 
-        public void Awake()
+        private void Awake()
+        {
+            Initialize();
+        }
+
+        public void Initialize()
         {
             CameraPlay.SetActive(true);
             CameraWin.SetActive(false);

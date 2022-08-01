@@ -17,16 +17,20 @@ namespace PurpleDrank
         {
             
         }
+
         public void Entry()
         {
+            InitializeGameEntitys();
+            InitializeSystemEntitys();
+        }
 
+        private void InitializeGameEntitys()
+        {
             _ground = GameObject.FindObjectOfType<MashBuilder>();
             _ground.Initialize();
 
-            _allLabels = GameObject.FindObjectsOfType<UIResourceLabel>();
-
-            foreach (var lable in _allLabels)
-                lable.UpdateUI();
+            _playerController = GameObject.FindObjectOfType<PlayerController>();
+            _playerController.Initialize();
 
             _enemys = new List<EnemyController>();
             foreach (var enemy in GameObject.FindObjectsOfType<EnemyController>())
@@ -35,31 +39,35 @@ namespace PurpleDrank
                 _enemys.Add(enemy);
             }
 
-            fieldOfViews = GameObject.FindObjectOfType<FieldOfView>();
-            _playerController = GameObject.FindObjectOfType<PlayerController>();
             fixedJoystick = _playerController._fixedJoystick;
             fixedJoystick.gameObject.SetActive(true);
-            Debug.Log("PlayState");
-            
         }
+
+        private void InitializeSystemEntitys()
+        {
+            _allLabels = GameObject.FindObjectsOfType<UIResourceLabel>();
+
+            foreach (var lable in _allLabels)
+                lable.UpdateUI();
+
+            Debug.Log("PlayState");
+        }
+
         public void OnUpdate()
         {
             foreach (var enemy in _enemys)
                 enemy.OnUpdate();
-
-            if (fieldOfViews != null)
-            {
-                fieldOfViews.DrawFieldOfView();
-                fieldOfViews.FindVisiableTargets();
-            }
-                
+    
             if (_playerController!= null)
                 _playerController.PlayerControllerUpdate();
         }
+
         public void Exit()
         {
-            _enemys.Clear();
+            foreach (var enemy in _enemys)
+                GameObject.Destroy(enemy);
 
+            _enemys.Clear();
             fixedJoystick.gameObject.SetActive(false);
             GameObject.Destroy(fixedJoystick.gameObject);
         }
