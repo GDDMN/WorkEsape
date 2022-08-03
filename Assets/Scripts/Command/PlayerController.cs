@@ -4,6 +4,12 @@ using UnityEngine;
 
 namespace PurpleDrank
 {
+    public enum PlayerStatus
+    {
+        ACTIVE,
+        DISAPEAR
+    }
+
     public class PlayerController : MonoBehaviour
     {
         public Joystick _fixedJoystick;
@@ -18,6 +24,8 @@ namespace PurpleDrank
 
         private GameObject Player;
         public InputHandle input;
+
+        
 
         public void Awake()
         {

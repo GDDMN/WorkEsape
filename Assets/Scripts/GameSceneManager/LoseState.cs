@@ -1,22 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace PurpleDrank
 {
-    public class LoseState : MonoBehaviour, IGameState
+    public class LoseState : IGameState
     {
-        HypercasualLoose _looseUI;
-        PlayerController _player;
+        private HypercasualLoose _looseUI;
+        private PlayerController _player;
+
         public LoseState()
         {
-            _looseUI = FindObjectOfType<HypercasualLoose>();
+            _looseUI = GameObject.FindObjectOfType<HypercasualLoose>();
             
             if (_looseUI!= null) _looseUI.gameObject.SetActive(false);
         }
+
         public void Entry()
         {
-            _player = FindObjectOfType<PlayerController>();
+            _player = GameObject.FindObjectOfType<PlayerController>();
             _looseUI.gameObject.SetActive(true);
             _player.input.SetLose();
         }

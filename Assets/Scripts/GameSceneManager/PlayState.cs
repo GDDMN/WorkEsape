@@ -1,19 +1,17 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace PurpleDrank
 {
-    public class PlayState : MonoBehaviour, IGameState
+    public class PlayState : IGameState
     {
-        private Joystick fixedJoystick;
+        private Joystick _fixedJoystick;
         private PlayerController _playerController;
         private List<EnemyController> _enemys = new List<EnemyController>();
-        private FieldOfView fieldOfViews;
-        private GameSceneManager _gameSceneManager;
-        private MashBuilder _ground;
+        private FieldOfView _fieldOfViews;
+        private MeshBuilder _ground;
 
-        UIResourceLabel[] _allLabels;
+        private UIResourceLabel[] _allLabels;
 
         public PlayState()
         {
@@ -21,26 +19,24 @@ namespace PurpleDrank
         }
         public void Entry()
         {
-
-            _ground = FindObjectOfType<MashBuilder>();
+            _ground = GameObject.FindObjectOfType<MeshBuilder>();
             _ground.Initialize();
 
-            _allLabels = FindObjectsOfType<UIResourceLabel>();
+            _allLabels = GameObject.FindObjectsOfType<UIResourceLabel>();
 
             foreach (var lable in _allLabels)
                 lable.UpdateUI();
 
-            foreach (var enemy in FindObjectsOfType<EnemyController>())
+            foreach (var enemy in GameObject.FindObjectsOfType<EnemyController>())
             {
                 enemy.Initiailize();
                 _enemys.Add(enemy);
             }
 
-            fieldOfViews = FindObjectOfType<FieldOfView>();
-            _playerController = FindObjectOfType<PlayerController>();
-            _gameSceneManager = FindObjectOfType<GameSceneManager>();
-            fixedJoystick = _playerController._fixedJoystick;
-            fixedJoystick.gameObject.SetActive(true);
+            _fieldOfViews = GameObject.FindObjectOfType<FieldOfView>();
+            _playerController = GameObject.FindObjectOfType<PlayerController>();
+            _fixedJoystick = _playerController._fixedJoystick;
+            _fixedJoystick.gameObject.SetActive(true);
             Debug.Log("PlayState");
             
         }
@@ -49,10 +45,10 @@ namespace PurpleDrank
             foreach (var enemy in _enemys)
                 enemy.OnUpdate();
 
-            if (fieldOfViews != null)
+            if (_fieldOfViews != null)
             {
-                fieldOfViews.DrawFieldOfView();
-                fieldOfViews.FindVisiableTargets();
+                _fieldOfViews.DrawFieldOfView();
+                _fieldOfViews.FindVisiableTargets();
             }
                 
             if (_playerController!= null)
@@ -60,8 +56,12 @@ namespace PurpleDrank
         }
         public void Exit()
         {
-            fixedJoystick.gameObject.SetActive(false);
-            Destroy(fixedJoystick.gameObject);
+            foreach (var enemy in _enemys)
+                GameObject.Destroy(enemy);
+
+            _enemys.Clear();
+            _fixedJoystick.gameObject.SetActive(false);
+            GameObject.Destroy(_fixedJoystick.gameObject);
         }
     }
 }

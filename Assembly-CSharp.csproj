@@ -110,7 +110,10 @@
     <Compile Include="Assets\HypercasualEndLvl.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\VFX Library\PEButtonScript.cs" />
     <Compile Include="Assets\BoxTrigger.cs" />
-    <Compile Include="Assets\MashBuilder.cs" />
+    <Compile Include="Assets\Scripts\GameSceneManager\MeshBuilder.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\FieldOfViewEditor.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\ViewCastInfo.cs" />
+    <Compile Include="Assets\Scripts\Resource\ResourceManagerEditor.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Shader Templates 2\SG2_Template_URP.txt" />
@@ -850,6 +853,14 @@
     <ProjectReference Include="ToonyColorsPro2.Demo.csproj">
       <Project>{0A205901-D8A0-9F41-86F7-3F7299FE3A55}</Project>
       <Name>ToonyColorsPro2.Demo</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{257FD363-B79E-13D0-0EDE-C52F767E5F49}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{AE0161D6-F6EA-C59B-E22B-79BCEE9848DD}</Project>
+      <Name>NavMeshComponents</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

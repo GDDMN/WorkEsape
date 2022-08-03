@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
@@ -11,16 +10,18 @@ namespace PurpleDrank
         private IGameState _activeState;
         private GameObject _actualScene;
 
-        public GameObject[] gamePrefab;
-        public int Lvl = 0;
-        public bool test;
+        [SerializeField] private GameObject[] _gamePrefab;
+        [SerializeField] private int _lvl = 0;
+        [SerializeField] private bool _test;
         
         private void Awake()
         {
             InitGameScene();            
             InitStates();
-            if (test) SetPlayState();
-            else SetMenuState();
+            if (_test) 
+                SetPlayState();
+            else 
+                SetMenuState();
         }
 
         private void Update()
@@ -30,20 +31,21 @@ namespace PurpleDrank
 
         public void InitGameScene()
         {
-            if(gamePrefab.Length != 0)
+            if(_gamePrefab.Length != 0)
             {
                 if (_actualScene != null)
                     Destroy(_actualScene);
 
-                if (Lvl >= gamePrefab.Length)
+                if (_lvl >= _gamePrefab.Length)
                 {
-                    Lvl = 0;
+                    _lvl = 0;
                 }
-                _actualScene = Instantiate(gamePrefab[Lvl], transform.position, Quaternion.identity);
+                _actualScene = Instantiate(_gamePrefab[_lvl], transform.position, Quaternion.identity);
                 Transform sceneObject = FindObjectOfType<Scene>().transform;
                 _actualScene.transform.SetParent(sceneObject);
                 _actualScene.transform.position = sceneObject.position;
-                Lvl++;
+                _lvl++;
+
             }
         }
 
@@ -51,12 +53,13 @@ namespace PurpleDrank
         {
             if (_actualScene != null)
                 Destroy(_actualScene);
-            Lvl--;
-            _actualScene = Instantiate(gamePrefab[Lvl], transform.position, Quaternion.identity);
+
+            _lvl--;
+            _actualScene = Instantiate(_gamePrefab[_lvl], transform.position, Quaternion.identity);
             Transform sceneObject = FindObjectOfType<Scene>().transform;
             _actualScene.transform.SetParent(sceneObject);
             _actualScene.transform.position = sceneObject.position;
-            Lvl++;
+            _lvl++;
         }
 
         /************************************************************************/

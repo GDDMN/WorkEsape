@@ -720,6 +720,14 @@
       <Project>{0A205901-D8A0-9F41-86F7-3F7299FE3A55}</Project>
       <Name>ToonyColorsPro2.Demo</Name>
     </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{257FD363-B79E-13D0-0EDE-C52F767E5F49}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{AE0161D6-F6EA-C59B-E22B-79BCEE9848DD}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -1,26 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace PurpleDrank
 {
-    public class MenuState : MonoBehaviour, IGameState
+    public class MenuState : IGameState
     {
-        //FixedJoystick fixedJoystick;
-        HypercasualMainMenu _mainMenu;
-        SaveGameManager _saveGameManager;
+        private HypercasualMainMenu _mainMenu;
+        private SaveGameManager _saveGameManager;
 
         public MenuState()
         {
-            _saveGameManager = FindObjectOfType<SaveGameManager>();
+            _saveGameManager = GameObject.FindObjectOfType<SaveGameManager>();
         }
         public void Entry()
         {
-            
-            //fixedJoystick = FindObjectOfType<FixedJoystick>();
-            //fixedJoystick.gameObject.SetActive(false);
             Debug.Log("MenuState");
-            _mainMenu = FindObjectOfType<HypercasualMainMenu>();
+            _mainMenu = GameObject.FindObjectOfType<HypercasualMainMenu>();
         }
         public void OnUpdate()
         {
@@ -28,7 +22,6 @@ namespace PurpleDrank
         }
         public void Exit()
         {
-            //fixedJoystick.gameObject.SetActive(true);
             _mainMenu.gameObject.SetActive(false);
             _saveGameManager.LoadGameProgress();
         }

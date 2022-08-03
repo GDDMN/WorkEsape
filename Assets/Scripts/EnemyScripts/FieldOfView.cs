@@ -1,27 +1,25 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 
 namespace PurpleDrank
 {
-    public class FieldOfView : MonoBehaviour
+    public partial class FieldOfView : MonoBehaviour
     {
-        public float viewRadius;
-        [Range(0, 360)]
-        public float viewAngle;
+        [SerializeField] private float viewRadius;
+        [Range(0, 360), SerializeField] private float viewAngle;
+        [SerializeField] private LayerMask targetMask;
+        [SerializeField] private LayerMask obstracleMask;
+        [SerializeField] private List<Transform> visiableTargets = new List<Transform>();
+        [SerializeField] private GameSceneManager gameManager;
+        [SerializeField] private float meshResolution;
+        [SerializeField] private MeshFilter viewMeshFilter;
 
-        public LayerMask targetMask;
-        public LayerMask obstracleMask;
+        private Mesh viewMesh;
 
-        public List<Transform> visiableTargets = new List<Transform>();
+        public Mesh ViewMesh => viewMesh;
+        public float ViewAngle => viewAngle;
+        public float ViewRadius => viewRadius;
 
-        public GameSceneManager gameManager;
-
-        public float meshResolution;
-
-        public MeshFilter viewMeshFilter;
-        Mesh viewMesh;
         private void Start()
         {
             viewMesh = new Mesh();
@@ -62,6 +60,7 @@ namespace PurpleDrank
                     break;
                 }
             }
+
             viewMesh.Clear();
             viewMesh.vertices = vertices;
             viewMesh.triangles = triangles;
@@ -112,42 +111,6 @@ namespace PurpleDrank
                 Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
         }
 
-        public struct ViewCastInfo
-        {
-            public bool hit;
-            public Vector3 point;
-            public float dst;
-            public float angle;
-
-            public ViewCastInfo(bool _hit, Vector3 _point, float _dst, float _angle)
-            {
-                hit = _hit;
-                point = _point;
-                dst = _dst;
-                angle = _angle;
-            }
-        }
-
-    }
-
-    [CustomEditor(typeof(FieldOfView))]
-    public class FieldOfViewEditor : Editor
-    {
-        private void OnSceneGUI()
-        {
-            FieldOfView fow = (FieldOfView)target;
-            Handles.color = Color.white;
-            Handles.DrawWireArc(fow.transform.position,
-                                Vector3.up,
-                                Vector3.forward,
-                                360,
-                                fow.viewRadius);
-            Vector3 viewAngleA = fow.DirFromAngle(-fow.viewAngle / 2, false);
-            Vector3 viewAngleB = fow.DirFromAngle(fow.viewAngle / 2, false);
-    
-            Handles.DrawLine(fow.transform.position, fow.transform.position + viewAngleA * fow.viewRadius);
-            Handles.DrawLine(fow.transform.position, fow.transform.position + viewAngleB * fow.viewRadius);
-        }
     }
 }
 

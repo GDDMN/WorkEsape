@@ -6,12 +6,7 @@ namespace PurpleDrank
 {
     public class TestGameStart : MonoBehaviour
     {
-        GameSceneManager _sceneManager;
-        private void Awake()
-        {
-            _sceneManager = FindObjectOfType<GameSceneManager>();
-            _sceneManager.SetPlayState();
-        }
+
     }
 }
 
