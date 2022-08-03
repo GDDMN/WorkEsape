@@ -4,7 +4,7 @@ using System;
 
 namespace PurpleDrank
 {
-    public class GameSceneManager : MonoBehaviour
+    public class GameSceneManager : Singleton<GameSceneManager>
     {
         private Dictionary<Type, IGameState> _gameStates;
         private IGameState _activeState;

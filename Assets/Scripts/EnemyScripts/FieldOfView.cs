@@ -10,7 +10,6 @@ namespace PurpleDrank
         [SerializeField] private LayerMask targetMask;
         [SerializeField] private LayerMask obstracleMask;
         [SerializeField] private List<Transform> visiableTargets = new List<Transform>();
-        [SerializeField] private GameSceneManager gameManager;
         [SerializeField] private float meshResolution;
         [SerializeField] private MeshFilter viewMeshFilter;
 
@@ -25,8 +24,6 @@ namespace PurpleDrank
             viewMesh = new Mesh();
             viewMesh.name = "view mesh";
             viewMeshFilter.mesh = viewMesh;
-
-            gameManager = FindObjectOfType<GameSceneManager>();
         }
 
         public void DrawFieldOfView()
@@ -80,11 +77,10 @@ namespace PurpleDrank
                     if (!Physics.Raycast(transform.position, dirTarget, distanceToTarget, obstracleMask))
                     {
                         visiableTargets.Add(target);
-                        gameManager.SetLoseState();
+                        GameSceneManager.Instance.SetLoseState();
                     }
                 }
             }
-
         }
 
         ViewCastInfo ViewCast(float globalAngle ){
@@ -100,6 +96,7 @@ namespace PurpleDrank
                 return new ViewCastInfo(false, transform.position + dir * viewRadius, viewRadius, globalAngle);
             }
         }
+       
         public Vector3 DirFromAngle(float angleInDegrees, bool angleIsGlobal)
         {
             if(!angleIsGlobal)

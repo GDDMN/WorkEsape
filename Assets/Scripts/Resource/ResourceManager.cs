@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace PurpleDrank
 {
-    public class ResourceManager : MonoBehaviour
+    public class ResourceManager : Singleton<ResourceManager>
     {
         public ResourceItem resources;
         public void AddRes(ResourceType type)

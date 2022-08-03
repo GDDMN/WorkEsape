@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf33ec36ea87a994a8278f0ef1a2ebd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointColors: {r: 0.047169805, g: 0.047169805, b: 0.047169805, a: 1}
+  _pointColors: {r: 0, g: 0, b: 0, a: 0}
   _walkPoints:
-  - {x: 12.92, y: 0, z: 2.18}
-  - {x: 9.27, y: 0, z: -4.46}
-  - {x: 2.87, y: 0, z: -4.46}
-  - {x: 3.17, y: 0, z: 3.68}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!195 &5046630264646839995
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1350,7 +1350,6 @@ MonoBehaviour:
   human: {fileID: 6685862828517546470}
   thing: {fileID: 659962882322681376}
   explosion: {fileID: 19802098, guid: 56e3e0c71ef4cbe4dbda074c547d7bd4, type: 3}
-  input: {fileID: 0}
 --- !u!54 &6685862829297628680
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2098,6 +2097,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750190077973874426, guid: f2738ccbd0698b1499b0cdfe40a1fddd,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7232770371131340477, guid: f2738ccbd0698b1499b0cdfe40a1fddd,
         type: 3}

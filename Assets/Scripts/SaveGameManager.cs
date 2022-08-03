@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace PurpleDrank
 {
-    public class SaveGameManager : MonoBehaviour
+    public class SaveGameManager : Singleton<SaveGameManager>
     {
         ResourceManager _resManager;
 

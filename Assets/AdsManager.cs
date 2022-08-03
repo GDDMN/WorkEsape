@@ -5,7 +5,7 @@ using UnityEngine.Advertisements;
 
 namespace PurpleDrank
 {
-    public class AdsManager : MonoBehaviour
+    public class AdsManager : Singleton<AdsManager>
     {
         public string gameID;
         public bool testMode;
