@@ -10,17 +10,35 @@ namespace PurpleDrank
         private IGameState _activeState;
         private GameObject _actualScene;
 
+
+        [SerializeField] private Transform _sceneObject;
         [SerializeField] private GameObject[] _gamePrefab;
-        [SerializeField] private int _lvl = 0;
+        [SerializeField] private int _actualLvlIndex = 0;
         [SerializeField] private bool _test;
-        
+
+        public int ActualLvlIndex => _actualLvlIndex;
+
         private void Awake()
         {
             InitGameScene();            
             InitStates();
-            if (_test) 
+            CheckForTestInitializing();
+        }
+
+        private void InitializeScene()
+        {
+            if (_actualScene != null)
+                Destroy(_actualScene);
+
+            _actualScene = Instantiate(_gamePrefab[_actualLvlIndex], _sceneObject.position, Quaternion.identity);
+            _actualScene.transform.SetParent(_sceneObject);
+        }
+
+        private void CheckForTestInitializing()
+        {
+            if (_test)
                 SetPlayState();
-            else 
+            else
                 SetMenuState();
         }
 
@@ -31,36 +49,24 @@ namespace PurpleDrank
 
         public void InitGameScene()
         {
-            if(_gamePrefab.Length != 0)
-            {
-                if (_actualScene != null)
-                    Destroy(_actualScene);
+            if (_gamePrefab.Length == 0)
+                return;
 
-                if (_lvl >= _gamePrefab.Length)
-                {
-                    _lvl = 0;
-                }
-                _actualScene = Instantiate(_gamePrefab[_lvl], transform.position, Quaternion.identity);
-                Transform sceneObject = FindObjectOfType<Scene>().transform;
-                _actualScene.transform.SetParent(sceneObject);
-                _actualScene.transform.position = sceneObject.position;
-                _lvl++;
+            if (_actualLvlIndex >= _gamePrefab.Length)
+                _actualLvlIndex = 0;
 
-            }
+            InitializeScene();
+            _actualLvlIndex++;
         }
 
         public void RestartLvl()
         {
-            if (_actualScene != null)
-                Destroy(_actualScene);
-
-            _lvl--;
-            _actualScene = Instantiate(_gamePrefab[_lvl], transform.position, Quaternion.identity);
-            Transform sceneObject = FindObjectOfType<Scene>().transform;
-            _actualScene.transform.SetParent(sceneObject);
-            _actualScene.transform.position = sceneObject.position;
-            _lvl++;
+            _actualLvlIndex--;
+            InitializeScene();
+            _actualLvlIndex++;
         }
+
+
 
         /************************************************************************/
         public void InitStates()

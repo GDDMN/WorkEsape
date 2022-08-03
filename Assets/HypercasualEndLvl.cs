@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace PurpleDrank
 {
-    public class HypercasualEndLvl : MonoBehaviour
+    public class HypercasualEndLvl : Singleton<HypercasualEndLvl>
     {
         public Animator _endLvlAnimation;
         public Button buttonAds;

@@ -1,41 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace PurpleDrank
 {
     public class SaveGameManager : Singleton<SaveGameManager>
     {
-        ResourceManager _resManager;
-
-        public string key;
-
-        [HideInInspector]
-        public ResourceInfo[] _allRes;
+        [HideInInspector] public ResourceInfo[] _allRes;
+        [SerializeField] private string key;
 
         private void Awake()
         {
-            _resManager = FindObjectOfType<ResourceManager>();
-            for(int i=0;i<_resManager.resources.Count;i++)
+            for(int i=0;i<ResourceManager.Instance.resources.Count;i++)
             {
-                var res = _resManager.resources[(ResourceType)i];
+                var res = ResourceManager.Instance.resources[(ResourceType)i];
                 _allRes[i] = res;
             }
         }
         public void SaveGameProgress()
         {
-            for(int i=0;i < _allRes.Length; i++)
-            {
-                PlayerPrefs.SetInt(_allRes[i].name + key, _allRes[i].current);
-            }
+            foreach(var res in _allRes)
+                PlayerPrefs.SetInt(res.name + key, res.current);
         }
         public void LoadGameProgress()
         {
-            foreach(var res in _resManager.resources.Values)
-            {
+            foreach(var res in ResourceManager.Instance.resources.Values)
                 res.current = PlayerPrefs.GetInt(res.name + key);
-            }
         }
     }
 }
-

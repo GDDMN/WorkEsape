@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
 
@@ -7,21 +5,17 @@ namespace PurpleDrank
 {
     public class AdsManager : Singleton<AdsManager>
     {
-        public string gameID;
-        public bool testMode;
+        private int lvlcomplets = 0;
 
-        int lvlcomplets = 0;
+        [SerializeField] private string gameID;
+        [SerializeField] private  bool testMode;
+
         private void Awake()
         {
             if(Advertisement.isSupported)
-            {
                 Advertisement.Initialize(gameID, testMode);
-            }
         }
-        public void ShowBanner()
-        {
 
-        }
         public void ShowVideoAds()
         {
             lvlcomplets++;
@@ -31,12 +25,11 @@ namespace PurpleDrank
                 lvlcomplets = 0;
             }
         }
+
         public void ShowReverdedVideoAds()
         {
             if(Advertisement.IsReady())
-            {
                 Advertisement.Show("rewardedVideo");
-            }
         }
     }
 }
