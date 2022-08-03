@@ -1124,12 +1124,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fixedJoystick: {fileID: 6035618919682101267, guid: 363033639672ee44e8d0fce9c7877dd9,
     type: 3}
-  animator: {fileID: 655670021908722802}
-  CameraPlay: {fileID: 655670020974056828}
-  CameraWin: {fileID: 1590633334740098766}
-  human: {fileID: 655670021908722800}
-  thing: {fileID: 6699443121781105590}
-  explosion: {fileID: 19802098, guid: 56e3e0c71ef4cbe4dbda074c547d7bd4, type: 3}
+  _animator: {fileID: 655670021908722802}
+  _cameraPlay: {fileID: 655670020974056828}
+  _cameraWin: {fileID: 1590633334740098766}
+  _human: {fileID: 655670021908722800}
+  _thing: {fileID: 6699443121781105590}
+  _explosion: {fileID: 19855650, guid: fe394d041df1a0547990f49cf653249f, type: 3}
 --- !u!54 &655670022722476958
 Rigidbody:
   m_ObjectHideFlags: 0

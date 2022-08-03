@@ -1,6 +1,7 @@
 using System.Collections.Generic;
-using UnityEngine;
 using System;
+using UnityEngine;
+using UnityEngine.Events;
 
 namespace PurpleDrank
 {
@@ -10,22 +11,41 @@ namespace PurpleDrank
         private IGameState _activeState;
         private GameObject _actualScene;
 
-
         [SerializeField] private Transform _sceneObject;
         [SerializeField] private GameObject[] _gamePrefab;
         [SerializeField] private int _actualLvlIndex = 0;
         [SerializeField] private bool _test;
 
-        public int ActualLvlIndex => _actualLvlIndex;
+        public UnityEvent onPlayerWinAction;
+        public UnityEvent onLoadSceneAction;
 
         private void Awake()
         {
             InitGameScene();            
             InitStates();
             CheckForTestInitializing();
+
+            onPlayerWinAction.AddListener(IncrementLevel);
+            onLoadSceneAction.AddListener(InitGameScene);
         }
 
-        private void InitializeScene()
+        private void IncrementLevel()
+        {
+            _actualLvlIndex++;
+        }
+
+        private void InitGameScene()
+        {
+            if (_gamePrefab.Length == 0)
+                return;
+
+            if (_actualLvlIndex >= _gamePrefab.Length)
+                _actualLvlIndex = 0;
+
+            SpawnScene();
+        }
+
+        private void SpawnScene()
         {
             if (_actualScene != null)
                 Destroy(_actualScene);
@@ -46,27 +66,6 @@ namespace PurpleDrank
         {
             _activeState.OnUpdate();
         }
-
-        public void InitGameScene()
-        {
-            if (_gamePrefab.Length == 0)
-                return;
-
-            if (_actualLvlIndex >= _gamePrefab.Length)
-                _actualLvlIndex = 0;
-
-            InitializeScene();
-            _actualLvlIndex++;
-        }
-
-        public void RestartLvl()
-        {
-            _actualLvlIndex--;
-            InitializeScene();
-            _actualLvlIndex++;
-        }
-
-
 
         /************************************************************************/
         public void InitStates()

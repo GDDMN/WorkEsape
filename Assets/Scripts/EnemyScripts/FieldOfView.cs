@@ -67,6 +67,7 @@ namespace PurpleDrank
         {
             visiableTargets.Clear();
             Collider[] targetsInViewRadius = Physics.OverlapSphere(transform.position, viewRadius, targetMask);
+            
             for(int i=0;i<targetsInViewRadius.Length; i++)
             {
                 Transform target = targetsInViewRadius[i].transform;
@@ -77,7 +78,8 @@ namespace PurpleDrank
                     if (!Physics.Raycast(transform.position, dirTarget, distanceToTarget, obstracleMask))
                     {
                         visiableTargets.Add(target);
-                        GameSceneManager.Instance.SetLoseState();
+                        if(target?.GetComponent<PlayerController>().Status == PlayerStatus.ACTIVE)
+                            GameSceneManager.Instance.SetLoseState();
                     }
                 }
             }

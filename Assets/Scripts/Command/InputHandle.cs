@@ -152,7 +152,7 @@ namespace PurpleDrank
         private ParticleSystem _explosion;
         private GameObject _human;
         private GameObject _thing;
-        private GameObject player = GameObject.FindObjectOfType<PlayerController>().gameObject;
+        private PlayerController player = GameObject.FindObjectOfType<PlayerController>();
         
         public Idle(ParticleSystem explosion, GameObject human, GameObject thing)
         {
@@ -167,6 +167,7 @@ namespace PurpleDrank
             _thing.SetActive(true);
             _explosion = GameObject.Instantiate(_explosion, player.transform.position + new Vector3(0.0f, 1.5f, 0.0f), Quaternion.identity);
             _explosion.Play();
+            player.SetDisappearStatus();
         }
 
         public void OnUpdate()
@@ -181,6 +182,8 @@ namespace PurpleDrank
             _human.transform.position = player.transform.position;
             _explosion = GameObject.Instantiate(_explosion, player.transform.position + new Vector3(0.0f, 1.5f, 0.0f), Quaternion.identity);
             _explosion.Play();
+
+            player.SetActiveStatus();
         }
     }
 
@@ -217,8 +220,8 @@ namespace PurpleDrank
         public void Entry()
         {
             player.GetComponent<Rigidbody>().velocity = new Vector3(0.0f, 0.0f, 0.0f);
-            player.GetComponent<PlayerController>().animator.SetBool("Walk", false);
-            player.GetComponent<PlayerController>().animator.SetTrigger("Win");
+            player.GetComponent<PlayerController>().GetAnimator.SetBool("Walk", false);
+            player.GetComponent<PlayerController>().GetAnimator.SetTrigger("Win");
         }
         public void OnUpdate()
         {

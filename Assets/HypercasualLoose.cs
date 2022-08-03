@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace PurpleDrank
 {
-    public class HypercasualLoose : MonoBehaviour
+    public class HypercasualLoose : Singleton<HypercasualLoose>
     {
 
     }

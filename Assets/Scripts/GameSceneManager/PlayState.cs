@@ -38,7 +38,7 @@ namespace PurpleDrank
 
             _fieldOfViews = GameObject.FindObjectOfType<FieldOfView>();
             _playerController = GameObject.FindObjectOfType<PlayerController>();
-            _fixedJoystick = _playerController._fixedJoystick;
+            _fixedJoystick = _playerController.GetJoystick;
             _fixedJoystick.gameObject.SetActive(true);
             Debug.Log("PlayState");
             
