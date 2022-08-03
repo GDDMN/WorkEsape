@@ -22,6 +22,9 @@ namespace PurpleDrank
             _ground = GameObject.FindObjectOfType<MeshBuilder>();
             _ground.Initialize();
 
+            foreach (var enemy in _enemys)
+                enemy.Initiailize();
+
             _allLabels = GameObject.FindObjectsOfType<UIResourceLabel>();
 
             foreach (var lable in _allLabels)
@@ -42,9 +45,6 @@ namespace PurpleDrank
         }
         public void OnUpdate()
         {
-            foreach (var enemy in _enemys)
-                enemy.OnUpdate();
-
             if (_fieldOfViews != null)
             {
                 _fieldOfViews.DrawFieldOfView();

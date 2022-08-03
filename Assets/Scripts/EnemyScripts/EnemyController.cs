@@ -14,44 +14,29 @@ namespace PurpleDrank
     public class EnemyController : MonoBehaviour
     {
         [SerializeField] private Color _pointColors = new Color();
-        [SerializeField] private List<Vector3> _walkPoints = new List<Vector3>();
+        [SerializeField] private List<Transform> _walkPoints = new List<Transform>();
         [SerializeField] private ActivePoint _activePoint;
         private NavMeshAgent _agent;
 
         private void OnDrawGizmos()
         {
             Gizmos.color = _pointColors;
-
             foreach (var point in _walkPoints)
-                Gizmos.DrawSphere(point, .3f);
-        }
-
-        private void Start()
-        {
-            Initiailize();
+                Gizmos.DrawSphere(point.position, .3f);
         }
 
         public void Initiailize()
         {
             _agent = gameObject.GetComponent<NavMeshAgent>();
-            _activePoint.position = _walkPoints[0];
+            _activePoint.position = _walkPoints[0].position;
             _activePoint.index = 0;
             _agent.SetDestination(_activePoint.position);
         }
 
-        public void OnUpdate()
+        public void SetNewDistantion()
         {
-            SetNewDistantion();
-        }
-
-        private void SetNewDistantion()
-        {
-            if ((int)gameObject.transform.position.x == (int)_activePoint.position.x &&
-                (int)gameObject.transform.position.z == (int)_activePoint.position.z)
-            {
-                SetActivePoint(_activePoint.index);
-                _agent.SetDestination(_activePoint.position);
-            }
+            SetActivePoint(_activePoint.index);
+            _agent.SetDestination(_activePoint.position);
         }
 
         private void SetActivePoint(int index)
@@ -61,8 +46,16 @@ namespace PurpleDrank
             else
                 index++;
 
-            _activePoint.position = _walkPoints[index];
+            _activePoint.position = _walkPoints[index].position;
             _activePoint.index = index;
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.GetComponent<InteractWithEnemy>() == null)
+                return;
+
+            other.GetComponent<InteractWithEnemy>().Interact(this);
         }
     }
 }

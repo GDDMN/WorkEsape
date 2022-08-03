@@ -78,24 +78,31 @@
     <Compile Include="Assets\Scripts\Command\MoveDown.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\VFX Library\ParticleEffectsLibrary.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\ETFXMouseOrbit.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\FieldOfViewEditor.cs" />
     <Compile Include="Assets\Scripts\GameSceneManager\LoseState.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\VFX Library\UICanvasManager.cs" />
     <Compile Include="Assets\Scripts\GameSceneManager\IGameState.cs" />
+    <Compile Include="Assets\Scripts\GameSceneManager\MeshBuilder.cs" />
     <Compile Include="Assets\TestGameStart.cs" />
     <Compile Include="Assets\HypercasualLoose.cs" />
     <Compile Include="Assets\Scripts\UI\UIResourceLabel.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\EnemyController.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Examples\JoystickSetterExample.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\InteractWithEnemy.cs" />
     <Compile Include="Assets\HypercasualPlayGameUI.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\ETFXTarget.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Scripts\ETFXRotation.cs" />
     <Compile Include="Assets\Scripts\Command\MoveLeft.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\NacMeshAgent.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\WalkPoint.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\InteractWithWalkPoint.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\FieldOfView.cs" />
     <Compile Include="Assets\Scripts\UI\UIWindow.cs" />
     <Compile Include="Assets\Scripts\GameSceneManager\PlayState.cs" />
     <Compile Include="Assets\Scripts\Command\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\ViewCastInfo.cs" />
+    <Compile Include="Assets\Scripts\Resource\ResourceManagerEditor.cs" />
     <Compile Include="Assets\Scripts\Command\InputHandle.cs" />
     <Compile Include="Assets\Scripts\Command\MoveUp.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Joystick Pack\Examples\JoystickPlayerExample.cs" />
@@ -110,10 +117,6 @@
     <Compile Include="Assets\HypercasualEndLvl.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\VFX Library\PEButtonScript.cs" />
     <Compile Include="Assets\BoxTrigger.cs" />
-    <Compile Include="Assets\Scripts\GameSceneManager\MeshBuilder.cs" />
-    <Compile Include="Assets\Scripts\EnemyScripts\FieldOfViewEditor.cs" />
-    <Compile Include="Assets\Scripts\EnemyScripts\ViewCastInfo.cs" />
-    <Compile Include="Assets\Scripts\Resource\ResourceManagerEditor.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Shader Templates 2\SG2_Template_URP.txt" />
@@ -846,14 +849,6 @@
       <Project>{DFFCDFA0-E550-4BA0-78E1-0014A384EFCC}</Project>
       <Name>ToonyColorsPro.Demo.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="ToonyColorsPro.Editor.csproj">
-      <Project>{D1AB207B-0150-734A-00DC-39A906EEC680}</Project>
-      <Name>ToonyColorsPro.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="ToonyColorsPro2.Demo.csproj">
-      <Project>{0A205901-D8A0-9F41-86F7-3F7299FE3A55}</Project>
-      <Name>ToonyColorsPro2.Demo</Name>
-    </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
       <Project>{257FD363-B79E-13D0-0EDE-C52F767E5F49}</Project>
       <Name>NavMeshComponentsEditor</Name>
@@ -861,6 +856,14 @@
     <ProjectReference Include="NavMeshComponents.csproj">
       <Project>{AE0161D6-F6EA-C59B-E22B-79BCEE9848DD}</Project>
       <Name>NavMeshComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro.Editor.csproj">
+      <Project>{D1AB207B-0150-734A-00DC-39A906EEC680}</Project>
+      <Name>ToonyColorsPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro2.Demo.csproj">
+      <Project>{0A205901-D8A0-9F41-86F7-3F7299FE3A55}</Project>
+      <Name>ToonyColorsPro2.Demo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

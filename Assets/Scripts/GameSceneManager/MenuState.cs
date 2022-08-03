@@ -11,15 +11,18 @@ namespace PurpleDrank
         {
             _saveGameManager = GameObject.FindObjectOfType<SaveGameManager>();
         }
+
         public void Entry()
         {
             Debug.Log("MenuState");
             _mainMenu = GameObject.FindObjectOfType<HypercasualMainMenu>();
         }
+
         public void OnUpdate()
         {
 
         }
+
         public void Exit()
         {
             _mainMenu.gameObject.SetActive(false);
