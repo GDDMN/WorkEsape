@@ -26,6 +26,12 @@ namespace PurpleDrank
             viewMeshFilter.mesh = viewMesh;
         }
 
+        public void Update()
+        {
+            DrawFieldOfView();
+            FindVisiableTargets();
+        }
+
         public void DrawFieldOfView()
         {
             int stepCount = (int)(viewAngle * meshResolution);

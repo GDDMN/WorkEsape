@@ -8,7 +8,6 @@ namespace PurpleDrank
         private Joystick _fixedJoystick;
         private PlayerController _playerController;
         private List<EnemyController> _enemys = new List<EnemyController>();
-        private FieldOfView _fieldOfViews;
         private MeshBuilder _ground;
 
         private UIResourceLabel[] _allLabels;
@@ -36,7 +35,7 @@ namespace PurpleDrank
                 _enemys.Add(enemy);
             }
 
-            _fieldOfViews = GameObject.FindObjectOfType<FieldOfView>();
+
             _playerController = GameObject.FindObjectOfType<PlayerController>();
             _fixedJoystick = _playerController.GetJoystick;
             _fixedJoystick.gameObject.SetActive(true);
@@ -45,11 +44,6 @@ namespace PurpleDrank
         }
         public void OnUpdate()
         {
-            if (_fieldOfViews != null)
-            {
-                _fieldOfViews.DrawFieldOfView();
-                _fieldOfViews.FindVisiableTargets();
-            }
                 
             if (_playerController!= null)
                 _playerController.PlayerControllerUpdate();

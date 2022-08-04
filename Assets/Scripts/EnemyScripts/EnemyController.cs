@@ -16,6 +16,9 @@ namespace PurpleDrank
         [SerializeField] private Color _pointColors = new Color();
         [SerializeField] private List<Transform> _walkPoints = new List<Transform>();
         [SerializeField] private ActivePoint _activePoint;
+
+        [SerializeField] private Animator _animator;
+
         private NavMeshAgent _agent;
 
         private void OnDrawGizmos()
@@ -31,10 +34,12 @@ namespace PurpleDrank
             _activePoint.position = _walkPoints[0].position;
             _activePoint.index = 0;
             _agent.SetDestination(_activePoint.position);
+            _animator.SetBool("Walking", false);
         }
 
         public void SetNewDistantion()
         {
+            _animator.SetBool("Walking", true);
             SetActivePoint(_activePoint.index);
             _agent.SetDestination(_activePoint.position);
         }

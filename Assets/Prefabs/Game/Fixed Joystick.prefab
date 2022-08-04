@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 6035618919682101278}
   - component: {fileID: 6035618919682101276}
   - component: {fileID: 6035618919682101277}
-  - component: {fileID: 6035618919682101267}
+  - component: {fileID: 2823059401694619956}
   m_Layer: 5
   m_Name: Fixed Joystick
   m_TagString: Untagged
@@ -111,7 +111,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 125, y: 80}
+  m_AnchoredPosition: {x: 146, y: 80}
   m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6035618919682101276
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6035618919682101267
+--- !u!114 &2823059401694619956
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

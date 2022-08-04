@@ -32,28 +32,35 @@ namespace PurpleDrank
         public Command handleInput()
         {
             _fixedJoystic = GameObject.FindObjectOfType<Joystick>();
-            var vPlayerMove = new Vector2(_fixedJoystic.Horizontal, _fixedJoystic.Vertical);
+            Vector2 vPlayerMove = new Vector2(_fixedJoystic.Horizontal, _fixedJoystic.Vertical);
+
             if (vPlayerMove != Vector2.zero)
-            {
-                firstWalk = true;
-                if (stateChange == true)
-                {
-                    SetWalk();
-                    stateChange = false;
-                    
-                }
-                _animator.SetBool("Walk", true);
-            }
+                EnterWalkingStatePLayer();
             else
-            {
-                if(stateChange == false & firstWalk == true)
-                {
-                    SetIdle();
-                    stateChange = true;
-                }
-                _animator.SetBool("Walk", false);
-            }
+                EnterIdleStatePlayer();
+
             return new Move(vPlayerMove);
+        }
+
+        private void EnterWalkingStatePLayer()
+        {
+            firstWalk = true;
+            if (stateChange == true)
+            {
+                SetWalk();
+                stateChange = false;
+            }
+            _animator.SetBool("Walk", true);
+        }
+
+        private void EnterIdleStatePlayer()
+        {
+            if (stateChange == false & firstWalk == true)
+            {
+                SetIdle();
+                stateChange = true;
+            }
+            _animator.SetBool("Walk", false);
         }
 
         public void InitStates()

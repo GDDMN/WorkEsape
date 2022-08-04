@@ -35,6 +35,7 @@ namespace PurpleDrank
             HypercasualEndLvl.Instance.finImage.transform.position = _startPosImage + new Vector3(0.0f, 1.0f, 0.0f);
             HypercasualEndLvl.Instance.gameObject.SetActive(false);
             SaveGameManager.Instance.SaveGameProgress();
+            GameSceneManager.Instance.onPlayerWinAction.Invoke();
             GameSceneManager.Instance.onLoadSceneAction.Invoke();
         }
     }

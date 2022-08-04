@@ -10,6 +10,7 @@ namespace PurpleDrank
 
     public class PlayerController : MonoBehaviour
     {
+        private Vector2 _joystickPos = new Vector2(0.0f, 0.0f);
         private GameObject Player;
         private PlayerStatus _status;
 
@@ -32,13 +33,23 @@ namespace PurpleDrank
         
         public void Awake()
         {
+            InitializeCameras();
+            InitializeJoystick();
+            _input = new InputHandle(_animator, _human, _thing, _explosion);
+            Player = this.gameObject;
+        }
+
+        private void InitializeCameras()
+        {
             _cameraPlay.SetActive(true);
             _cameraWin.SetActive(false);
-            _input = new InputHandle(_animator, _human, _thing, _explosion);
-            _fixedJoystick = Instantiate(_fixedJoystick, _fixedJoystick.transform.position, Quaternion.identity);
+        }
+
+        private void InitializeJoystick()
+        {
+            _fixedJoystick = Instantiate(_fixedJoystick, _joystickPos, Quaternion.identity);
             _fixedJoystick.transform.SetParent(FindObjectOfType<Canvas>().transform);
             _fixedJoystick.gameObject.SetActive(false);
-            Player = this.gameObject;
         }
 
         public void SetActiveStatus()
