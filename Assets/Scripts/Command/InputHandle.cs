@@ -227,8 +227,7 @@ namespace PurpleDrank
         public void Entry()
         {
             player.GetComponent<Rigidbody>().velocity = new Vector3(0.0f, 0.0f, 0.0f);
-            player.GetComponent<PlayerController>().GetAnimator.SetBool("Walk", false);
-            player.GetComponent<PlayerController>().GetAnimator.SetTrigger("Win");
+
         }
         public void OnUpdate()
         {

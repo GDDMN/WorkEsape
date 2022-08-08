@@ -116,6 +116,7 @@ namespace PurpleDrank
             var state = GetGameState<LoseState>();
             SetState(state);
         }
+
         /************************************************************************/
         public IGameState GetState()
         {

@@ -13,6 +13,7 @@ namespace PurpleDrank
         [SerializeField] private float meshResolution;
         [SerializeField] private MeshFilter viewMeshFilter;
 
+        private bool _isPlayerFinded = false;
         private Mesh viewMesh;
 
         public Mesh ViewMesh => viewMesh;
@@ -28,6 +29,9 @@ namespace PurpleDrank
 
         public void Update()
         {
+            if (_isPlayerFinded)
+                return; 
+
             DrawFieldOfView();
             FindVisiableTargets();
         }
@@ -85,7 +89,11 @@ namespace PurpleDrank
                     {
                         visiableTargets.Add(target);
                         if(target?.GetComponent<PlayerController>().Status == PlayerStatus.ACTIVE)
+                        {
                             GameSceneManager.Instance.SetLoseState();
+                            _isPlayerFinded = true;
+                        }
+                            
                     }
                 }
             }

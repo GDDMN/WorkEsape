@@ -73,8 +73,23 @@ namespace PurpleDrank
 
         public void Win()
         {
+            ChangeCameraView();
+            _animator.SetBool("Walk", false);
+            _animator.SetTrigger("Win");
+        }
+
+        public void Lose()
+        {
+            ChangeCameraView();
+            _animator.SetBool("Walk", false);
+            _animator.SetTrigger("Lose");
+        }
+
+        private void ChangeCameraView()
+        {
             _cameraPlay.SetActive(false);
             _cameraWin.SetActive(true);
+
         }
     }
 
