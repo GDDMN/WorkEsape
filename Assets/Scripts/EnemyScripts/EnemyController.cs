@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 [SerializeField]
 public struct ActivePoint
@@ -21,6 +22,8 @@ namespace PurpleDrank
 
         private NavMeshAgent _agent;
 
+        public UnityEvent OnLoseGame;
+
         private void OnDrawGizmos()
         {
             Gizmos.color = _pointColors;
@@ -35,6 +38,8 @@ namespace PurpleDrank
             _activePoint.index = 0;
             _agent.SetDestination(_activePoint.position);
             _animator.SetBool("Walking", false);
+
+            OnLoseGame.AddListener(LoseGame);
         }
 
         public void SetNewDistantion()
@@ -53,6 +58,13 @@ namespace PurpleDrank
 
             _activePoint.position = _walkPoints[index].position;
             _activePoint.index = index;
+        }
+
+        private void LoseGame()
+        {
+            _animator.SetBool("Walking", false);
+            _animator.SetTrigger("LoseGame");
+            _agent.isStopped = true;
         }
 
         private void OnTriggerEnter(Collider other)

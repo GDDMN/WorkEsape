@@ -92,6 +92,9 @@ namespace PurpleDrank
                         {
                             GameSceneManager.Instance.SetLoseState();
                             _isPlayerFinded = true;
+
+                            foreach (var enemy in FindObjectsOfType<EnemyController>())
+                                enemy.OnLoseGame.Invoke();
                         }
                             
                     }
