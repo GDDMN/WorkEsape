@@ -25,6 +25,8 @@ namespace PurpleDrank
         [SerializeField] private ParticleSystem _explosion;
 
         [SerializeField] private InputHandle _input;
+        [SerializeField] private ParticleSystem _emotionParticle;
+        [SerializeField] private Transform _emotionParticlePosition;
 
         public Animator GetAnimator => _animator;
         public PlayerStatus Status => _status;
@@ -83,6 +85,7 @@ namespace PurpleDrank
             ChangeCameraView();
             _animator.SetBool("Walk", false);
             _animator.SetTrigger("Lose");
+            var emotionParticle = Instantiate(_emotionParticle, _emotionParticlePosition.position, Quaternion.identity);
         }
 
         private void ChangeCameraView()
