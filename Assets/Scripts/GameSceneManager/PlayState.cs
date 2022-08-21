@@ -27,7 +27,7 @@ namespace PurpleDrank
             _allLabels = GameObject.FindObjectsOfType<UIResourceLabel>();
 
             foreach (var lable in _allLabels)
-                lable.UpdateUI();
+                lable.OnResourceUpdate.Invoke();
 
             foreach (var enemy in GameObject.FindObjectsOfType<EnemyController>())
             {

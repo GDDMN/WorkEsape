@@ -6,7 +6,6 @@ namespace PurpleDrank
     {
         private void OnCollisionEnter(Collision collision)
         {
-            SaveGameManager.Instance._allRes[(int)ResourceType.GOLD].current += 10;
             GameSceneManager.Instance.SetEndLvlState();
         }
     }

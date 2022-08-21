@@ -1,37 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 namespace PurpleDrank
 {
     public class UIResourceLabel : MonoBehaviour
     {
-        ResourceManager _resManager;
+        [SerializeField] private Text resourceCount;
+        [SerializeField] private Image resourceImage;
 
-        public Text resourceCount;
-        public Image resourceImage;
+        [SerializeField] private ResourceManager _resManager;
+        [SerializeField] private ResourceType resourceType;
 
-        public ResourceType resourceType;
+        public UnityEvent OnResourceUpdate;
+        public ResourceType GetResourceType() => resourceType;
 
         private void Awake()
         {
-            _resManager = FindObjectOfType<ResourceManager>();
+            Initialize();
+            OnResourceUpdate.AddListener(UpdateUI);
         }
 
-        public void UpdateUI()
+        private void Initialize()
         {
-            _resManager = FindObjectOfType<ResourceManager>();
-            foreach (var res in _resManager.resources)
-            {
-                if (res.Key == resourceType)
-                {
-                    resourceCount.text = res.Value.current.ToString();
-                    resourceImage.sprite = res.Value.icon;
+            resourceCount.text = _resManager.resources[resourceType].current.ToString();
+            resourceImage.sprite = _resManager.resources[resourceType].icon;
+        }
 
-                    break;
-                }
-            }
+        private void UpdateUI()
+        {
+            resourceCount.text = _resManager.resources[resourceType].current.ToString();
         }
     }
 }

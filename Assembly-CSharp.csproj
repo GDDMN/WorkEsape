@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Command\MoveDown.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\VFX Library\ParticleEffectsLibrary.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\ETFXMouseOrbit.cs" />
+    <Compile Include="Assets\Scripts\SystemScripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\FieldOfViewEditor.cs" />
     <Compile Include="Assets\Scripts\GameSceneManager\LoseState.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\VFX Library\UICanvasManager.cs" />
@@ -117,7 +118,8 @@
     <Compile Include="Assets\HypercasualEndLvl.cs" />
     <Compile Include="Assets\DownloadedPrefabs\Epic Toon FX\Demo\Scripts\VFX Library\PEButtonScript.cs" />
     <Compile Include="Assets\BoxTrigger.cs" />
-    <Compile Include="Assets\Scripts\SystemScripts\Singleton.cs" />
+    <Compile Include="Assets\Scripts\InteractWithPlayer\InteractWithPlayer.cs" />
+    <Compile Include="Assets\Scripts\InteractWithPlayer\CoinInteract.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\DownloadedPrefabs\JMO Assets\Toony Colors Pro\Shader Templates 2\SG2_Template_URP.txt" />
