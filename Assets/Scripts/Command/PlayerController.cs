@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 namespace PurpleDrank
 {
@@ -13,12 +14,14 @@ namespace PurpleDrank
         private Vector2 _joystickPos = new Vector2(0.0f, 0.0f);
         private GameObject Player;
         private PlayerStatus _status;
+        private bool _startEmoWasShowed = false;
 
         [SerializeField] private Joystick _fixedJoystick;
         [SerializeField] private Animator _animator;
 
         public GameObject _cameraPlay;
         public GameObject _cameraWin;
+        public GameObject _cameraMenu;
 
         [SerializeField] private GameObject _human;
         [SerializeField] private GameObject _thing;
@@ -28,6 +31,12 @@ namespace PurpleDrank
         [SerializeField] private ParticleSystem _emotionParticle;
         [SerializeField] private Transform _emotionParticlePosition;
 
+        [SerializeField] private ParticleSystem _bloodPuddle;
+
+
+        public UnityEvent OnLvlStart;
+
+        public ParticleSystem Puddle => _bloodPuddle;
         public Animator GetAnimator => _animator;
         public PlayerStatus Status => _status;
         public Joystick GetJoystick => _fixedJoystick;
@@ -35,6 +44,7 @@ namespace PurpleDrank
         
         public void Awake()
         {
+            OnLvlStart.AddListener(ActivateGameCamera);
             InitializeCameras();
             InitializeJoystick();
             _input = new InputHandle(_animator, _human, _thing, _explosion);
@@ -43,7 +53,8 @@ namespace PurpleDrank
 
         private void InitializeCameras()
         {
-            _cameraPlay.SetActive(true);
+            _cameraMenu.SetActive(true);
+            _cameraPlay.SetActive(false);
             _cameraWin.SetActive(false);
         }
 
@@ -56,7 +67,17 @@ namespace PurpleDrank
 
         public void SetActiveStatus()
         {
+            _animator.SetBool("Start", true); 
+            _animator.SetBool("Walk", true);
             _status = PlayerStatus.ACTIVE;
+        }
+
+        private void ActivateGameCamera()
+        {
+            _cameraPlay.SetActive(true);
+            _cameraMenu.SetActive(false);
+            _cameraWin.SetActive(false);
+            _animator.SetBool("Start", true);
         }
 
         public void SetDisappearStatus()
@@ -90,9 +111,9 @@ namespace PurpleDrank
 
         private void ChangeCameraView()
         {
-            _cameraPlay.SetActive(false);
             _cameraWin.SetActive(true);
-
+            _cameraPlay.SetActive(false);
+            _cameraMenu.SetActive(false);
         }
     }
 

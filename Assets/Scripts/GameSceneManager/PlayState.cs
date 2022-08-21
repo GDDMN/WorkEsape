@@ -37,14 +37,23 @@ namespace PurpleDrank
 
 
             _playerController = GameObject.FindObjectOfType<PlayerController>();
+            _playerController.OnLvlStart.Invoke();
             _fixedJoystick = _playerController.GetJoystick;
             _fixedJoystick.gameObject.SetActive(true);
             Debug.Log("PlayState");
-            
         }
         public void OnUpdate()
         {
-                
+            float rTime = Random.RandomRange(0.0f, 1.0f);
+            if (rTime >= 0.95f)
+            {
+                var puddle = GameObject.Instantiate(_playerController.Puddle,
+                    _playerController.transform.position, Quaternion.identity);
+
+                puddle.gameObject.transform.SetParent(_ground.gameObject.transform);
+                GameObject.Destroy(puddle, 3f);
+            }
+
             if (_playerController!= null)
                 _playerController.PlayerControllerUpdate();
         }
