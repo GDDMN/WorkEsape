@@ -25,6 +25,9 @@ namespace PurpleDrank
 
         public void Exit()
         {
+            PlayerController _player = GameObject.FindObjectOfType<PlayerController>();
+            _player.OnLvlStart.Invoke();
+
             HypercasualLoose.Instance.gameObject.SetActive(false);
             GameSceneManager.Instance.onLoadSceneAction.Invoke();
         }

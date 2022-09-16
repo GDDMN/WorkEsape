@@ -10,7 +10,7 @@ namespace PurpleDrank
         private List<EnemyController> _enemys = new List<EnemyController>();
         private MeshBuilder _ground;
 
-        private UIResourceLabel[] _allLabels;
+        private List<UIResourceLabel> _allLabels = new List<UIResourceLabel>();
 
         public PlayState()
         {
@@ -18,13 +18,15 @@ namespace PurpleDrank
         }
         public void Entry()
         {
+
+            HypercasualPlaymodeScreen.Instance.gameObject.SetActive(true);
             _ground = GameObject.FindObjectOfType<MeshBuilder>();
             _ground.Initialize();
 
             foreach (var enemy in _enemys)
                 enemy.Initiailize();
 
-            _allLabels = GameObject.FindObjectsOfType<UIResourceLabel>();
+            _allLabels = HypercasualPlaymodeScreen.Instance.GetLabels();
 
             foreach (var lable in _allLabels)
                 lable.OnResourceUpdate.Invoke();
@@ -38,8 +40,7 @@ namespace PurpleDrank
 
             _playerController = GameObject.FindObjectOfType<PlayerController>();
             _playerController.OnLvlStart.Invoke();
-            _fixedJoystick = _playerController.GetJoystick;
-            _fixedJoystick.gameObject.SetActive(true);
+            _fixedJoystick = HypercasualPlaymodeScreen.Instance.GetJoystick();
             Debug.Log("PlayState");
         }
         public void OnUpdate()
@@ -59,12 +60,11 @@ namespace PurpleDrank
         }
         public void Exit()
         {
+            HypercasualPlaymodeScreen.Instance.gameObject.SetActive(false);
             foreach (var enemy in _enemys)
                 GameObject.Destroy(enemy);
 
             _enemys.Clear();
-            _fixedJoystick.gameObject.SetActive(false);
-            GameObject.Destroy(_fixedJoystick.gameObject);
         }
     }
 }

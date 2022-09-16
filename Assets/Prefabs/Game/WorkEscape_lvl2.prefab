@@ -468,7 +468,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
-    m_RemovedComponents: []
+    - target: {fileID: 1911626787258956551, guid: 7b32ff212dd4f1740ab97913e670ca4b,
+        type: 3}
+      propertyPath: _cameraPlayStartPos
+      value: 
+      objectReference: {fileID: 6120611299634280982}
+    - target: {fileID: 4365160044118812826, guid: 7b32ff212dd4f1740ab97913e670ca4b,
+        type: 3}
+      propertyPath: m_XDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365160044118812826, guid: 7b32ff212dd4f1740ab97913e670ca4b,
+        type: 3}
+      propertyPath: m_YDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365160044118812826, guid: 7b32ff212dd4f1740ab97913e670ca4b,
+        type: 3}
+      propertyPath: m_ZDamping
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4365160044118812827, guid: 7b32ff212dd4f1740ab97913e670ca4b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7b32ff212dd4f1740ab97913e670ca4b, type: 3}
 --- !u!95 &4767290362824470336 stripped
 Animator:
@@ -2708,6 +2729,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CM vcam1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417878469236825687, guid: 84f9e2731f2cad34ca206fdd5f97ff0a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84f9e2731f2cad34ca206fdd5f97ff0a, type: 3}

@@ -751,6 +751,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee,
         type: 3}
+    - target: {fileID: 1911626787258956551, guid: 7b32ff212dd4f1740ab97913e670ca4b,
+        type: 3}
+      propertyPath: _cameraPlayStartPos
+      value: 
+      objectReference: {fileID: 5065514215234362505}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b32ff212dd4f1740ab97913e670ca4b, type: 3}
 --- !u!4 &7026830618868783076 stripped
@@ -1091,12 +1096,43 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 7026830618868783076}
+    - target: {fileID: 4417878469236825685, guid: 84f9e2731f2cad34ca206fdd5f97ff0a,
+        type: 3}
+      propertyPath: m_LookAt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4417878469236825687, guid: 84f9e2731f2cad34ca206fdd5f97ff0a,
         type: 3}
       propertyPath: m_Name
       value: CM vcam1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4417878469236825687, guid: 84f9e2731f2cad34ca206fdd5f97ff0a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417878470327605336, guid: 84f9e2731f2cad34ca206fdd5f97ff0a,
+        type: 3}
+      propertyPath: m_XDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417878470327605336, guid: 84f9e2731f2cad34ca206fdd5f97ff0a,
+        type: 3}
+      propertyPath: m_YDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417878470327605336, guid: 84f9e2731f2cad34ca206fdd5f97ff0a,
+        type: 3}
+      propertyPath: m_ZDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417878470327605336, guid: 84f9e2731f2cad34ca206fdd5f97ff0a,
+        type: 3}
+      propertyPath: m_FollowOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4417878470327605337, guid: 84f9e2731f2cad34ca206fdd5f97ff0a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 84f9e2731f2cad34ca206fdd5f97ff0a, type: 3}
 --- !u!1 &5065514215234362506 stripped
 GameObject:

@@ -31,7 +31,7 @@ namespace PurpleDrank
 
         public Command handleInput()
         {
-            _fixedJoystic = GameObject.FindObjectOfType<Joystick>();
+            _fixedJoystic = HypercasualPlaymodeScreen.Instance.GetJoystick();
             Vector2 vPlayerMove = new Vector2(_fixedJoystic.Horizontal, _fixedJoystic.Vertical);
 
             if (vPlayerMove != Vector2.zero)

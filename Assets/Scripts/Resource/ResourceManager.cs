@@ -18,7 +18,7 @@ namespace PurpleDrank
         public void IncreaseResource(ResourceType type, int count)
         {
             resources[type].current += count;
-            UIResourceLabel lable = labels.FirstOrDefault(label => label.GetResourceType() == type);
+            UIResourceLabel lable = HypercasualPlaymodeScreen.Instance.GetLabels().FirstOrDefault(label => label.GetResourceType() == type);
             lable.OnResourceUpdate.Invoke();
         }
     }

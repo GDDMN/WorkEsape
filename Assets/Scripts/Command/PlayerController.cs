@@ -11,11 +11,11 @@ namespace PurpleDrank
 
     public class PlayerController : MonoBehaviour
     {
-        private Vector2 _joystickPos = new Vector2(0.0f, 0.0f);
         private GameObject Player;
         private PlayerStatus _status;
         private bool _startEmoWasShowed = false;
 
+        [SerializeField] private Transform _cameraPlayStartPos; 
         [SerializeField] private Joystick _fixedJoystick;
         [SerializeField] private Animator _animator;
 
@@ -39,14 +39,15 @@ namespace PurpleDrank
         public ParticleSystem Puddle => _bloodPuddle;
         public Animator GetAnimator => _animator;
         public PlayerStatus Status => _status;
-        public Joystick GetJoystick => _fixedJoystick;
+        public Joystick Joystick { get; set; } 
         public InputHandle GetInputHandle => _input;
         
         public void Awake()
         {
+            InitializeJoystick();
+
             OnLvlStart.AddListener(ActivateGameCamera);
             InitializeCameras();
-            InitializeJoystick();
             _input = new InputHandle(_animator, _human, _thing, _explosion);
             Player = this.gameObject;
         }
@@ -60,9 +61,7 @@ namespace PurpleDrank
 
         private void InitializeJoystick()
         {
-            _fixedJoystick = Instantiate(_fixedJoystick, _joystickPos, Quaternion.identity);
-            _fixedJoystick.transform.SetParent(FindObjectOfType<Canvas>().transform);
-            _fixedJoystick.gameObject.SetActive(false);
+            _fixedJoystick = HypercasualPlaymodeScreen.Instance.GetJoystick();
         }
 
         public void SetActiveStatus()
@@ -74,9 +73,13 @@ namespace PurpleDrank
 
         private void ActivateGameCamera()
         {
+            _cameraPlay.transform.position = new Vector3(0.0f, _cameraPlay.transform.position.y,
+                                                    _cameraPlay.transform.position.z);
+
             _cameraPlay.SetActive(true);
             _cameraMenu.SetActive(false);
             _cameraWin.SetActive(false);
+
             _animator.SetBool("Start", true);
         }
 

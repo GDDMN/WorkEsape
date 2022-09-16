@@ -4,18 +4,21 @@ ScriptsOnlyBuild:
     - DynamicJoystick
     - PurpleDrank.AdsManager
     - PurpleDrank.BoxTrigger
+    - PurpleDrank.CoinInteract
     - PurpleDrank.EnemyController
     - PurpleDrank.FieldOfView
     - PurpleDrank.GameSceneManager
     - PurpleDrank.HypercasualEndLvl
     - PurpleDrank.HypercasualLoose
     - PurpleDrank.HypercasualMainMenu
+    - PurpleDrank.HypercasualPlaymodeScreen
     - PurpleDrank.InteractWithWalkPoint
     - PurpleDrank.MeshBuilder
     - PurpleDrank.MusicManager
     - PurpleDrank.PlayerController
     - PurpleDrank.ResourceManager
     - PurpleDrank.SaveGameManager
+    - PurpleDrank.UIResourceLabel
     - PurpleDrank.UIWindow
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
@@ -25,6 +28,8 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachineVirtualCamera
     NavMeshComponents.dll:
     - UnityEngine.AI.NavMeshSurface
+    NavMeshComponentsEditor.dll:
+    - UnityEditor.AI.NavMeshAssetManager
     Unity.Recorder.Editor.dll:
     - UnityEditor.Recorder.RecorderControllerSettings
     - UnityEditor.Recorder.RecorderSettingsPrefsEditor
@@ -134,31 +139,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2838}
     - Class: 114
+      Script: {instanceID: 2858}
+    - Class: 114
       Script: {instanceID: 2888}
     - Class: 114
       Script: {instanceID: 2994}
     - Class: 114
       Script: {instanceID: 3512}
     - Class: 114
-      Script: {instanceID: 3564}
+      Script: {instanceID: 3528}
     - Class: 114
-      Script: {instanceID: 3640}
+      Script: {instanceID: 3566}
     - Class: 114
-      Script: {instanceID: 3698}
+      Script: {instanceID: 3644}
     - Class: 114
-      Script: {instanceID: 3842}
+      Script: {instanceID: 3702}
     - Class: 114
-      Script: {instanceID: 4286}
+      Script: {instanceID: 3846}
     - Class: 114
-      Script: {instanceID: 4388}
+      Script: {instanceID: 4290}
     - Class: 114
-      Script: {instanceID: 4408}
+      Script: {instanceID: 4392}
     - Class: 114
-      Script: {instanceID: 4522}
+      Script: {instanceID: 4412}
     - Class: 114
-      Script: {instanceID: 4628}
+      Script: {instanceID: 4526}
     - Class: 114
-      Script: {instanceID: 4668}
+      Script: {instanceID: 4632}
+    - Class: 114
+      Script: {instanceID: 4672}
+    - Class: 114
+      Script: {instanceID: 27470}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -326,7 +337,7 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 8739a5adaa8fa85a0d4762dfe4a95852
+      Hash: 6cf89a2d2ba92d224decb764d6900a02
     assemblyName: Assembly-CSharp.dll
     namespaceName: PurpleDrank
     className: ResourceManager
@@ -656,7 +667,7 @@ ScriptsOnlyBuild:
     className: HypercasualLoose
   - hash:
       serializedVersion: 2
-      Hash: 446eb68736b125c8c3343de6c52c7a22
+      Hash: 55f54647aadb4c2d66da446121941354
     assemblyName: Assembly-CSharp.dll
     namespaceName: PurpleDrank
     className: UIResourceLabel
@@ -914,6 +925,12 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 50bdda96d741b4c2dddf2fbc03074e8d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PurpleDrank
+    className: CoinInteract
+  - hash:
+      serializedVersion: 2
       Hash: 7c792393fb82488bd20139dcc5ba26d8
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -1010,7 +1027,7 @@ ScriptsOnlyBuild:
     className: CinemachineGroupComposer
   - hash:
       serializedVersion: 2
-      Hash: 52ea6dfef1e8e610b1fc78f87be614ee
+      Hash: 92ee893429f127384060a15b6a331054
     assemblyName: Assembly-CSharp.dll
     namespaceName: PurpleDrank
     className: PlayerController
@@ -1320,6 +1337,12 @@ ScriptsOnlyBuild:
     assemblyName: NavMeshComponents.dll
     namespaceName: UnityEngine.AI
     className: NavMeshLink
+  - hash:
+      serializedVersion: 2
+      Hash: ea469bb2fca536d1e0d3f1709e39ffff
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PurpleDrank
+    className: HypercasualPlaymodeScreen
   platform: 13
   scenePathNames:
   - Assets/Scenes/Boot.unity
